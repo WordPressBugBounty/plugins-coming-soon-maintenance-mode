@@ -247,7 +247,7 @@ if(is_array($csmm_social_media)){
 						<div class="col-md-12 p-2 mt-3">
 							<h5 class=""><?php esc_html_e( 'Select Template', 'coming-soon-maintenance-mode' ); ?></h5>
 							<div id="csmm-templates-info-1" class="form-text"><?php esc_html_e( 'Click on activate button under the template for selection.', 'coming-soon-maintenance-mode' ); ?></div>
-							<div id="csmm-templates-info-2" class="form-text"><span class="badge text-bg-info"><?php esc_html_e( 'Important Note', 'coming-soon-maintenance-mode' ); ?></span> Only <strong>Template 1, 4 and 8</strong> is available in free version.</div>
+							<div id="csmm-templates-info-2" class="form-text"><span class="badge text-bg-info"><?php esc_html_e( 'Important Note', 'coming-soon-maintenance-mode' ); ?></span> Only <strong>Template 1, 4, 8 and 11, 15 </strong> is available in free version.</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 p-2">
@@ -269,6 +269,24 @@ if(is_array($csmm_social_media)){
 							</div>
 							<div class="col-md-6 p-2">
 								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/12.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/8.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<button type="button" class="btn btn-lg btn-secondary" disabled><?php esc_html_e( 'Template 8', 'coming-soon-maintenance-mode' ); ?></button>
+									<button type="button" class="btn btn-lg <?php if($csmm_template_id == 8) echo esc_attr("btn-primary"); else echo esc_attr("btn-outline-primary"); ?> cmss-templates" id="csmm-t8" value="8" onclick="return csmm_save('templates', this.id);"><?php if($csmm_template_id == 8) echo esc_attr("Activated"); else echo esc_attr("Activate"); ?></button>
+								</div>
+							</div>
+							
+							<div class="col-md-6 p-2">
+								<div class="p-4">
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/3.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
@@ -286,7 +304,33 @@ if(is_array($csmm_social_media)){
 							</div>
 							<div class="col-md-6 p-2">
 								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/11.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<button type="button" class="btn btn-lg btn-secondary" disabled><?php esc_html_e( 'Template 11', 'coming-soon-maintenance-mode' ); ?></button>
+									<button type="button" class="btn btn-lg <?php if($csmm_template_id == 11) echo esc_attr("btn-primary"); else echo esc_attr("btn-outline-primary"); ?> cmss-templates" id="csmm-t11" value="11" onclick="return csmm_save('templates', this.id);"><?php if($csmm_template_id == 11) echo esc_attr("Activated"); else echo esc_attr("Activate"); ?></button>
+								</div>
+							</div>
+							<div class="col-md-6 p-2">
+								<div class="p-4">
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/5.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/15.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<button type="button" class="btn btn-lg btn-secondary" disabled><?php esc_html_e( 'Template 15', 'coming-soon-maintenance-mode' ); ?></button>
+									<button type="button" class="btn btn-lg <?php if($csmm_template_id == 15) echo esc_attr("btn-primary"); else echo esc_attr("btn-outline-primary"); ?> cmss-templates" id="csmm-t15" value="15" onclick="return csmm_save('templates', this.id);"><?php if($csmm_template_id == 15) echo esc_attr("Activated"); else echo esc_attr("Activate"); ?></button>
+								</div>
+							</div>
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/16.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
 									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
@@ -308,15 +352,7 @@ if(is_array($csmm_social_media)){
 									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
-							<div class="col-md-6 p-2">
-								<div class="p-4">
-									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/8.webp'); ?>" class="w-100 h-100 rounded-4">
-								</div>
-								<div class="p-2 text-center">
-									<button type="button" class="btn btn-lg btn-secondary" disabled><?php esc_html_e( 'Template 8', 'coming-soon-maintenance-mode' ); ?></button>
-									<button type="button" class="btn btn-lg <?php if($csmm_template_id == 8) echo esc_attr("btn-primary"); else echo esc_attr("btn-outline-primary"); ?> cmss-templates" id="csmm-t8" value="8" onclick="return csmm_save('templates', this.id);"><?php if($csmm_template_id == 8) echo esc_attr("Activated"); else echo esc_attr("Activate"); ?></button>
-								</div>
-							</div>
+							
 							<div class="col-md-6 p-2">
 								<div class="p-4">
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/9.webp'); ?>" class="w-100 h-100 rounded-4">
@@ -328,6 +364,23 @@ if(is_array($csmm_social_media)){
 							<div class="col-md-6 p-2">
 								<div class="p-4">
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/10.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/13.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/14.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
 									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>

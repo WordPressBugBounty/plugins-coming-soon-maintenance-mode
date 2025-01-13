@@ -2,8 +2,8 @@
 Contributors: webenvo
 Tags: coming soon, maintenance mode, landing page, under construction page, SEO friendly,
 Requires at least: 4.0
-Tested up to: 6.7
-Stable tag: 1.0.7
+Tested up to: 6.7.1
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -125,13 +125,20 @@ you can also translate the plugin in your native language easily.
 1. Free Template 1
 2. Free Template 2
 3. Free Template 3
-4. Coming Soon Mode Setting
-5. Maintenance Mode Settings
-6. Template Settings
-7. Content Configuration Settings
-8. Social Media Settings
+4. Free Template 4
+5. Free Template 5
+6. Coming Soon Mode Setting
+7. Maintenance Mode Settings
+8. Template Settings
+9. Content Configuration Settings
+10. Social Media Settings
 
 == Changelog ==
+
+= 1.0.8 =
+* Testing Pricing table plugin for wordpress 6.7.1
+* Template 11, 15 Added
+* Bug Fix: Fixed.
 
 = 1.0.7 =
 * Logo upload issue fixed

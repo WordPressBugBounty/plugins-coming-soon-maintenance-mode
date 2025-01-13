@@ -4,10 +4,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Plugin Name:       Coming Soon Maintenance Mode - v1.0.7
+ * Plugin Name:       Coming Soon Maintenance Mode - v1.0.8
  * Plugin URI:        https://webenvo.com/
  * Description:       One of the most recommended and crucial plugin to start your website projects.
- * Version:           1.0.7
+ * Version:           1.0.8
  * Requires at least: 4.0
  * Requires PHP:      4.0
  * Author:            A WP Life
