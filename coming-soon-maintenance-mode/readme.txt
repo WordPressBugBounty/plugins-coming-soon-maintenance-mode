@@ -3,7 +3,7 @@ Contributors: webenvo
 Tags: coming soon, maintenance mode, landing page, under construction page, SEO friendly,
 Requires at least: 4.0
 Tested up to: 6.7.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -134,6 +134,11 @@ you can also translate the plugin in your native language easily.
 10. Social Media Settings
 
 == Changelog ==
+
+= 1.0.9 =
+* Testing Pricing table plugin for wordpress 6.7.1
+* Favicon Icon bug fixed.
+* Bug Fix: Fixed.
 
 = 1.0.8 =
 * Testing Pricing table plugin for wordpress 6.7.1

@@ -23,8 +23,8 @@
     <script src="<?php echo esc_url( CSMM_URL.'templates/js/pace.min.js' ); ?>"></script>
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="<?php echo esc_url( CSMM_URL.'templates/favicon.ico' ); ?>" type="image/x-icon">
-    <link rel="icon" href="<?php echo esc_url( CSMM_URL.'templates/favicon.ico' ); ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
+	<link rel="icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
 </head>
 <body>
     <!-- home
