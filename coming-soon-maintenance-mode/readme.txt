@@ -136,12 +136,10 @@ you can also translate the plugin in your native language easily.
 == Changelog ==
 
 = 1.0.9 =
-* Testing Pricing table plugin for wordpress 6.7.1
 * Favicon Icon bug fixed.
-* Bug Fix: Fixed.
 
 = 1.0.8 =
-* Testing Pricing table plugin for wordpress 6.7.1
+* Testing wordpress 6.7.1
 * Template 11, 15 Added
 * Bug Fix: Fixed.
 
