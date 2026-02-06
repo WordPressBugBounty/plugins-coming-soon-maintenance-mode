@@ -261,18 +261,11 @@ if(is_array($csmm_social_media)){
 							</div>
 							<div class="col-md-6 p-2">
 								<div class="p-4">
-									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/2.webp'); ?>" class="w-100 h-100 rounded-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/4.webp'); ?>" class="w-100 h-100 rounded-4 border">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
-								</div>
-							</div>
-							<div class="col-md-6 p-2">
-								<div class="p-4">
-									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/12.webp'); ?>" class="w-100 h-100 rounded-4">
-								</div>
-								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<button type="button" class="btn btn-lg btn-secondary" disabled><?php esc_html_e( 'Template 4', 'coming-soon-maintenance-mode' ); ?></button>
+									<button type="button" class="btn btn-lg <?php if($csmm_template_id == 4) echo esc_attr("btn-primary"); else echo esc_attr("btn-outline-primary"); ?> cmss-templates" id="csmm-t4" value="4" onclick="return csmm_save('templates', this.id);"><?php if($csmm_template_id == 4) echo esc_attr("Activated"); else echo esc_attr("Activate"); ?></button>
 								</div>
 							</div>
 							<div class="col-md-6 p-2">
@@ -282,24 +275,6 @@ if(is_array($csmm_social_media)){
 								<div class="p-2 text-center">
 									<button type="button" class="btn btn-lg btn-secondary" disabled><?php esc_html_e( 'Template 8', 'coming-soon-maintenance-mode' ); ?></button>
 									<button type="button" class="btn btn-lg <?php if($csmm_template_id == 8) echo esc_attr("btn-primary"); else echo esc_attr("btn-outline-primary"); ?> cmss-templates" id="csmm-t8" value="8" onclick="return csmm_save('templates', this.id);"><?php if($csmm_template_id == 8) echo esc_attr("Activated"); else echo esc_attr("Activate"); ?></button>
-								</div>
-							</div>
-							
-							<div class="col-md-6 p-2">
-								<div class="p-4">
-									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/3.webp'); ?>" class="w-100 h-100 rounded-4">
-								</div>
-								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
-								</div>
-							</div>
-							<div class="col-md-6 p-2">
-								<div class="p-4">
-									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/4.webp'); ?>" class="w-100 h-100 rounded-4 border">
-								</div>
-								<div class="p-2 text-center">
-									<button type="button" class="btn btn-lg btn-secondary" disabled><?php esc_html_e( 'Template 4', 'coming-soon-maintenance-mode' ); ?></button>
-									<button type="button" class="btn btn-lg <?php if($csmm_template_id == 4) echo esc_attr("btn-primary"); else echo esc_attr("btn-outline-primary"); ?> cmss-templates" id="csmm-t4" value="4" onclick="return csmm_save('templates', this.id);"><?php if($csmm_template_id == 4) echo esc_attr("Activated"); else echo esc_attr("Activate"); ?></button>
 								</div>
 							</div>
 							<div class="col-md-6 p-2">
@@ -313,14 +288,6 @@ if(is_array($csmm_social_media)){
 							</div>
 							<div class="col-md-6 p-2">
 								<div class="p-4">
-									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/5.webp'); ?>" class="w-100 h-100 rounded-4">
-								</div>
-								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
-								</div>
-							</div>
-							<div class="col-md-6 p-2">
-								<div class="p-4">
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/15.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
@@ -330,10 +297,45 @@ if(is_array($csmm_social_media)){
 							</div>
 							<div class="col-md-6 p-2">
 								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/2.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/12.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/3.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+
+
+							<div class="col-md-6 p-2">
+								<div class="p-4">
+									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/5.webp'); ?>" class="w-100 h-100 rounded-4">
+								</div>
+								<div class="p-2 text-center">
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+								</div>
+							</div>
+
+							<div class="col-md-6 p-2">
+								<div class="p-4">
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/16.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
 							<div class="col-md-6 p-2">
@@ -341,7 +343,7 @@ if(is_array($csmm_social_media)){
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/6.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
 							<div class="col-md-6 p-2">
@@ -349,7 +351,7 @@ if(is_array($csmm_social_media)){
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/7.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
 							
@@ -358,7 +360,7 @@ if(is_array($csmm_social_media)){
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/9.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
 							<div class="col-md-6 p-2">
@@ -366,7 +368,7 @@ if(is_array($csmm_social_media)){
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/10.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
 
@@ -375,7 +377,7 @@ if(is_array($csmm_social_media)){
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/13.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
 							<div class="col-md-6 p-2">
@@ -383,7 +385,7 @@ if(is_array($csmm_social_media)){
 									<img src="<?php echo esc_url( CSMM_URL.'admin/assets/img/14.webp'); ?>" class="w-100 h-100 rounded-4">
 								</div>
 								<div class="p-2 text-center">
-									<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
+									<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="btn btn-lg btn-warning"><i class="fa-solid fa-cart-shopping"></i> Pro Version</a>
 								</div>
 							</div>
 							<div class="col-md-12 p-2">
@@ -493,7 +495,7 @@ if(is_array($csmm_social_media)){
 									<div id="csmm-countdown-timezone-info" class="form-text"><?php esc_html_e( 'Timezone setting used to calculate website launch.', 'coming-soon-maintenance-mode' ); ?></div>
 									<div id="csmm-countdown-title-info" class="form-text"><?php esc_html_e( 'Write a countdown heading which will appear above the countdown.', 'coming-soon-maintenance-mode' ); ?></div>
 									<div id="csmm-countdown-dt-info-1" class="form-text"><?php esc_html_e( 'Set a date and time for the website launch.', 'coming-soon-maintenance-mode' ); ?></div>
-									<div id="csmm-countdown-dt-info-2" class="form-text"><?php esc_html_e( 'When the countdown ends, the website will go live automatically.', 'coming-soon-maintenance-mode' ); ?></div>
+									<div id="csmm-countdown-dt-info-2" class="form-text"><?php esc_html_e( 'Do not select a past date.', 'coming-soon-maintenance-mode' ); ?></div>
 									<div class="form-text"><span class="badge text-bg-danger"><?php esc_html_e( 'Important Note', 'coming-soon-maintenance-mode' ); ?></span><br><?php esc_html_e( 'Automatic website launch on the countdown end is available only in the Pro version.', 'coming-soon-maintenance-mode' ); ?></div>
 								</div>
 							</div>
@@ -515,7 +517,7 @@ if(is_array($csmm_social_media)){
 									<div id="csmm-countdown-info-1" class="form-text"><?php esc_html_e( 'Display an email subscription form for visitors to sign up for the mailing list.', 'coming-soon-maintenance-mode' ); ?></div>
 									<div id="csmm-countdown-info-2" class="form-text"><?php esc_html_e( 'The email subscription mailing list, used to send updates and offers about your website via email.', 'coming-soon-maintenance-mode' ); ?></div>
 									<div id="csmm-countdown-info-3" class="form-text"><?php esc_html_e( 'Admin can download mailing list from Subscribers sub menu and import in any email maketing tools.', 'coming-soon-maintenance-mode' ); ?></div>
-									<div class="form-text"><a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
+									<div class="form-text"><a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
 								</div>
 							</div>
 						</div>
@@ -531,7 +533,7 @@ if(is_array($csmm_social_media)){
 								<h5 class=""><?php esc_html_e( 'Video URL Tips', 'coming-soon-maintenance-mode' ); ?> <i class="fa-solid fa-circle-info m-1"></i></h5>
 								<div>
 									<div id="csmm-video-url-info" class="form-text"><?php esc_html_e( 'Provide a Youtube / Vimeo embed video URL.', 'coming-soon-maintenance-mode' ); ?></div>
-									<div class="form-text"><a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
+									<div class="form-text"><a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
 								</div>
 							</div>
 						</div>
@@ -554,7 +556,7 @@ if(is_array($csmm_social_media)){
 									<h5 class=""><?php esc_html_e( 'Background Slides Tips', 'coming-soon-maintenance-mode' ); ?> <i class="fa-solid fa-circle-info m-1"></i></h5>
 									<div id="csmm-upload-slides-info-1" class="form-text"><?php esc_html_e( 'Upload the images for the background slideshow.', 'coming-soon-maintenance-mode' ); ?></div>
 									<div id="csmm-upload-slides-info-2" class="form-text"><?php esc_html_e( 'Recommended image slide resolution is 1920x1080px.', 'coming-soon-maintenance-mode' ); ?></div>
-									<div class="form-text"><a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
+									<div class="form-text"><a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
 								</div>
 							</div>
 						</div>
@@ -571,7 +573,7 @@ if(is_array($csmm_social_media)){
 								<div>
 									<div id="csmm-custom-css-info" class="form-text"><?php esc_html_e( 'Write custom CSS code to modify the template designs.', 'coming-soon-maintenance-mode' ); ?></div>
 									<div id="csmm-custom-css-info" class="form-text"><?php esc_html_e( 'Do not use the <style> tag in the CSS field.', 'coming-soon-maintenance-mode' ); ?></div>
-									<div class="form-text"><a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
+									<div class="form-text"><a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'Setting available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a></div>
 								</div>
 							</div>
 						</div>
@@ -613,7 +615,7 @@ if(is_array($csmm_social_media)){
 								</div>
 								<div>
 									<div class="input-group p-2 mt-3">
-										<a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'More Social Media options are available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a>
+										<a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank"><span class="badge text-bg-warning"><?php esc_html_e( 'More Social Media options are available in Pro', 'coming-soon-maintenance-mode' ); ?></span></a>
 									</div>
 								</div>
 								<div>
@@ -705,7 +707,7 @@ if(is_array($csmm_social_media)){
 								<div id="csmm-website-mode-info" class="form-text">
 									<h5 class=""><?php esc_html_e( 'Upgrade To Pro', 'coming-soon-maintenance-mode' ); ?></h5>
 									<?php esc_html_e( 'Upgrade the plugin to the Pro version to get more templates and features.', 'coming-soon-maintenance-mode' ); ?>
-									<br><br><a href="https://webenvo.com/coming-soon-maintenance-mode-pro/" target="_blank" id="csmm-subscribe" name="csmm-subscribe" class="btn btn-lg btn-danger"><i class="fa-solid fa-cart-shopping"></i> <?php esc_html_e( 'Get Pro Plugin', 'coming-soon-maintenance-mode' ); ?></a>
+									<br><br><a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" id="csmm-subscribe" name="csmm-subscribe" class="btn btn-lg btn-danger"><i class="fa-solid fa-cart-shopping"></i> <?php esc_html_e( 'Get Pro Plugin', 'coming-soon-maintenance-mode' ); ?></a>
 								</div>
 							</div>
 						</div>

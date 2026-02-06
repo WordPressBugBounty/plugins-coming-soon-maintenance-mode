@@ -4,14 +4,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Plugin Name:       Coming Soon Maintenance Mode - v1.0.9
- * Plugin URI:        https://webenvo.com/
+ * Plugin Name:       Coming Soon Maintenance Mode
+ * Plugin URI:        https://wpfrank.com/
  * Description:       One of the most recommended and crucial plugin to start your website projects.
- * Version:           1.0.9
- * Requires at least: 4.0
- * Requires PHP:      4.0
- * Author:            A WP Life
- * Author URI:        https://profiles.wordpress.org/webenvo/
+ * Version:           1.1.1
+ * Requires at least: 5.0
+ * Requires PHP:      5.6
+ * Author:            WP Frank
+ * Author URI:        https://profiles.wordpress.org/farazfrank/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       coming-soon-maintenance-mode
@@ -28,7 +28,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Coming Soon Maintenance Mode. If not, see https://webenvo.com/.
+along with Coming Soon Maintenance Mode. If not, see https://wpfrank.com/.
  */
  
 // CSMM default URLs and Paths
@@ -72,22 +72,16 @@ function csmm_uninstall() {
 }
 register_uninstall_hook( __FILE__, 'csmm_uninstall' );
 
-// load translation
-function csmm_load_translation() {
-	load_plugin_textdomain( 'coming-soon-maintenance-mode', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-}
-add_action( 'plugins_loaded', 'csmm_load_translation' );
-
 // CSMM
 function csmm_menu_page() {
 	// add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
-	add_menu_page( __( 'Coming Soon Maintenance Mode', 'coming-soon-maintenance-mode' ), __( 'Coming Soon Maintenance Mode', 'coming-soon-maintenance-mode' ), 'manage_options', 'webenvo-csmm', 'webenvo_csmm', 'dashicons-format-gallery', 3 );
+	add_menu_page( __( 'Coming Soon Maintenance Mode', 'coming-soon-maintenance-mode' ), __( 'Coming Soon Maintenance Mode', 'coming-soon-maintenance-mode' ), 'manage_options', 'webenvo-csmm', 'csmm_admin_page', 'dashicons-format-gallery', 3 );
 	add_submenu_page( 'webenvo-csmm', 'More Products', 'More Products', 'manage_options', 'webenvo-more-products', 'csmm_more_product');
 }
 add_action( 'admin_menu', 'csmm_menu_page' );
 
 // CSMM main page body
-function webenvo_csmm() {
+function csmm_admin_page() {
 	require 'admin/csmm.php';
 }
 
@@ -103,29 +97,40 @@ function csmm_more_product(){
 // CSMM load admin scripts (CSS/JS) only on plugin pages
 function csmm_admin_scripts() {
 	if ( current_user_can( 'manage_options' ) ) {
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce not required for checking page parameter, no form data is processed
 		if ( isset( $_GET['page'] ) ) {
 			// load plugin required CSS and JS only on plugin pages
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce not required for checking page parameter
 			$sf_current_page_slug = sanitize_text_field( wp_unslash( $_GET['page'] ) );
 			if ( strpos( $sf_current_page_slug, 'webenvo-' ) !== false ) {
 				//core admin assets
 				wp_enqueue_script('media-upload');
 				wp_enqueue_media();
-				wp_enqueue_script( 'csmm-uploader-js', plugins_url( 'admin/assets/js/csmm-uploader.js', __FILE__ ), array('jquery'), '1.0.0' );
+				wp_enqueue_script( 'csmm-uploader-js', plugins_url( 'admin/assets/js/csmm-uploader.js', __FILE__ ), array('jquery'), '1.0.0', true );
+				wp_localize_script(
+					'csmm-uploader-js',
+					'CSMMUploaderAjax',
+					array(
+						'ajaxUrl'   => admin_url( 'admin-ajax.php' ),
+						'logoNonce' => wp_create_nonce( 'csmm-logo-nonce' ),
+					)
+				);
 
 				// CSS
-				wp_enqueue_style( 'csmm-admin-style-css', plugin_dir_url( __FILE__ ) . 'admin/assets/css/style.css' );
-				wp_enqueue_style( 'csmm-bootstrap-admin-css', plugin_dir_url( __FILE__ ) . 'admin/assets/bootstrap-5.2.3-dist/css/bootstrap.css' );
-				wp_enqueue_style( 'csmm-fontawesome-admin-css', plugin_dir_url( __FILE__ ) . 'admin/assets/fontawesome-free-6.2.1-web/css/all.css' );
+				wp_enqueue_style( 'csmm-admin-style-css', plugin_dir_url( __FILE__ ) . 'admin/assets/css/style.css', array(), '1.1.0' );
+				wp_enqueue_style( 'csmm-bootstrap-admin-css', plugin_dir_url( __FILE__ ) . 'admin/assets/bootstrap-5.2.3-dist/css/bootstrap.css', array(), '5.2.3' );
+				wp_enqueue_style( 'csmm-fontawesome-admin-css', plugin_dir_url( __FILE__ ) . 'admin/assets/fontawesome-free-6.2.1-web/css/all.css', array(), '6.2.1' );
 
 				// JS
-				wp_enqueue_script( 'jquery', 'jquery-ui-tabs' );
-    				wp_enqueue_script('jquery-effects-shake', '', '', array('jquery', 'jquery-ui-core', 'jquery-effects-core'));
+				wp_enqueue_script( 'jquery' );
+				wp_enqueue_script( 'jquery-ui-tabs' );
+				wp_enqueue_script( 'jquery-effects-shake', '', array( 'jquery', 'jquery-ui-core', 'jquery-effects-core' ), '1.0.0', true );
 				// wp_enqueue_script('csmm-color-picker-js', plugin_dir_url( __FILE__ ) . 'admin/assets/js/csmm-color-picker.js', array('jquery'), '' );
 				//wp_enqueue_script( 'csmm-bootstrap-js', plugin_dir_url( __FILE__ ) . 'admin/assets/bootstrap-5.2.3-dist/js/bootstrap.js', array( 'jquery' ), '5.2.3' );
-				wp_enqueue_script( 'csmm-bootstrap-bundle-js', plugin_dir_url( __FILE__ ) . 'admin/assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.js', array( 'jquery' ), '5.2.3' );
+				wp_enqueue_script( 'csmm-bootstrap-bundle-js', plugin_dir_url( __FILE__ ) . 'admin/assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.js', array( 'jquery' ), '5.2.3', true );
 				
 				// product page assets
-				wp_register_style( 'cmss-product-css', plugin_dir_url( __FILE__ ) . 'our-products/products.css', array(), 1.0, false );
+				wp_register_style( 'cmss-product-css', plugin_dir_url( __FILE__ ) . 'our-products/products.css', array(), '1.0' );
 				wp_register_script( 'csmm-product-js', plugin_dir_url( __FILE__ ) . 'our-products/products.js', array( 'jquery' ), '1.0', true );
 				wp_enqueue_script( 'csmm-product-js' );
 				wp_localize_script(
@@ -144,6 +149,10 @@ add_action( 'admin_enqueue_scripts', 'csmm_admin_scripts' );
 
 // upload logo callback
 function csmm_logo_li_callback() {
+	// Verify nonce for AJAX request
+	if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'csmm-logo-nonce' ) ) {
+		wp_send_json_error( 'Invalid nonce.' );
+	}
 	if ( isset($_POST['attachment_id']) ) {
 		//defaults
 		$csmm_logo_url = "";
@@ -164,22 +173,23 @@ function csmm_logo_li_callback() {
 add_action( 'wp_ajax_csmm_logo', 'csmm_logo_li_callback' );
 
 // custom admin notice start
-function custom_admin_notice() {
+function csmm_admin_notice() {
 	$dismissed = get_user_meta(get_current_user_id(), 'dismissed_custom_notice', true);
 	if (!$dismissed) {
-		if (isset($_GET['page']) && $_GET['page'] === 'webenvo-csmm') {
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce not required for checking page parameter, no form data is processed
+		if (isset($_GET['page']) && sanitize_text_field( wp_unslash( $_GET['page'] ) ) === 'webenvo-csmm') {
 			$image_url = plugin_dir_url(__FILE__) . 'admin/assets/img/portfolio-wordpress.webp'; // Replace with your image URL
 			echo '<div class="notice is-dismissible awp-notice-custom">
-			<a href="https://webenvo.com/ultimate-portfolio/" target="_blank"><img width="1690px" src="' . esc_url($image_url) . '"></a>
+			<a href="https://wpfrank.com/wordpress-plugins/ultimate-portfolio-pro/" target="_blank"><img width="1690px" src="' . esc_url($image_url) . '"></a>
 			</div>';
 		}
 	}
 }
-add_action('admin_notices', 'custom_admin_notice');
+add_action('admin_notices', 'csmm_admin_notice');
 
-function custom_admin_notice_script() {
+function csmm_admin_notice_script() {
     // Create a nonce and pass it to the JavaScript
-    $cmss_ajax_nonce = wp_create_nonce('dismiss_custom_notice_nonce');
+    $cmss_ajax_nonce = wp_create_nonce('csmm_dismiss_notice_nonce');
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
@@ -190,7 +200,7 @@ function custom_admin_notice_script() {
                     type: "POST",
                     url: ajaxurl,
                     data: {
-                        action: "dismiss_custom_notice",
+                        action: "csmm_dismiss_notice",
                         security: '<?php echo esc_js($cmss_ajax_nonce); ?>',
                     },
                     success: function(response) {
@@ -229,15 +239,15 @@ function custom_admin_notice_script() {
     </style>
     <?php
 }
-add_action('admin_footer', 'custom_admin_notice_script');
-function dismiss_custom_notice() {
+add_action('admin_footer', 'csmm_admin_notice_script');
+function csmm_dismiss_notice() {
     // Check the nonce
-    check_ajax_referer('dismiss_custom_notice_nonce', 'security');
+    check_ajax_referer('csmm_dismiss_notice_nonce', 'security');
     // Update user meta to mark the notice as dismissed
     update_user_meta(get_current_user_id(), 'dismissed_custom_notice', '1');
     wp_send_json_success();
 }
-add_action('wp_ajax_dismiss_custom_notice', 'dismiss_custom_notice');
+add_action('wp_ajax_csmm_dismiss_notice', 'csmm_dismiss_notice');
 // custom admin notice end
 
 // save CSMM start
@@ -255,17 +265,14 @@ function csmm_save() {
 				$csmm_selected_other_pages = array();
 				$csmm_website_mode = isset( $_POST['website_mode'] ) ? sanitize_text_field( wp_unslash ( $_POST['website_mode'] ) ) : 3;
 				
-				if( wp_unslash( isset ( $_POST['selected_posts'] ) ) ) {
-					$csmm_selected_posts = wp_unslash($_POST['selected_posts']);
-					array_map('sanitize_text_field', $csmm_selected_posts);
+				if( isset ( $_POST['selected_posts'] ) && is_array( $_POST['selected_posts'] ) ) {
+					$csmm_selected_posts = array_map( 'sanitize_text_field', wp_unslash( $_POST['selected_posts'] ) );
 				}
-				if( wp_unslash( isset ( $_POST['selected_pages'] ) ) ) {
-					$csmm_selected_pages = wp_unslash($_POST['selected_pages']);
-					array_map('sanitize_text_field', $csmm_selected_pages);
+				if( isset ( $_POST['selected_pages'] ) && is_array( $_POST['selected_pages'] ) ) {
+					$csmm_selected_pages = array_map( 'sanitize_text_field', wp_unslash( $_POST['selected_pages'] ) );
 				}
-				if( wp_unslash( isset ( $_POST['selected_other_pages'] ) ) ) {
-					$csmm_selected_other_pages = wp_unslash($_POST['selected_other_pages']);
-					array_map('sanitize_text_field', $csmm_selected_other_pages);
+				if( isset ( $_POST['selected_other_pages'] ) && is_array( $_POST['selected_other_pages'] ) ) {
+					$csmm_selected_other_pages = array_map( 'sanitize_text_field', wp_unslash( $_POST['selected_other_pages'] ) );
 				}
 				
 				$csmm_settings_array = array(
@@ -497,7 +504,8 @@ if($csmm_website_mode == 2) {
 // output CSMM end
 
 // live preview CSMM start
-if((isset($_GET['csmm']) && $_GET['csmm'] == 'true')){
+// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce not required for preview parameter check, safe read-only operation
+if( isset( $_GET['csmm'] ) && sanitize_text_field( wp_unslash( $_GET['csmm'] ) ) === 'true' ){
 	function csmm_website_mode_preview(){
 		// chekc user logged in
 		include('loader.php');
@@ -508,7 +516,7 @@ if((isset($_GET['csmm']) && $_GET['csmm'] == 'true')){
 // output CSMM end
 
 // restrict rest API for maintenance mode start
-function cmss_restrict_rest_api_for_maintenance_mode($result, $server, $request) {
+function csmm_restrict_rest_api_for_maintenance_mode($result, $server, $request) {
     // Check if the maintenance mode is enabled in your plugin's settings
     $csmm_website_mode = 3; // default mode live
     $csmm_settings = get_option('csmm_settings');
@@ -520,12 +528,12 @@ function cmss_restrict_rest_api_for_maintenance_mode($result, $server, $request)
     if ($csmm_website_mode && !is_user_logged_in()) {
         // Check if the request is for posts or pages
         if (strpos($request->get_route(), '/wp/v2/posts') !== false || strpos($request->get_route(), '/wp/v2/pages') !== false) {
-            return new WP_Error('rest_forbidden', esc_html__('The site is in maintenance mode.', 'your-plugin-text-domain'), array('status' => rest_authorization_required_code()));
+            return new WP_Error('rest_forbidden', esc_html__('The site is in maintenance mode.', 'coming-soon-maintenance-mode'), array('status' => rest_authorization_required_code()));
         }
     }
 
     return $result;
 }
-add_filter('rest_pre_dispatch', 'cmss_restrict_rest_api_for_maintenance_mode', 10, 3);
+add_filter('rest_pre_dispatch', 'csmm_restrict_rest_api_for_maintenance_mode', 10, 3);
 // restrict rest API for maintenance mode end
 ?>

@@ -72,6 +72,38 @@ if(is_array($csmm_social_media)){
 	if(array_key_exists('csmm_sm_instagram', $csmm_social_media)){ $csmm_sm_instagram = $csmm_social_media['csmm_sm_instagram']; }
 }
 
+// Custom CSS (for templates 11 and 15)
+$csmm_custom_css = '';
+
+// Enqueue template assets function
+function csmm_enqueue_template_assets( $template_id ) {
+	// Base styles
+	wp_enqueue_style( 'csmm-base', CSMM_URL . 'templates/css/base.css', array(), '1.1.0' );
+	wp_enqueue_style( 'csmm-vendor', CSMM_URL . 'templates/css/vendor.css', array(), '1.1.0' );
+	wp_enqueue_style( 'csmm-main', CSMM_URL . 'templates/css/main.css', array(), '1.1.0' );
+	wp_enqueue_style( 'csmm-fontawesome', CSMM_URL . 'admin/assets/fontawesome-free-6.2.1-web/css/all.min.css', array(), '6.2.1' );
+	
+	// Template specific styles
+	wp_enqueue_style( 'csmm-template-' . $template_id, CSMM_URL . 'templates/css/' . $template_id . '.css', array(), '1.1.0' );
+	
+	// Base scripts - load in head
+	wp_enqueue_script( 'csmm-modernizr', CSMM_URL . 'templates/js/modernizr.js', array(), '1.1.0', false );
+	wp_enqueue_script( 'csmm-pace', CSMM_URL . 'templates/js/pace.min.js', array(), '1.1.0', false );
+	
+	// Footer scripts
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'csmm-plugins', CSMM_URL . 'templates/js/plugins.js', array( 'jquery' ), '1.1.0', true );
+	
+	// Template specific scripts
+	if ( $template_id == 1 ) {
+		wp_enqueue_script( 'csmm-particles', CSMM_URL . 'templates/js/particles.min.js', array( 'jquery' ), '1.1.0', true );
+		wp_enqueue_script( 'csmm-polygons', CSMM_URL . 'templates/js/polygons.js', array( 'jquery' ), '1.1.0', true );
+	}
+}
+
+// Enqueue assets for this template
+csmm_enqueue_template_assets( $csmm_template_id );
+
 //print_r($cmss_subscriber_list);
-$file = plugin_dir_path( __FILE__ )."templates/$csmm_template_id.php";
-include($file);
+$csmm_file = plugin_dir_path( __FILE__ )."templates/$csmm_template_id.php";
+include($csmm_file);

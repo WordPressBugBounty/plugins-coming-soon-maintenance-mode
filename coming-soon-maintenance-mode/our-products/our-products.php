@@ -15,27 +15,30 @@ add_action( 'wp_ajax_extras_theme_update', 'csmm_extras_update_theme' );
 
 function csmm_extras_install_plugin() {
 	// Verify the nonce for install action.
-	$extnonce = $_POST['extnonce'];
-	if ( ! wp_verify_nonce( $extnonce, 'csmm-extra-nonce' ) ) {
+	if ( ! isset( $_POST['extnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['extnonce'] ) ), 'csmm-extra-nonce' ) ) {
 		wp_send_json_error( 'Invalid nonce.' );
 	}
 
 	// Retrieve the plugin slug.
-	$extplugin_slug = $_POST['slug'];
+	$csmm_extplugin_slug = isset( $_POST['slug'] ) ? sanitize_text_field( wp_unslash( $_POST['slug'] ) ) : '';
+
+	if ( empty( $csmm_extplugin_slug ) ) {
+		wp_send_json_error( 'Plugin slug is required.' );
+	}
 
 	// Include the necessary files.
 	require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
 	require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
 	// Get plugin information.
-	$get_plugin_info = plugins_api( 'plugin_information', array( 'slug' => sanitize_key( wp_unslash( $extplugin_slug ) ) ) );
+	$csmm_get_plugin_info = plugins_api( 'plugin_information', array( 'slug' => sanitize_key( $csmm_extplugin_slug ) ) );
 	// Create the plugin upgrader instance.
-	$upgrader = new Plugin_Upgrader( new Plugin_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'plugin', 'api' ) ) );
+	$csmm_upgrader = new Plugin_Upgrader( new Plugin_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'plugin', 'api' ) ) );
 
 	// Install the plugin.
-	$result = $upgrader->install( $get_plugin_info->download_link );
+	$csmm_result = $csmm_upgrader->install( $csmm_get_plugin_info->download_link );
 
 	// Check the installation result.
-	if ( is_wp_error( $result ) ) {
+	if ( is_wp_error( $csmm_result ) ) {
 		wp_send_json_error( 'Plugin installation failed.' );
 	}
 
@@ -46,27 +49,30 @@ function csmm_extras_install_plugin() {
 
 function csmm_extras_update_plugin() {
 	// Verify the nonce for update action.
-	$nonce = $_POST['extnonce'];
-	if ( ! wp_verify_nonce( $nonce, 'csmm-extra-nonce' ) ) {
+	if ( ! isset( $_POST['extnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['extnonce'] ) ), 'csmm-extra-nonce' ) ) {
 		wp_send_json_error( 'Invalid nonce.' );
 	}
 
 	// Retrieve the plugin slug.
-	$extplugin_slug = $_POST['slug'];
+	$csmm_extplugin_slug = isset( $_POST['slug'] ) ? sanitize_text_field( wp_unslash( $_POST['slug'] ) ) : '';
+
+	if ( empty( $csmm_extplugin_slug ) ) {
+		wp_send_json_error( 'Plugin slug is required.' );
+	}
 
 	// Include the necessary files.
 	require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
 	require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
 	// Get plugin information.
-	$get_plugin_info = plugins_api( 'plugin_information', array( 'slug' => sanitize_key( wp_unslash( $extplugin_slug ) ) ) );
+	$csmm_get_plugin_info = plugins_api( 'plugin_information', array( 'slug' => sanitize_key( $csmm_extplugin_slug ) ) );
 	// Create the plugin upgrader instance.
-	$upgrader = new Plugin_Upgrader( new Plugin_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'plugin', 'api' ) ) );
+	$csmm_upgrader = new Plugin_Upgrader( new Plugin_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'plugin', 'api' ) ) );
 
 	// Update the plugin.
-	$result = $upgrader->upgrade( $get_plugin_info->download_link );
+	$csmm_result = $csmm_upgrader->upgrade( $csmm_get_plugin_info->download_link );
 
 	// Check the update result.
-	if ( is_wp_error( $result ) ) {
+	if ( is_wp_error( $csmm_result ) ) {
 		wp_send_json_error( 'Plugin update failed.' );
 	}
 
@@ -76,22 +82,25 @@ function csmm_extras_update_plugin() {
 
 function csmm_extras_activate_plugin() {
 	// Verify the nonce for activate action.
-	$nonce = $_POST['extnonce'];
-	if ( ! wp_verify_nonce( $nonce, 'csmm-extra-nonce' ) ) {
+	if ( ! isset( $_POST['extnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['extnonce'] ) ), 'csmm-extra-nonce' ) ) {
 		wp_send_json_error( 'Invalid nonce.' );
 	}
 
 	// Retrieve the plugin slug.
-	$plugin_slug = $_POST['slug'];
+	$csmm_plugin_slug = isset( $_POST['slug'] ) ? sanitize_text_field( wp_unslash( $_POST['slug'] ) ) : '';
+
+	if ( empty( $csmm_plugin_slug ) ) {
+		wp_send_json_error( 'Plugin slug is required.' );
+	}
 
 	// Include the necessary files.
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 	// Activate the plugin.
-	$activate_result = activate_plugin( $plugin_slug . '/' . $plugin_slug . '.php' );
+	$csmm_activate_result = activate_plugin( $csmm_plugin_slug . '/' . $csmm_plugin_slug . '.php' );
 
 	// Check the activation result.
-	if ( is_wp_error( $activate_result ) ) {
+	if ( is_wp_error( $csmm_activate_result ) ) {
 		wp_send_json_error( 'Plugin activation failed.' );
 	}
 
@@ -102,29 +111,32 @@ function csmm_extras_activate_plugin() {
 // Theme functions.
 function csmm_extras_install_theme() {
 	// Verify the nonce for install action.
-	$extnonce = $_POST['extnonce'];
-	if ( ! wp_verify_nonce( $extnonce, 'csmm-extra-nonce' ) ) {
+	if ( ! isset( $_POST['extnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['extnonce'] ) ), 'csmm-extra-nonce' ) ) {
 		wp_send_json_error( 'Invalid nonce.' );
 	}
 
 	// Retrieve the theme slug.
-	$exttheme_slug = $_POST['slug'];
+	$csmm_exttheme_slug = isset( $_POST['slug'] ) ? sanitize_text_field( wp_unslash( $_POST['slug'] ) ) : '';
+
+	if ( empty( $csmm_exttheme_slug ) ) {
+		wp_send_json_error( 'Theme slug is required.' );
+	}
 
 	// Include the necessary files.
 	require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
 	require_once ABSPATH . 'wp-admin/includes/theme-install.php';
 
 	// Get theme information.
-	$get_theme_info = themes_api( 'theme_information', array( 'slug' => sanitize_key( wp_unslash( $exttheme_slug ) ) ) );
+	$csmm_get_theme_info = themes_api( 'theme_information', array( 'slug' => sanitize_key( $csmm_exttheme_slug ) ) );
 
 	// Create the theme upgrader instance.
-	$upgrader = new Theme_Upgrader( new Theme_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'theme' ) ) );
+	$csmm_upgrader = new Theme_Upgrader( new Theme_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'theme' ) ) );
 
 	// Install the theme.
-	$result = $upgrader->install( $get_theme_info->download_link );
+	$csmm_result = $csmm_upgrader->install( $csmm_get_theme_info->download_link );
 
 	// Check the installation result.
-	if ( is_wp_error( $result ) ) {
+	if ( is_wp_error( $csmm_result ) ) {
 		wp_send_json_error( 'Theme installation failed.' );
 	}
 
@@ -134,29 +146,32 @@ function csmm_extras_install_theme() {
 
 function csmm_extras_update_theme() {
 	// Verify the nonce for update action.
-	$nonce = $_POST['extnonce'];
-	if ( ! wp_verify_nonce( $nonce, 'csmm-extra-nonce' ) ) {
+	if ( ! isset( $_POST['extnonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['extnonce'] ) ), 'csmm-extra-nonce' ) ) {
 		wp_send_json_error( 'Invalid nonce.' );
 	}
 
 	// Retrieve the theme slug.
-	$theme_slug = $_POST['slug'];
+	$csmm_theme_slug = isset( $_POST['slug'] ) ? sanitize_text_field( wp_unslash( $_POST['slug'] ) ) : '';
+
+	if ( empty( $csmm_theme_slug ) ) {
+		wp_send_json_error( 'Theme slug is required.' );
+	}
 
 	// Include the necessary files.
 	require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
 	require_once ABSPATH . 'wp-admin/includes/theme-install.php';
 
 	// Get theme information.
-	$get_theme_info = themes_api( 'theme_information', array( 'slug' => sanitize_key( wp_unslash( $theme_slug ) ) ) );
+	$csmm_get_theme_info = themes_api( 'theme_information', array( 'slug' => sanitize_key( $csmm_theme_slug ) ) );
 
 	// Create the theme upgrader instance.
-	$upgrader = new Theme_Upgrader( new Theme_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'theme' ) ) );
+	$csmm_upgrader = new Theme_Upgrader( new Theme_Upgrader_Skin( compact( 'title', 'url', 'nonce', 'theme' ) ) );
 
 	// Update the theme.
-	$result = $upgrader->upgrade( $get_theme_info->download_link );
+	$csmm_result = $csmm_upgrader->upgrade( $csmm_get_theme_info->download_link );
 
 	// Check the update result.
-	if ( is_wp_error( $result ) ) {
+	if ( is_wp_error( $csmm_result ) ) {
 		wp_send_json_error( 'Theme update failed.' );
 	}
 

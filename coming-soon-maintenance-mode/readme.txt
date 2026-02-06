@@ -1,192 +1,220 @@
 === Coming Soon Maintenance Mode ===
-Contributors: webenvo
-Tags: coming soon, maintenance mode, landing page, under construction page, SEO friendly,
-Requires at least: 4.0
-Tested up to: 6.7.1
-Stable tag: 1.0.9
+Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK, webenvo
+Tags: coming soon, maintenance mode, landing page, under construction page, SEO friendly
+Requires at least: 5.0
+Tested up to: 6.9
+Stable tag: 1.1.1
+Requires PHP: 5.6
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-The coming soon maintenance mode WordPress plugin comes with a one-click setup, free templates, customization settings, and automatic website launch.
+A Coming Soon and Maintenance Mode plugin to manage your site's availability with responsive templates and SEO-friendly features.
 
 == Description ==
 
-Introducing coming soon and maintenance mode WordPress plugin! With its one-click setup, this super fast and handy plugin makes it easy to create a stunning and professional-looking coming soon or maintenance page for your website. The minimal design ensures that your page is clean and simple, yet eye-catching.
+The Coming Soon and Maintenance Mode plugin enables WordPress users to set up a temporary landing page or a maintenance screen while working on their site. This tool helps site administrators manage visitor access during website construction, updates, or downtime.
 
-This plugin comes with a range of free, responsive coming soon templates, so you can choose one that matches the style and feel of your brand. You can also customize your page to your liking using the customization settings, allowing you to change the background, text, colors, and more.
+Pro Version Demo: **[Coming Soon Maintenance Mode Demo](https://wpfrank.com/demo/coming-soon-maintenance-mode-pro)**
+Buy Pro Version: **[Buy Coming Soon Maintenance Mode](https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/)**
 
-The coming soon and maintenance mode WordPress plugin is the ideal solution for anyone looking to create a professional and user-friendly coming soon or maintenance page for their website. With its one-click setup, this fast and handy plugin is perfect for those who are short on time but want a stunning and impactful page.
+### Video Tutorial - Free Version
 
-👉 **Pro Version:** [Live Demo](https://webenvo.com/coming-soon-maintenance-mode-pro)
-✅ **Pro Version:** [Buy Now](https://webenvo.com/member/signup/coming-soon-maintenance-mode-pro)
+[youtube https://www.youtube.com/watch?v=HYVdcnvPi08]
 
-## Free Version Features
+Detailed configuration options are available to customize the look and feel of your coming soon page without writing code. The plugin is designed to be responsive, ensuring that your temporary page looks functional on various devices, including desktops, tablets, and mobile phones.
 
-* One Click Setup
-* Super Fast and Handy Plugin
-* Minimal Design
-* Free Responsive Coming Soon Templates
-* Maintenance Mode
-* Bootstrap 5 User Interface
-* Customization Settings
-* Website Auto Launch
-* SEO Friendly
+Search engine optimization is a key consideration for this plugin. It allows search engines to crawl your coming soon page, which can help maintain your site's presence even when the main content is not yet visible. 
 
-## Watch The Video Tutorial - Free Version
-https://www.youtube.com/watch?v=HYVdcnvPi08
+### Key Features
 
-## Pro Version Feature
+*   **Coming Soon Mode:** Activate a coming soon page to inform visitors about your upcoming site launch.
+*   **Multiple templates:** Comes with 35+ prebuilt templates ready to shine.
+*   **Maintenance Mode:** Display a maintenance message when performing updates or fixing issues.
+*   **Responsive Design:** Templates are built to adapt to different screen sizes.
+*   **Customization:** Adjust background images, colors, and text to align with your content.
+*   **SEO Friendly:** Designed to work well with search engine indexing requirements.
+*   **Bootstrap 5 Interface:** Uses a modern interface for backend settings.
+*   **Countdown Timer:** Optionally display a timer to indicate when the site will be live.
+*   **Auto Launch:** Schedule your site to go live automatically.
 
-* 10 Premium Templates
-* Mobile Responsive
-* Easy To Use And Setup
-* No Coding Required
-* Many Design
-* Video Support
-* Pre Build Templates
-* Advance Plugin Setting
-* Countdown Timer
-* Automatic Website Launch
-* Social Media Profiling
-* Custom CSS
+### What You Get in the Free Version
 
-## Watch The Video Tutorial - Pro Version
-https://www.youtube.com/watch?v=hgd1lziA7Mk
+*   **One Click Setup:** Get started quickly without complicated configuration steps.
+*   **Super Fast and Handy:** Lightweight plugin that won't slow down your site.
+*   **Minimal Design:** Clean, distraction-free templates that focus on your message.
+*   **Free Responsive Templates:** Choose from professionally designed templates that work on all devices.
+*   **Customization Settings:** Personalize colors, backgrounds, and content to match your brand.
+*   **Website Auto Launch:** Set a date and time for your site to go live automatically.
 
-The bootstrap 5 user interface makes this plugin user-friendly and easy to navigate. You can choose to display a countdown timer on your page to create a sense of urgency for your visitors, or simply display a message about your website being under construction.
+### Upgrade to Pro for More Power
 
-One of the best features of this plugin is its SEO-friendly design. This means that your coming soon or maintenance page will not negatively impact your search engine ranking, ensuring that your website remains at the top of the search results even while it's under construction.
+The Pro version includes everything in the free version, plus:
 
-The website auto launch feature ensures that your website will be automatically launched once your construction or updates are complete. This feature eliminates the need to manually change the settings and ensures that your website will be up and running as soon as possible.
+*   **35+ Premium Templates:** Access a wide variety of professionally designed templates.
+*   **Video Support:** Add background videos to make your page more engaging.
+*   **Pre Built Templates:** Ready-to-use designs that require minimal setup.
+*   **Advanced Plugin Settings:** Fine-tune every aspect of your coming soon page.
+*   **Social Media Profiling:** Connect your social accounts to build your audience before launch.
+*   **Custom CSS:** Add your own styles for complete design control.
 
-The minimal design of this plugin ensures that your coming soon or maintenance page is clean and simple, yet eye-catching. The free responsive coming soon templates that come with this plugin make it easy to choose one that matches the style and feel of your brand. The customization settings allow you to change the background, text, colors, and more to your liking. This makes it possible to create a page that truly represents your brand and makes a great first impression on your visitors.
+### Video Tutorial - Pro Version
 
-One of the standout features of this plugin is the bootstrap 5 user interface. This user-friendly design makes it easy for anyone to navigate the settings and choose the perfect template for their needs. The ability to display a countdown timer on your page creates a sense of urgency for your visitors and gives them an idea of when your website will be up and running again.
+[youtube https://www.youtube.com/watch?v=hgd1lziA7Mk]
 
-Another important factor to consider is search engine optimization (SEO). With this plugin's SEO-friendly design, your coming soon or maintenance page will not negatively impact your search engine ranking. This is important because it ensures that your website remains at the top of the search results even while it's under construction. This gives your visitors an easy and direct path to your website and makes it easier for them to find what they're looking for.
+### Usage Scenario
 
-The website auto launch feature is a great way to ensure that your website is automatically launched once your construction or updates are complete. This eliminates the need to manually change the settings and ensures that your website will be up and running as soon as possible. This feature also helps to ensure that your visitors are not left waiting for your website to be up and running again.
-
-In conclusion, the coming soon and maintenance mode WordPress plugin is the perfect solution for anyone looking to create a professional and seamless coming soon or maintenance page for their website. With its fast and handy setup, minimal design, and SEO-friendly features, this plugin is a must-have for anyone looking to improve their website's appearance and performance.
-
-The user-friendly design of this plugin makes it easy for anyone to create a stunning and impactful coming soon or maintenance page, even if they have limited technical knowledge. The free responsive templates and customization settings ensure that your page will look and feel like your brand, making a great first impression on your visitors. And with the website auto launch feature, you can rest assured that your website will be up and running as soon as possible, giving your visitors the best possible experience.
-
-In today's fast-paced world, having a professional and user-friendly coming soon or maintenance page is more important than ever. With this plugin, you can create a page that not only looks great but also helps to protect your search engine ranking, ensuring that your website is always at the top of the search results. So why wait? Start using this amazing coming soon and maintenance mode WordPress plugin today and take your website to the next level!
-
-In conclusion, this coming soon and maintenance mode WordPress plugin is the perfect solution for anyone looking to create a professional and seamless coming soon or maintenance page for their website. With its fast and handy setup, minimal design, and SEO-friendly features, this plugin is a must-have for anyone looking to improve their website's appearance and performance.
-
-**The plugin is available in following languages:**
-
-Arabic (ar) - العربية
-Chinese (zh_CN) - 简体中文
-Finnish (fi) - Suomi
-French (fr_FR) - Français
-German (de_DE) - Deutsch
-Hindi (hi_IN) - हिन्दी
-Hungarian (hu_HU) - Magyar
-Italian (it_IT) - Italiano
-Indonesian (id_ID) - Bahasa Indonesia
-Japanese (ja) - 日本語
-Dutch (nl_NL) - Nederlands
-Russian (ru_RU) - Русский
-Spanish (es_ES) - Español
-Polish (pl_PL) - Polski
-Portuguese (pt_PT) - Português
-
-you can also translate the plugin in your native language easily.
+Use the Coming Soon mode when you are building a new website and want to collect leads or inform visitors before the official launch. The Maintenance Mode is suitable for existing websites that need to be taken offline temporarily for updates or troubleshooting.
 
 == Installation ==
 
-* Upload plugin files to your plugins folder, or install using WordPress built-in Add New Plugin installer.
-* Activate the plugin.
-* Navigate to Plugin Settings and fill settings.
-* For more details check the [Plugin Documentation](https://www.youtube.com/channel/UCqbxQzbTEE2p3o33fKB5NIQ/)
+1.  Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen.
+2.  Activate the plugin through the 'Plugins' screen in WordPress.
+3.  Use the plugin settings panel to configure your Coming Soon or Maintenance Mode page.
+4.  For detailed visual instructions, refer to the [Plugin Documentation](https://www.youtube.com/channel/UCqbxQzbTEE2p3o33fKB5NIQ/).
 
 == Frequently Asked Questions ==
 
-= Can I use plugin on commercial website? =
+= How do I activate the Coming Soon or Maintenance Mode? =
 
-* Yes, absolutely, you can use plugin anywhere you want. The plugin is released under a GPL license.
+After installing the plugin, go to your WordPress dashboard and navigate to the plugin settings. You'll find an option to enable either Coming Soon or Maintenance Mode. Simply select your preferred mode and save the settings.
 
-= How to install and configure the plugin? =
+= Will logged-in users see the coming soon page? =
 
-* Please follow this [link](https://www.youtube.com/channel/UCqbxQzbTEE2p3o33fKB5NIQ/) get complete guidelines to install the plugin on your website.
+No, by default, logged-in administrators and users with appropriate permissions can view the live site while visitors see the coming soon page. This allows you to work on your site while it's in maintenance mode.
 
-= How to enable or disable plugin coming soon mode? =
+= Can I customize the coming soon page design? =
 
-* Go to the plugin page and configure the website Status settings.
+Yes, the plugin offers extensive customization options. You can change backgrounds, colors, fonts, add your logo, customize text, and choose from multiple responsive templates to match your brand.
 
-= How to disable plugin maintenance soon mode? =
+= How do I schedule my site to go live automatically? =
 
-* Go to the plugin page and set website Status to Live.
+The plugin includes an auto-launch feature. In the settings, you can set a specific date and time for your site to automatically switch from coming soon mode to live mode without manual intervention.
+
+= Does this plugin affect SEO? =
+
+The plugin is designed to be SEO-friendly. It properly handles HTTP status codes and allows search engines to understand that your site is temporarily unavailable, helping maintain your search engine presence.
+
+= Can I collect email addresses from visitors? =
+
+Yes, But only in Pro version many templates include built-in email subscription forms. You can collect visitor emails to build your audience before your official launch.
+
+= Will the plugin work with my theme? =
+
+Yes, the plugin works independently of your WordPress theme. It displays a standalone coming soon page that doesn't rely on your theme's design.
+
+= Can I preview the coming soon page before activating it? =
+
+Yes, you can preview your coming soon page while logged in as an administrator before making it live to visitors.
+
+= How do I add social media links? =
+
+The plugin includes social media options in the settings panel. You can add links to your Facebook, Twitter, Instagram, and other social profiles in Pro.
+
+= Is the plugin compatible with caching plugins? =
+
+Yes, the plugin is designed to work with popular caching plugins. However, you may need to clear your cache after activating or deactivating the coming soon mode.
+
+= Can I use custom CSS? =
+
+Yes, the Pro version includes a custom CSS option that allows you to add your own styles for complete design control.
+
+= What's the difference between Coming Soon and Maintenance Mode? =
+
+Coming Soon mode is typically used for new websites that haven't launched yet, while Maintenance Mode is used for existing sites that are temporarily offline for updates or repairs.
+
+= Can I use it on commercial websites? =
+
+Yes, this plugin is released under the GPL license, allowing usage on any website, including commercial projects.
+
+= How do I switch back to a live site? =
+
+Go to the plugin settings and change the status to "Live" or "Disabled" to deactivate the coming soon or maintenance page and make your site publicly accessible.
+
+= Does it work with multisite installations? =
+
+Yes, the plugin is compatible with WordPress multisite installations and can be activated on individual sites within your network.
+
+= Can I add a countdown timer? =
+
+Yes, the plugin includes countdown timer functionality. You can set a launch date and the timer will automatically count down to that moment.
+
+= What happens if I deactivate the plugin? =
+
+If you deactivate the plugin, your site will immediately become publicly accessible again. All your settings will be saved if you decide to reactivate it later.
+
+= Is the plugin translation ready? =
+
+Yes, the plugin is translation ready and supports multiple languages, making it easy to create coming soon pages in your preferred language.
+
+= How do I get support? =
+
+For support questions, please visit the WordPress.org support forum for this plugin. Pro version users receive priority support through our dedicated support channels.
 
 == Screenshots ==
 
-1. Free Template 1
-2. Free Template 2
-3. Free Template 3
-4. Free Template 4
-5. Free Template 5
-6. Coming Soon Mode Setting
-7. Maintenance Mode Settings
-8. Template Settings
-9. Content Configuration Settings
+1.  Free Template 1
+2.  Free Template 2
+3.  Free Template 3
+4.  Free Template 4
+5.  Free Template 5
+6.  Coming Soon Mode Setting
+7.  Maintenance Mode Settings
+8.  Template Settings
+9.  Content Configuration Settings
 10. Social Media Settings
 
 == Changelog ==
 
+= 1.1.1 =
+*   Fixed: Logo upload not showing preview after selecting image
+*   Fixed: Logo setting not saving on form save
+*   Fixed: Mismatched Requires PHP version in readme.txt
+*   Fixed: Added direct file access protection to all template files
+*   Fixed: Removed offloaded remote video URLs from templates 11 and 15
+*   Security: Added nonce verification for logo upload AJAX request
+
+= 1.1.0 =
+*   Plugin is migrated to new website
+*   All interlinks updated
+*   Plugin Check plugin all error fixed.
+
 = 1.0.9 =
-* Favicon Icon bug fixed.
+*   Favicon Icon bug fixed.
 
 = 1.0.8 =
-* Testing wordpress 6.7.1
-* Template 11, 15 Added
-* Bug Fix: Fixed.
+*   Testing WordPress 6.7.1
+*   Template 11, 15 Added
+*   Bug Fix: Fixed.
 
 = 1.0.7 =
-* Logo upload issue fixed
-* Promo banner size issue fixed
-* All PCP error fixed
+*   Logo upload issue fixed
+*   Promo banner size issue fixed
+*   All PCP error fixed
 
 = 1.0.6 =
-* Vulnerability issue fixed, reported by Wordfence.com
-* Admin banner code sanitized and escaped properly
+*   Vulnerability issue fixed, reported by Wordfence.com
+*   Admin banner code sanitized and escaped properly
 
 = 1.0.5 =
-* Updated to latest version of WordPress
-* Add info banner to admin 
+*   Updated to latest version of WordPress
+*   Add info banner to admin
 
 = 1.0.4 =
-* The truck version was not committed so recommitted with that version
+*   The truck version was not committed so recommitted with that version
 
 = 1.0.3 =
-* Plugin now available into 15 language translations
-* Arabic (ar) - العربية
-* Chinese (zh_CN) - 简体中文
-* Finnish (fi) - Suomi
-* French (fr_FR) - Français
-* German (de_DE) - Deutsch
-* Hindi (hi_IN) - हिन्दी
-* Hungarian (hu_HU) - Magyar
-* Italian (it_IT) - Italiano
-* Indonesian (id_ID) - Bahasa Indonesia
-* Japanese (ja) - 日本語
-* Dutch (nl_NL) - Nederlands
-* Russian (ru_RU) - Русский
-* Spanish (es_ES) - Español
-* Polish (pl_PL) - Polski
-* Portuguese (pt_PT) - Português
+*   Plugin now available into 15 language translations: Arabic, Chinese, Finnish, French, German, Hindi, Hungarian, Italian, Indonesian, Japanese, Dutch, Russian, Spanish, Polish, Portuguese.
 
 = 1.0.2 =
-* Update
+*   Update
 
 = 1.0.1 =
-* video tutorial added and docs tab updated
+*   video tutorial added and docs tab updated
 
 = 1.0.0 =
-* starter version
+*   starter version
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-* This is a starter version of the plugin
+= 1.1.0 =
+*   Standard update with bug fixes and improvements.

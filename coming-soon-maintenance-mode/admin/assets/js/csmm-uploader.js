@@ -78,9 +78,10 @@ jQuery(
 				var data = {
 					action: 'csmm_logo',
 					attachment_id: id,
+					nonce: CSMMUploaderAjax.logoNonce,
 				};
 				jQuery.post(
-					ajaxurl,
+					CSMMUploaderAjax.ajaxUrl,
 					data,
 					function(response) {
 						CSMM.ul.empty();

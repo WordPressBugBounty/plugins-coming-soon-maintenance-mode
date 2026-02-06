@@ -1,3 +1,8 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -11,24 +16,14 @@
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="<?php echo esc_url(CSMM_URL . 'templates/css/base.css'); ?>">
-    <link rel="stylesheet" href="<?php echo esc_url(CSMM_URL . 'templates/css/vendor.css'); ?>">
-    <link rel="stylesheet" href="<?php echo esc_url(CSMM_URL . 'templates/css/main.css'); ?>">
-    <link rel="stylesheet" href="<?php echo esc_url(CSMM_URL . 'templates/css/15.css'); ?>">
-    <link rel="stylesheet" href="<?php echo esc_url(CSMM_URL . 'admin/assets/fontawesome-free-6.2.1-web/css/all.min.css'); ?>">
-    <style>
-        <?php echo $csmm_custom_css; ?>
-    </style>
-    <!-- script
-    ================================================== -->
-    <script src="<?php echo esc_url(CSMM_URL . 'templates/js/modernizr.js'); ?>"></script>
-    <script src="<?php echo esc_url(CSMM_URL . 'templates/js/pace.min.js'); ?>"></script>
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
-	<link rel="icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo esc_url( get_site_icon_url() ); ?>" type="image/x-icon">
+	<link rel="icon" href="<?php echo esc_url( get_site_icon_url() ); ?>" type="image/x-icon">
+    <?php wp_head(); ?>
+    <style>
+        <?php echo wp_kses( $csmm_custom_css, array( '"', "'" ) ); ?>
+    </style>
 </head>
 
 <body>
@@ -51,7 +46,7 @@
            
                 <div class="home-logo">
 					<?php if ($csmm_logo_id) { ?>
-						<a href="<?php echo get_site_url(); ?>">
+						<a href="<?php echo esc_url( get_site_url() ); ?>">
 							<img src="<?php echo esc_url($csmm_logo_url[0]);
 										?>" alt="<?php echo esc_attr($csmm_logo_alt);
 													?>">
@@ -117,16 +112,6 @@
 
      <!-- Java Script
     ================================================== -->
-    <?php
-    // Javascript
-    $csmm_include_url = includes_url();
-    $csmm_last = $csmm_include_url[strlen($csmm_include_url) - 1];
-    if ($csmm_last != '/') {
-        $csmm_include_url = $csmm_include_url . '/';
-    }
-    ?>
-    <script src="<?php echo esc_url($csmm_include_url); ?>js/jquery/jquery.js"></script>
-    <script src="<?php echo esc_js(CSMM_URL.'templates/js/plugins.js'); ?>"></script>
     <script>
     jQuery( document ).ready(function() {
         // Add the User Agent to the <html>
@@ -180,5 +165,6 @@
         })();
     });
     </script>
+    <?php wp_footer(); ?>
 </body>
 </html>
