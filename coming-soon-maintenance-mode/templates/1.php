@@ -9,8 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title><?php echo esc_html($csmm_title); ?></title>
-    <meta name="description" content="<?php echo esc_html($csmm_description); ?>">
+    <title><?php echo esc_html($comisoma_title); ?></title>
+    <meta name="description" content="<?php echo esc_html($comisoma_description); ?>">
     <meta name="author" content="">
     <!-- mobile specific metas
     ================================================== -->
@@ -29,17 +29,17 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="home-content">
             <div class="row home-content__main text-center">
                 
-                <?php if($csmm_logo_id) { ?>
+                <?php if($comisoma_logo_id) { ?>
                 <div class="home-logo">
                     <a href="<?php echo esc_url( get_site_url() ); ?>">
-                        <img src="<?php echo esc_url( $csmm_logo_url[0] ); ?>" alt="<?php echo esc_attr( $csmm_logo_alt ); ?>">
+                        <img src="<?php echo esc_url( $comisoma_logo_url[0] ); ?>" alt="<?php echo esc_attr( $comisoma_logo_alt ); ?>">
                     </a>
                 </div>
                 <?php } ?>
                 
-                <?php if($csmm_countdown == 1) { ?>
+                <?php if($comisoma_countdown == 1) { ?>
                 <div class="home-content__counter">
-                    <h3><?php if($csmm_countdown_title != "") { echo esc_html( $csmm_countdown_title ); } ?></h3>
+                    <h3><?php if($comisoma_countdown_title != "") { echo esc_html( $comisoma_countdown_title ); } ?></h3>
                     <div class="home-content__clock">
                         <div class="time days">
                             325
@@ -62,20 +62,20 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <?php } ?>
                 
                 <div class="home-content__text">
-                    <h1><?php if($csmm_title != "") { echo esc_html( $csmm_title ); } ?></h1>
-                    <p><?php if($csmm_description != "") { echo esc_textarea( stripslashes( $csmm_description ) ); } ?></p>
+                    <h1><?php if($comisoma_title != "") { echo esc_html( $comisoma_title ); } ?></h1>
+                    <p><?php if($comisoma_description != "") { echo esc_textarea( stripslashes( $comisoma_description ) ); } ?></p>
                 </div>  <!-- end home-content__text -->
             </div>  <!-- end home-content__main -->
             
             <ul class="home-social">
-                <?php if(empty($csmm_sm_facebook) == false) { ?>
-                <li><a href="<?php echo esc_url($csmm_sm_facebook); ?>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <?php if(empty($comisoma_sm_facebook) == false) { ?>
+                <li><a href="<?php echo esc_url($comisoma_sm_facebook); ?>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <?php } ?>
-                <?php if(empty($csmm_sm_twitter) == false) { ?>
-                <li><a href="<?php echo esc_url($csmm_sm_twitter); ?>" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <?php if(empty($comisoma_sm_twitter) == false) { ?>
+                <li><a href="<?php echo esc_url($comisoma_sm_twitter); ?>" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
                 <?php } ?>
-                <?php if(empty($csmm_sm_instagram) == false) { ?>
-                <li><a href="<?php echo esc_url($csmm_sm_instagram); ?>" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <?php if(empty($comisoma_sm_instagram) == false) { ?>
+                <li><a href="<?php echo esc_url($comisoma_sm_instagram); ?>" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
                 <?php } ?>
             </ul> <!-- end home-social -->
             
@@ -87,59 +87,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     
     <!-- Java Script
     ================================================== -->
-    <script>
-    jQuery( document ).ready(function() {
-        // Add the User Agent to the <html>
-        // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
-        var doc = document.documentElement;
-        doc.setAttribute('data-useragent', navigator.userAgent);
-        // svg fallback
-        if (!Modernizr.svg) {
-            jQuery(".home-logo img").attr("src", "images/logo.png");
-        }
-      
-        <?php if($csmm_countdown == 1) { ?>
-       /* final countdown
-        * ------------------------------------------------------ */
-        var CsmmFinalCountdown = function() {
-            var finalDate =  new Date("<?php echo esc_js($csmm_launch_dt); ?>").getTime(); // date format: March 25, 2024 15:37:25
-            // updating countdown time start
-            jQuery('.home-content__clock').countdown(finalDate)
-            .on('update.countdown', function(event) {
-                var str = '<div class=\"time days\">' +
-                          '%D <span>D</span>' + 
-                          '</div></div>' +
-                          '<div class=\"time hours\">' +
-                          '%H <span>H</span></div>' +
-                          '<div class=\"time minutes\">' +
-                          '%M <span>M</span></div>' +
-                          '<div class=\"time seconds\">' +
-                          '%S <span>S</span>';
-                jQuery(this)
-                .html(event.strftime(str));
-            });
-            // updating countdown time end
-            
-            // when countdown time finish start
-            jQuery('.home-content__clock').countdown(finalDate)
-            .on('finish.countdown', function(event) {
-                // hide counter start
-                jQuery( ".home-content__counter" ).fadeOut( "slow" );
-                // hide counter end
-            });
-            // when countdown time finish end
-        };
-        <?php } ?>
-
-       /* initialize
-        * ----------------------------------------------- */
-        (function ssInit() {
-            <?php if($csmm_countdown == 1) { ?>
-            CsmmFinalCountdown();
-            <?php } ?>
-        })();
-    });
-    </script>
     <?php wp_footer(); ?>
 </body>
 </html>

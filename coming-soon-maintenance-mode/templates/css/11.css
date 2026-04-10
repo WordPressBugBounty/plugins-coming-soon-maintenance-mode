@@ -134,22 +134,32 @@
    background-color: #0000;
    color: #fff;
    mix-blend-mode: lighten;
-   color: transparent;
+   color: #fff; /* Fallback color */
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: #ffe8b7;
    text-transform: uppercase;
    margin-bottom: 7rem;
  }
 
+ .comisoma-description {
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 1.8rem;
+   line-height: 1.6;
+   max-width: 600px;
+   margin: 2rem auto;
+   font-family: "Nunito Sans", sans-serif;
+ }
 
- .home-content h3 {
+
+ .home-content h3, .comisoma-countdown-title {
    margin-top: 1.2rem;
    font-family: "Nunito Sans", sans-serif;
    font-weight: 300;
    font-size: 3.8rem;
    line-height: 1.342;
    font-style: normal;
-   color: #9c9c9c;
+   color: #ffe8b7;
+   margin-bottom: 2rem;
  }
 
 .home-logo {
@@ -228,7 +238,7 @@
     margin-bottom: 1.8rem;
 }
 
-#csmm-email {
+#comisoma-email {
   -webkit-text-fill-color: #fff;
 }
 

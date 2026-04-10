@@ -149,20 +149,32 @@
    text-transform: uppercase;
    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjFyZGFxeDJmZ3BlcnlnNXliYWFyYW5tNTY4dno0a2pldnJ5aGprbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif);
    background-size: contain;
+   color: #ffffff; /* Fallback color */
    color: transparent;
    -moz-background-clip: text;
    -webkit-background-clip: text;
  }
 
 
- .home-content h3 {
+ .home-content h3, .comisoma-countdown-title {
    margin-top: 1.2rem;
    font-family: "Nunito Sans", sans-serif;
    font-weight: 300;
    font-size: 3.8rem;
    line-height: 1.342;
    font-style: normal;
-   color: #a13a3a;
+   color: #ffffff;
+   margin-bottom: 2rem;
+ }
+
+ .comisoma-description {
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 2.2rem;
+   line-height: 1.6;
+   max-width: 800px;
+   margin: 2rem auto 4rem auto;
+   font-family: "Nunito Sans", sans-serif;
+   font-weight: 400;
  }
 
  .home-logo {

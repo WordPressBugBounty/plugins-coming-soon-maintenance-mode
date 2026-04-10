@@ -1,0 +1,167 @@
+/* Modernized Pro Features Dashboard Add-on Styling */
+
+.comisoma-pro-wrapper {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    padding: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.comisoma-pro-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.comisoma-pro-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1d2327;
+    margin-bottom: 10px;
+}
+
+.comisoma-pro-header p {
+    color: #646970;
+    font-size: 16px;
+}
+
+.comisoma-pro-table {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #c3c4c7;
+    margin-bottom: 40px;
+}
+
+.comisoma-pro-table table {
+    margin-bottom: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comisoma-pro-table thead {
+    background-color: #f6f7f7;
+    border-bottom: 2px solid #dcdcde;
+}
+
+.comisoma-pro-table th {
+    padding: 16px 20px;
+    font-weight: 600;
+    color: #2c3338;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.comisoma-pro-table td {
+    padding: 16px 20px;
+    vertical-align: middle;
+    color: #3c434a;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.comisoma-pro-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comisoma-pro-table tbody tr:nth-of-type(even) {
+    background-color: #fcfcfc;
+}
+
+.comisoma-pro-table .feature-col {
+    font-weight: 500;
+}
+
+.comisoma-col-free {
+    text-align: center;
+    color: #646970;
+}
+
+.comisoma-col-pro {
+    text-align: center;
+    background-color: #f0f6fc;
+}
+
+.comisoma-table-icon {
+    font-size: 18px;
+}
+
+.comisoma-icon-cross {
+    color: #d63638;
+}
+
+.comisoma-icon-check {
+    color: #00a32a;
+}
+
+.comisoma-pro-highlight {
+    color: #2271b1;
+    font-weight: 700;
+}
+
+.comisoma-pro-cta-area {
+    text-align: center;
+    padding: 30px;
+    background: #f0f6fc;
+    border-radius: 8px;
+    border: 1px solid #cce2ff;
+}
+
+.comisoma-btn-demo {
+    display: inline-block;
+    background-color: transparent;
+    color: #2271b1;
+    padding: 13px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 2px solid #2271b1;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    margin-right: 15px;
+}
+
+.comisoma-btn-demo:hover {
+    background-color: #2271b1;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(34, 113, 177, 0.2);
+}
+
+.comisoma-btn-upgrade {
+    display: inline-block;
+    background-color: #2271b1;
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(34, 113, 177, 0.3);
+}
+
+.comisoma-btn-upgrade:hover {
+    background-color: #135e96;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(34, 113, 177, 0.4);
+}
+
+.comisoma-guarantee {
+    margin-top: 16px;
+    color: #50575e;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Override standard wp-admin background for better presentation */
+#wpwrap {
+    background: #f0f0f1;
+}

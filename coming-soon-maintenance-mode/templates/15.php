@@ -10,8 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title><?php echo esc_html($csmm_title); ?></title>
-    <meta name="description" content="<?php echo esc_html($csmm_description); ?>">
+    <title><?php echo esc_html($comisoma_title); ?></title>
+    <meta name="description" content="<?php echo esc_html($comisoma_description); ?>">
     <meta name="author" content="">
     <!-- mobile specific metas
     ================================================== -->
@@ -20,47 +20,44 @@ if ( ! defined( 'ABSPATH' ) ) {
     ================================================== -->
     <link rel="shortcut icon" href="<?php echo esc_url( get_site_icon_url() ); ?>" type="image/x-icon">
 	<link rel="icon" href="<?php echo esc_url( get_site_icon_url() ); ?>" type="image/x-icon">
-    <?php wp_head(); ?>
     <style>
-        <?php echo wp_kses( $csmm_custom_css, array( '"', "'" ) ); ?>
+        body { background: #111 !important; }
+        .PhotoZoom_iframe__LeuQM { height: 100vh !important; }
     </style>
+    <?php wp_head(); ?>
+
 </head>
 
 <body>
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+    <div class="PhotoZoom_iframe__LeuQM" style="background-image: url('<?php echo esc_url( COMISOMA_URL . 'templates/images/temp-15-fg.webp' ); ?>'); background-size: cover; background-position: center; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1;"></div>
+
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="<?php echo esc_url( COMISOMA_URL . 'templates/images/temp-15-fg.webp' ); ?>" data-natural-width="3000" data-natural-height="2000" data-position-y="center" style="z-index: 2; background: transparent;">
 
 
         <div class="home-content">
 
 
-            <div class="video-background">
-                <video id="main-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" src="https://cdn.pixabay.com/video/2019/04/03/22555-328624767_large.mp4">
-
-                </video>
-            </div>
-
-
            
                 <div class="home-logo">
-					<?php if ($csmm_logo_id) { ?>
+					<?php if ($comisoma_logo_id) { ?>
 						<a href="<?php echo esc_url( get_site_url() ); ?>">
-							<img src="<?php echo esc_url($csmm_logo_url[0]);
-										?>" alt="<?php echo esc_attr($csmm_logo_alt);
+							<img src="<?php echo esc_url($comisoma_logo_url[0]);
+										?>" alt="<?php echo esc_attr($comisoma_logo_alt);
 													?>">
 						</a>
 					 <?php } ?>
                      <ul class="home-social">
-						<?php if(empty($csmm_sm_facebook) == false) { ?>
-						<li><a href="<?php echo esc_url($csmm_sm_facebook); ?>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+						<?php if(empty($comisoma_sm_facebook) == false) { ?>
+						<li><a href="<?php echo esc_url($comisoma_sm_facebook); ?>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
 						<?php } ?>
-						<?php if(empty($csmm_sm_twitter) == false) { ?>
-						<li><a href="<?php echo esc_url($csmm_sm_twitter); ?>" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+						<?php if(empty($comisoma_sm_twitter) == false) { ?>
+						<li><a href="<?php echo esc_url($comisoma_sm_twitter); ?>" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
 						<?php } ?>
-						<?php if(empty($csmm_sm_instagram) == false) { ?>
-						<li><a href="<?php echo esc_url($csmm_sm_instagram); ?>" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+						<?php if(empty($comisoma_sm_instagram) == false) { ?>
+						<li><a href="<?php echo esc_url($comisoma_sm_instagram); ?>" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
 						<?php } ?>
 					</ul> <!-- end home-social --> <!-- end home-social -->
                 </div>
@@ -69,8 +66,11 @@ if ( ! defined( 'ABSPATH' ) ) {
             <div class="row home-content__main">
 
 
-                <?php if ($csmm_countdown == 1) { ?>
+                <?php if ($comisoma_countdown == 1) { ?>
                     <div class="home-content__counter">
+                        <?php if ($comisoma_countdown_title != "") { ?>
+                            <h3 class="comisoma-countdown-title"><?php echo esc_html($comisoma_countdown_title); ?></h3>
+                        <?php } ?>
                         <div class="home-content__clock">
                             <div class="time days">
                                 325
@@ -92,9 +92,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                     </div> <!-- end home-content__counter -->
                 <?php } ?>
 
-                <h1 class="csm-ticker"><?php if ($csmm_title != "") {
-                                            echo esc_html($csmm_title);
+                <h1 class="csm-ticker"><?php if ($comisoma_title != "") {
+                                            echo esc_html($comisoma_title);
                                         } ?></h1>
+                
+
+
 
 
             </div> <!-- end home-content__main -->
@@ -112,59 +115,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
      <!-- Java Script
     ================================================== -->
-    <script>
-    jQuery( document ).ready(function() {
-        // Add the User Agent to the <html>
-        // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
-        var doc = document.documentElement;
-        doc.setAttribute('data-useragent', navigator.userAgent);
-        // svg fallback
-        if (!Modernizr.svg) {
-            jQuery(".home-logo img").attr("src", "images/logo.png");
-        }
-      
-        <?php if($csmm_countdown == 1) { ?>
-       /* final countdown
-        * ------------------------------------------------------ */
-        var CsmmFinalCountdown = function() {
-            var finalDate =  new Date("<?php echo esc_js($csmm_launch_dt); ?>").getTime(); // date format: March 25, 2024 15:37:25
-            // updating countdown time start
-            jQuery('.home-content__clock').countdown(finalDate)
-            .on('update.countdown', function(event) {
-                var str = '<div class=\"time days\">' +
-                          '%D <span>D</span>' + 
-                          '</div></div>' +
-                          '<div class=\"time hours\">' +
-                          '%H <span>H</span></div>' +
-                          '<div class=\"time minutes\">' +
-                          '%M <span>M</span></div>' +
-                          '<div class=\"time seconds\">' +
-                          '%S <span>S</span>';
-                jQuery(this)
-                .html(event.strftime(str));
-            });
-            // updating countdown time end
-            
-            // when countdown time finish start
-            jQuery('.home-content__clock').countdown(finalDate)
-            .on('finish.countdown', function(event) {
-                // hide counter start
-                jQuery( ".home-content__counter" ).fadeOut( "slow" );
-                // hide counter end
-            });
-            // when countdown time finish end
-        };
-        <?php } ?>
 
-       /* initialize
-        * ----------------------------------------------- */
-        (function ssInit() {
-            <?php if($csmm_countdown == 1) { ?>
-            CsmmFinalCountdown();
-            <?php } ?>
-        })();
-    });
-    </script>
     <?php wp_footer(); ?>
 </body>
-</html>
+</html>

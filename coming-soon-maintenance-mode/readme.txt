@@ -1,9 +1,9 @@
 === Coming Soon Maintenance Mode ===
-Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK, webenvo
+Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
 Tags: coming soon, maintenance mode, landing page, under construction page, SEO friendly
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.1.1
+Stable tag: 1.1.5
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -61,9 +61,18 @@ The Pro version includes everything in the free version, plus:
 
 [youtube https://www.youtube.com/watch?v=hgd1lziA7Mk]
 
-### Usage Scenario
-
 Use the Coming Soon mode when you are building a new website and want to collect leads or inform visitors before the official launch. The Maintenance Mode is suitable for existing websites that need to be taken offline temporarily for updates or troubleshooting.
+
+== Third-Party Libraries ==
+
+This plugin utilizes several third-party libraries to provide its features. In accordance with WordPress.org guidelines, the source code for these libraries is documented below:
+
+*   **Bootstrap** (v5.2.3 and v3.3.7): https://github.com/twbs/bootstrap - License: MIT
+*   **Font Awesome Free** (v6.2.1): https://github.com/FortAwesome/Font-Awesome - License: CC BY 4.0, SIL OFL 1.1, MIT
+*   **Particles.js** (v2.0.0): https://github.com/VincentGarreau/particles.js - License: MIT
+*   **Slick Carousel** (v1.6.0): https://github.com/kenwheeler/slick - License: MIT
+*   **jQuery Countdown** (v2.2.0): https://github.com/hilios/jQuery.countdown - License: MIT
+*   **jQuery Placeholder** (v2.1.2): https://github.com/mathiasbynens/jquery-placeholder - License: MIT
 
 == Installation ==
 
@@ -164,6 +173,35 @@ For support questions, please visit the WordPress.org support forum for this plu
 10. Social Media Settings
 
 == Changelog ==
+
+= 1.1.5 =
+*   Requirement: Renamed all generic function, class, constant, and variable prefixes to 'comisoma' for WP.org guideline compliance.
+*   Update: Implemented database option migration to preserve user settings during prefix rename.
+*   Update: Fixed case consistency for plugin constants and renamed internal JS functions.
+*   Update: Adjusted admin menu position to a lower priority (position 81) to comply with WordPress.org guidelines.
+*   Compliance: Documented third-party library sources in readme.txt for human-readable code compliance.
+*   Update: Replaced background videos with statically served images (`temp-11-fg.webp`, `temp-15-fg.webp`) for Template 11 and Template 15 as per the latest requirements.
+*   Update: Removed redundant `templates/videos/` directory to further optimize plugin weight.
+*   Update: Pruned unused third-party libraries (Lity, Pace, Modernizr, Bootstrap) and CSS to reduce plugin file size.
+*   Compliance: Removed restricted Pro functionality code (Custom CSS logic) from the free version.
+*   Update: Minimalist layout refinements for Templates 11 and 15.
+
+= 1.1.4 =
+*   Security: Updated Modernizr library to 3.13.1 to resolve outdated footprint vulnerabilities.
+*   Update: Refactored inline scripts and styles from all templates to use WordPress core `wp_enqueue_*` functions for better performance and compliance.
+
+= 1.1.3 =
+*   Security: Fixed broken nonce verification in AJAX save handler
+*   Security: Removed unauthenticated AJAX endpoint (wp_ajax_nopriv_csmm_save)
+*   Security: Used require_once for core file includes (plugin-install.php, theme-install.php) per WP.org guidelines
+*   Fixed: Removed auto-activation of plugins after install — install and activate are now separate user actions
+*   Fixed: Added proper capability checks to all AJAX handlers for plugin/theme install, update, and activate
+*   Update: Removed duplicate inline JavaScript in favour of properly enqueued external script
+
+= 1.1.2 =
+*   Update: Cleaned up plugin dashboard for WordPress.org guidelines compliance by removing Pro up-sells
+*   Update: Added a dedicated Pro Features menu page
+*   Update: UI modernization for Pro features layout
 
 = 1.1.1 =
 *   Fixed: Logo upload not showing preview after selecting image

@@ -6,10 +6,10 @@ function extrasAjaxRequest(pluginSlug, action, button) {
     var data = {
         action: action,
         slug: pluginSlug,
-        extnonce: CSMMExtrasAjax.extnonce
+        extnonce: ComisomaExtrasAjax.extnonce
     };
 
-    jQuery.post(CSMMExtrasAjax.ajaxUrl, data, function(response) {
+    jQuery.post(ComisomaExtrasAjax.ajaxUrl, data, function(response) {
         console.log(response);
         alert('Installed successfully.');
 
