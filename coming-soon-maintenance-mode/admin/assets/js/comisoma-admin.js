@@ -207,7 +207,125 @@ function comisoma_save(tab, id){
 		});
 	}
 	// remove logo end
+
+	// reset start
+	if(tab == 'reset'){
+		Swal.fire({
+			title: 'Are you sure?',
+			text: "This will completely factory reset the plugin and permanently delete all configurations, template selections, and data.",
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#d33',
+			cancelButtonColor: '#3085d6',
+			confirmButtonText: 'Yes, factory reset it!'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				jQuery('#comisoma-reset-settings-btn').prop('disabled', true).text('Resetting...');
+				jQuery.ajax({
+					type: 'POST',
+					url: ComisomaAdmin.ajaxUrl,
+					data: {
+						'action': 'comisoma_save',
+						'tab': tab,
+						'nonce': ComisomaAdmin.nonce,
+					}, 
+					success: function (response) {
+						Swal.fire({
+							title: 'Reset Complete!',
+							text: 'Plugin has been factory reset.',
+							icon: 'success'
+						}).then(() => {
+							window.location.reload();
+						});
+					},
+					error: function () {
+						Swal.fire('Error!', 'Error resetting plugin.', 'error');
+						jQuery('#comisoma-reset-settings-btn').prop('disabled', false).html('<i class="fa-solid fa-rotate-left"></i> Factory Reset Plugin');
+					}
+				});
+			}
+		});
+	}
+	// reset end
+
+	// import start
+	if(tab == 'import'){
+		var import_data = jQuery('#comisoma-import-data').val();
+		if(!import_data || import_data.trim() == '') {
+			Swal.fire('Wait!', 'Please paste the exported settings data first.', 'info');
+			return false;
+		}
+
+		Swal.fire({
+			title: 'Import Settings?',
+			text: "Are you sure you want to overwrite your current settings with this imported data?",
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#198754',
+			cancelButtonColor: '#6c757d',
+			confirmButtonText: 'Yes, import it!'
+		}).then((result) => {
+			if (result.isConfirmed) {
+				jQuery('#comisoma-import-settings-btn').prop('disabled', true).text('Importing...');
+				jQuery.ajax({
+					type: 'POST',
+					url: ComisomaAdmin.ajaxUrl,
+					data: {
+						'action': 'comisoma_save',
+						'tab': tab,
+						'import_data': import_data,
+						'nonce': ComisomaAdmin.nonce,
+					}, 
+					success: function (response) {
+						if(response.success) {
+							Swal.fire({
+								title: 'Imported!',
+								text: 'Settings successfully imported!',
+								icon: 'success'
+							}).then(() => {
+								window.location.reload();
+							});
+						} else {
+							Swal.fire('Failed', 'Failed to import settings. Invalid data.', 'error');
+							jQuery('#comisoma-import-settings-btn').prop('disabled', false).html('<i class="fa-solid fa-file-import"></i> Import Settings');
+						}
+					},
+					error: function () {
+						Swal.fire('Error!', 'Error importing settings.', 'error');
+						jQuery('#comisoma-import-settings-btn').prop('disabled', false).html('<i class="fa-solid fa-file-import"></i> Import Settings');
+					}
+				});
+			}
+		});
+	}
+	// import end
 	
+}
+
+function comisoma_export() {
+	jQuery('#comisoma-export-settings-btn').prop('disabled', true).text('Generating...');
+	jQuery.ajax({
+		type: 'POST',
+		url: ComisomaAdmin.ajaxUrl,
+		data: {
+			'action': 'comisoma_export',
+			'nonce': ComisomaAdmin.nonce,
+		}, 
+		success: function (response) {
+			if(response.success && response.data) {
+				jQuery('#comisoma-export-data').val(response.data);
+				jQuery('#comisoma-export-settings-btn').prop('disabled', false).html('<i class="fa-solid fa-file-export"></i> Generate Export');
+				Swal.fire('Success!', 'Export generated! You can now copy the data from the text box.', 'success');
+			} else {
+				Swal.fire('Error!', 'Error generating export.', 'error');
+				jQuery('#comisoma-export-settings-btn').prop('disabled', false).html('<i class="fa-solid fa-file-export"></i> Generate Export');
+			}
+		},
+		error: function () {
+			Swal.fire('Error!', 'Error generating export.', 'error');
+			jQuery('#comisoma-export-settings-btn').prop('disabled', false).html('<i class="fa-solid fa-file-export"></i> Generate Export');
+		}
+	});
 }
 
 jQuery(document).ready(function(){
@@ -230,7 +348,7 @@ jQuery(document).ready(function(){
 		if(this.id == "nav-settings-tab") {
 			jQuery("div.website-mode-top").addClass('d-none');
 		}
-		if(this.id == "nav-templates-tab" || this.id == "nav-content-tab" || this.id == "nav-social-media-tab") {
+		if(this.id == "nav-templates-tab" || this.id == "nav-content-tab" || this.id == "nav-social-media-tab" || this.id == "nav-tools-tab") {
 			jQuery("div.website-mode-top").removeClass('d-none');
 		}
 	});

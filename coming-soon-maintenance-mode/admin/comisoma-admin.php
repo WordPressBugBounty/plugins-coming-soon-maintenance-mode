@@ -121,7 +121,7 @@ if(is_array($comisoma_social_media)){
 						<button class="nav-link" id="nav-templates-tab" data-bs-toggle="tab" data-bs-target="#nav-templates" type="button" role="tab" aria-controls="nav-templates" aria-selected="false"><?php esc_html_e( 'Templates', 'coming-soon-maintenance-mode' ); ?></button>
 						<button class="nav-link" id="nav-content-tab" data-bs-toggle="tab" data-bs-target="#nav-content" type="button" role="tab" aria-controls="nav-content" aria-selected="false"><?php esc_html_e( 'Settings', 'coming-soon-maintenance-mode' ); ?></button>
 						<button class="nav-link" id="nav-social-media-tab" data-bs-toggle="tab" data-bs-target="#nav-social-media" type="button" role="tab" aria-controls="nav-social-media" aria-selected="false"><?php esc_html_e( 'Social Media', 'coming-soon-maintenance-mode' ); ?></button>
-						<!--<button class="nav-link" id="nav-more-tab" data-bs-toggle="tab" data-bs-target="#nav-more" type="button" role="tab" aria-controls="nav-more" aria-selected="false"><?php esc_html_e( 'More', 'coming-soon-maintenance-mode' ); ?></button>-->
+						<button class="nav-link" id="nav-tools-tab" data-bs-toggle="tab" data-bs-target="#nav-tools" type="button" role="tab" aria-controls="nav-tools" aria-selected="false"><?php esc_html_e( 'Tools', 'coming-soon-maintenance-mode' ); ?></button>
 						<button class="nav-link" id="nav-docs-tab" data-bs-toggle="tab" data-bs-target="#nav-docs" type="button" role="tab" aria-controls="nav-docs" aria-selected="false"><?php esc_html_e( 'Docs', 'coming-soon-maintenance-mode' ); ?></button>
 					</div>
 				</nav>
@@ -476,8 +476,51 @@ if(is_array($comisoma_social_media)){
 						</div>
 					</div><!-- social media tab content end-->
 					
-					<div class="tab-pane fade" id="nav-more" role="tabpanel" aria-labelledby="nav-more-tab" tabindex="0">
-					</div><!-- more tab content end-->
+					<div class="tab-pane fade" id="nav-tools" role="tabpanel" aria-labelledby="nav-tools-tab" tabindex="0">
+						<div class="row">
+							
+							<!-- Export Settings Section -->
+							<div class="col-md-6 p-2 mt-3 border bg-light">
+								<h5 class=""><?php esc_html_e( 'Export Settings', 'coming-soon-maintenance-mode' ); ?></h5>
+								<div id="comisoma-export-info" class="form-text mb-3">
+									<?php esc_html_e( 'Generate a JSON string of your current plugin settings to copy to another website.', 'coming-soon-maintenance-mode' ); ?>
+								</div>
+								<div>
+									<button type="button" id="comisoma-export-settings-btn" class="btn btn-outline-primary mb-3" onclick="return comisoma_export();"><i class="fa-solid fa-file-export"></i> <?php esc_html_e( 'Generate Export', 'coming-soon-maintenance-mode' ); ?></button>
+								</div>
+								<div>
+									<textarea id="comisoma-export-data" class="form-control" rows="5" readonly placeholder="<?php esc_html_e( 'Export data will appear here...', 'coming-soon-maintenance-mode' ); ?>"></textarea>
+								</div>
+							</div>
+
+							<!-- Import Settings Section -->
+							<div class="col-md-6 p-2 mt-3 border bg-light">
+								<h5 class=""><?php esc_html_e( 'Import Settings', 'coming-soon-maintenance-mode' ); ?></h5>
+								<div id="comisoma-import-info" class="form-text mb-3">
+									<?php esc_html_e( 'Paste a JSON string of exported settings to overwrite this sites settings.', 'coming-soon-maintenance-mode' ); ?>
+								</div>
+								<div>
+									<textarea id="comisoma-import-data" class="form-control mb-3" rows="5" placeholder="<?php esc_html_e( 'Paste export data here...', 'coming-soon-maintenance-mode' ); ?>"></textarea>
+								</div>
+								<div>
+									<button type="button" id="comisoma-import-settings-btn" class="btn btn-outline-success" onclick="return comisoma_save('import', '');"><i class="fa-solid fa-file-import"></i> <?php esc_html_e( 'Import Settings', 'coming-soon-maintenance-mode' ); ?></button>
+								</div>
+							</div>
+
+							<!-- Reset Settings Section -->
+							<div class="col-md-6 p-2 mt-3 border bg-light">
+								<h5 class=""><?php esc_html_e( 'Reset Plugin Settings', 'coming-soon-maintenance-mode' ); ?></h5>
+								<div id="comisoma-reset-info" class="form-text mb-3">
+									<span class="badge text-bg-danger"><?php esc_html_e( 'Warning', 'coming-soon-maintenance-mode' ); ?></span><br>
+									<?php esc_html_e( 'This will permanently delete all your plugin configurations, template selections, and social media data, reverting the plugin to its default fresh state.', 'coming-soon-maintenance-mode' ); ?>
+								</div>
+								<div>
+									<button type="button" id="comisoma-reset-settings-btn" class="btn btn-danger" onclick="return comisoma_save('reset', '');"><i class="fa-solid fa-rotate-left"></i> <?php esc_html_e( 'Factory Reset Plugin', 'coming-soon-maintenance-mode' ); ?></button>
+								</div>
+							</div>
+
+						</div>
+					</div><!-- tools tab content end-->
 					
 					<div class="tab-pane fade" id="nav-docs" role="tabpanel" aria-labelledby="nav-docs-tab" tabindex="0">
 					</div><!-- docs tab content end-->

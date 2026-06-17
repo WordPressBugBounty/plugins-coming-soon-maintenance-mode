@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Plugin Name:       Coming Soon Maintenance Mode
  * Plugin URI:        https://wpfrank.com/
  * Description:       One of the most recommended and crucial plugin to start your website projects.
- * Version:           1.1.5
+ * Version:           1.1.9
  * Requires at least: 5.0
  * Requires PHP:      5.6
  * Author:            WP Frank
@@ -68,6 +68,19 @@ function comisoma_activation() {
 			}
 		}
 	}
+	
+	// Set default countdown date to current date + 1 month
+	$comisoma_content = get_option('comisoma_content');
+	if ( ! is_array( $comisoma_content ) ) {
+		$comisoma_content = array();
+	}
+	if ( empty( $comisoma_content['countdown_date'] ) ) {
+		$comisoma_content['countdown_date'] = gmdate('Y-m-d', strtotime('+1 month'));
+	}
+	if ( empty( $comisoma_content['countdown_time'] ) ) {
+		$comisoma_content['countdown_time'] = '10:00';
+	}
+	update_option('comisoma_content', $comisoma_content);
 	
 	// reset admin notice
 	delete_user_meta(get_current_user_id(), 'dismissed_custom_notice');
@@ -151,7 +164,7 @@ function comisoma_admin_scripts() {
 				);
 
 				// CSS
-				wp_enqueue_style( 'comisoma-admin-style-css', plugin_dir_url( __FILE__ ) . 'admin/assets/css/style.css', array(), '1.1.5' );
+				wp_enqueue_style( 'comisoma-admin-style-css', plugin_dir_url( __FILE__ ) . 'admin/assets/css/style.css', array(), '1.1.9' );
 				wp_enqueue_style( 'comisoma-bootstrap-admin-css', plugin_dir_url( __FILE__ ) . 'admin/assets/bootstrap-5.2.3-dist/css/bootstrap.css', array(), '5.2.3' );
 				wp_enqueue_style( 'comisoma-fontawesome-admin-css', plugin_dir_url( __FILE__ ) . 'admin/assets/fontawesome-free-6.2.1-web/css/all.css', array(), '6.2.1' );
 
@@ -160,9 +173,10 @@ function comisoma_admin_scripts() {
 				wp_enqueue_script( 'jquery-ui-tabs' );
 				wp_enqueue_script( 'jquery-effects-shake', '', array( 'jquery', 'jquery-ui-core', 'jquery-effects-core' ), '1.0.0', true );
 				wp_enqueue_script( 'comisoma-bootstrap-bundle-js', plugin_dir_url( __FILE__ ) . 'admin/assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.js', array( 'jquery' ), '5.2.3', true );
+				wp_enqueue_script( 'comisoma-sweetalert2-js', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array(), '11', true );
 
 				// Admin page main JS (extracted from inline script)
-				wp_enqueue_script( 'comisoma-admin-js', plugin_dir_url( __FILE__ ) . 'admin/assets/js/comisoma-admin.js', array( 'jquery', 'jquery-effects-shake' ), '1.1.5', true );
+				wp_enqueue_script( 'comisoma-admin-js', plugin_dir_url( __FILE__ ) . 'admin/assets/js/comisoma-admin.js', array( 'jquery', 'jquery-effects-shake' ), '1.1.9', true );
 				wp_localize_script(
 					'comisoma-admin-js',
 					'ComisomaAdmin',
@@ -238,10 +252,10 @@ add_action('admin_notices', 'comisoma_admin_notice');
 
 function comisoma_admin_notice_script() {
     // Enqueue notice CSS.
-    wp_enqueue_style( 'comisoma-notice-css', plugin_dir_url( __FILE__ ) . 'admin/assets/css/comisoma-notice.css', array(), '1.1.5' );
+    wp_enqueue_style( 'comisoma-notice-css', plugin_dir_url( __FILE__ ) . 'admin/assets/css/comisoma-notice.css', array(), '1.1.7' );
 
     // Enqueue notice JS.
-    wp_enqueue_script( 'comisoma-notice-js', plugin_dir_url( __FILE__ ) . 'admin/assets/js/comisoma-notice.js', array( 'jquery' ), '1.1.5', true );
+    wp_enqueue_script( 'comisoma-notice-js', plugin_dir_url( __FILE__ ) . 'admin/assets/js/comisoma-notice.js', array( 'jquery' ), '1.1.7', true );
     wp_localize_script(
         'comisoma-notice-js',
         'ComisomaNotice',
@@ -360,13 +374,37 @@ function comisoma_save() {
 			}
 			// social media data save end
 			
-			// more data save start
-			if($tab == 'more'){
-				$comisoma_more_array = array(
-				);
-				update_option('comisoma_more', $comisoma_more_array);
+			// reset data save start
+			if($tab == 'reset'){
+				delete_option('comisoma_settings');
+				delete_option('comisoma_templates');
+				delete_option('comisoma_content');
+				delete_option('comisoma_social_media');
+				delete_option('comisoma_more');
+				// Reset current version to trigger defaults on next load
+				delete_option('comisoma_current_version');
 			}
-			// more data save end
+			// reset data save end
+
+			// import data save start
+			if($tab == 'import'){
+				$import_data = isset( $_POST['import_data'] ) ? wp_unslash( $_POST['import_data'] ) : '';
+				if(!empty($import_data)) {
+					$imported_options = json_decode($import_data, true);
+					if(is_array($imported_options)) {
+						if(isset($imported_options['comisoma_settings'])) update_option('comisoma_settings', $imported_options['comisoma_settings']);
+						if(isset($imported_options['comisoma_templates'])) update_option('comisoma_templates', $imported_options['comisoma_templates']);
+						if(isset($imported_options['comisoma_content'])) update_option('comisoma_content', $imported_options['comisoma_content']);
+						if(isset($imported_options['comisoma_social_media'])) update_option('comisoma_social_media', $imported_options['comisoma_social_media']);
+						wp_send_json_success();
+					} else {
+						wp_send_json_error('Invalid JSON format.');
+					}
+				} else {
+					wp_send_json_error('No import data provided.');
+				}
+			}
+			// import data save end
 			
 			wp_die(); // this is required to terminate immediately and return a proper response
 		} else {
@@ -376,7 +414,34 @@ function comisoma_save() {
 	}
 }
 add_action( 'wp_ajax_comisoma_save', 'comisoma_save' );
-// Removed wp_ajax_nopriv_comisoma_save — save handler requires manage_options and must not be exposed to unauthenticated users.
+
+// export CSMM start
+function comisoma_export() {
+	if ( current_user_can( 'manage_options' ) ) {
+		if ( isset( $_POST['nonce'] ) && wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nonce'] ) ), 'comisoma-save' ) ) {
+			
+			$export_data = array(
+				'comisoma_settings' => get_option('comisoma_settings'),
+				'comisoma_templates' => get_option('comisoma_templates'),
+				'comisoma_content' => get_option('comisoma_content'),
+				'comisoma_social_media' => get_option('comisoma_social_media')
+			);
+
+			$json_data = wp_json_encode($export_data);
+			
+			if($json_data) {
+				wp_send_json_success($json_data);
+			} else {
+				wp_send_json_error('Failed to encode export data.');
+			}
+		} else {
+			wp_send_json_error('Nonce verification failed.');
+		}
+	} else {
+		wp_send_json_error('Insufficient permissions.');
+	}
+}
+add_action( 'wp_ajax_comisoma_export', 'comisoma_export' );
 // save CSMM end
 
 // register CSMM frontend scripts start
@@ -416,6 +481,8 @@ if($comisoma_website_mode == 1) {
 	function comisoma_website_mode(){
 		// check user logged in
 		if (!is_user_logged_in()) {
+			status_header(200);
+			nocache_headers();
 			include('loader.php');
 			exit();
 		} else {
@@ -502,6 +569,9 @@ if($comisoma_website_mode == 2) {
 			}
 			
 			if($comisoma_flag) {
+				status_header(503);
+				nocache_headers();
+				header('Retry-After: 3600');
 				include('loader.php');
 				exit();
 			}

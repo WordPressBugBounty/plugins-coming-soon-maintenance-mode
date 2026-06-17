@@ -3,7 +3,7 @@ Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkh
 Tags: coming soon, maintenance mode, landing page, under construction page, SEO friendly
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.1.5
+Stable tag: 1.1.9
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,7 +32,7 @@ Search engine optimization is a key consideration for this plugin. It allows sea
 *   **Maintenance Mode:** Display a maintenance message when performing updates or fixing issues.
 *   **Responsive Design:** Templates are built to adapt to different screen sizes.
 *   **Customization:** Adjust background images, colors, and text to align with your content.
-*   **SEO Friendly:** Designed to work well with search engine indexing requirements.
+*   **SEO Protection:** Emits intelligent HTTP status codes (200 OK for Coming Soon, 503 for Maintenance) so search engines know exactly how to handle your site without dropping your rankings.
 *   **Bootstrap 5 Interface:** Uses a modern interface for backend settings.
 *   **Countdown Timer:** Optionally display a timer to indicate when the site will be live.
 *   **Auto Launch:** Schedule your site to go live automatically.
@@ -101,7 +101,9 @@ The plugin includes an auto-launch feature. In the settings, you can set a speci
 
 = Does this plugin affect SEO? =
 
-The plugin is designed to be SEO-friendly. It properly handles HTTP status codes and allows search engines to understand that your site is temporarily unavailable, helping maintain your search engine presence.
+Yes! The plugin uses intelligent HTTP status codes to protect your Google rankings:
+- **Coming Soon Mode** returns a `200 OK` status, telling Google that your new website is actively being built and should start being indexed.
+- **Maintenance Mode** returns a strict `503 Service Unavailable` status. This acts as a "Do Not Disturb" sign for search engines, telling them your site is just down for quick repairs and they should come back later without dropping your search rankings!
 
 = Can I collect email addresses from visitors? =
 
@@ -173,6 +175,20 @@ For support questions, please visit the WordPress.org support forum for this plu
 10. Social Media Settings
 
 == Changelog ==
+
+= 1.1.9 =
+*   New: Added a dedicated Tools tab with Factory Reset and Import/Export configuration capabilities (June 17, 2026).
+*   Update: Replaced browser alerts with beautiful, modern SweetAlert2 popups for all confirmation dialogs (June 17, 2026).
+*   Update: Perfected vertical centering layout for Template 1 (June 17, 2026).
+
+= 1.1.8 =
+*   Update: Overhauled responsive layouts, fixed vertical centering bugs, and perfected mobile spacing and font scaling for Templates 3, 4, and 5 (June 17, 2026).
+
+= 1.1.7 =
+*   Update: Added default countdown date to current date + 1 month on plugin activation.
+
+= 1.1.6 =
+*   SEO: Added proper HTTP status codes (200 OK for Coming Soon mode and 503 Service Unavailable with Retry-After for Maintenance mode) to comply with SEO best practices (June 17, 2026).
 
 = 1.1.5 =
 *   Requirement: Renamed all generic function, class, constant, and variable prefixes to 'comisoma' for WP.org guideline compliance.

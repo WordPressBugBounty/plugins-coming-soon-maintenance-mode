@@ -34,8 +34,14 @@
   background: #000000;
 }
 
+.home-logo {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 .home-logo a {
-  display: block;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -53,12 +59,31 @@
  * ## home content - (_site-layout.scss) 
  * ------------------------------------------------------------------- */
 .home-content {
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: table-cell;
   vertical-align: middle;
-  padding-bottom: 6rem;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 0;
   position: relative;
+  z-index: 4;
+}
+
+.s-home {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.comisoma-row {
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.comisoma-row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .home-content h3 {
@@ -77,10 +102,11 @@
   color: #FFFFFF;
   letter-spacing: 0;
   font-family: metropolis-bold;
+  margin: 0;
+  margin-bottom: 3rem;
 }
 
 .home-content__main {
-  padding-top:15rem;
   position: relative;
   overflow: hidden;
 }
@@ -89,7 +115,7 @@
   font-size:16px;
   color: #ffffffd9;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
 }
 
 .home-content__subscribe {
@@ -156,6 +182,10 @@
   padding-right: 6px;
 }
 
+.home-content__clock {
+  margin-bottom: 3rem;
+}
+
 .home-content__counter .top {
   margin-bottom: 1.5rem;
   position: relative;
@@ -185,12 +215,10 @@
   list-style: none;
   font-family: var(--thm-font);
   margin: 0;
-  position: absolute;
-  top: 50%;
-  right: 6.6rem;
-  -webkit-transform: translate3d(0, -50%, 0);
-  -ms-transform: translate3d(0, -50%, 0);
-  transform: translate3d(0, -50%, 0);
+  position: static;
+  text-align: center;
+  margin-top: 2rem;
+  transform: none;
 }
 
 .home-social a {
@@ -200,11 +228,12 @@
 }
 
 .home-social li {
-  position: relative;
-  padding: .9rem 0;
+  display: inline-block;
+  padding: 0 1rem;
 }
 
 .home-social li a {
+  position: relative;
   display: block;
   width: 36px;
   height: 36px;
@@ -274,7 +303,7 @@
 
   .home-content__text p {
     font-size: 1.7rem;
-    margin-top: 4.8rem;
+    margin-top: 0;
   }
 
   .home-content__counter .time {
@@ -307,7 +336,7 @@
 
   .home-content__text p {
     font-size: 1.6rem;
-    margin-top: 4.2rem;
+    margin-top: 0;
   }
 
   .home-content__counter .time {
@@ -364,7 +393,7 @@
 
   .home-content__text p {
     font-size: 1.5rem;
-    margin-top: 3.6rem;
+    margin-top: 0;
   }
 
   .home-content__counter .time {
@@ -379,12 +408,13 @@
 }
 
 @media only screen and (max-width:1000px) {
-  .s-home,
-  .home-content {
+  .s-home {
     display: block;
   }
 
   .home-content {
+    display: block;
+    padding-top: 4rem;
     overflow-y: auto;
   }
 
@@ -450,7 +480,15 @@
   }
 
   .home-social {
-    display: none;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    position: static;
+    transform: none;
+  }
+  .home-social li {
+    display: inline-block;
+    padding: 0 1rem;
   }
 
 }
@@ -466,8 +504,14 @@
   }
 
   .home-content__counter .time {
-    font-size: 2rem;
-    min-width: 3rem;
+    height: auto;
+    width: 85px;
+    font-size: 3rem;
+    min-width: 85px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
   }
 
   .home-content__counter .time span {
@@ -508,12 +552,33 @@
 
 @media only screen and (max-width:500px) {
   .s-home {
-    min-height: 642px;
+    min-height: 100vh;
     text-align: center;
+  }
+  .home-content {
+    padding-bottom: 120px;
+  }
+  
+  .home-logo {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .home-logo img {
+    max-height: 60px;
+  }
+  .home-logo a {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .home-content h3 {
     padding-left: 0;
+    margin-bottom: 3rem;
+  }
+
+  .home-content__clock {
+    margin-bottom: 3rem;
   }
 
   .home-content h3::before {
@@ -521,11 +586,19 @@
   }
 
   .home-content h1 {
-    font-size: 3.3rem;
+    font-size: 2.6rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
   }
 
   .home-content__main {
     max-width: 420px;
+  }
+
+  .home-content__text p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
   }
 
   #mc-form input[type="email"] {
@@ -559,12 +632,12 @@
   }
 
   .home-logo img {
-    width: auto;
+    max-width: 100%;
     height: auto;
   }
 
   .home-content h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   .home-content__main {
@@ -576,7 +649,7 @@
   }
 
   .home-content__text p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
 }

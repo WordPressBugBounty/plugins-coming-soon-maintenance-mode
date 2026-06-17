@@ -75,10 +75,12 @@ body {
  * ## home content - (_site-layout.scss) 
  * ------------------------------------------------------------------- */
 .home-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  vertical-align: middle;
+  min-height: 100vh;
   padding-bottom: 6rem;
   position: relative;
 }
@@ -102,7 +104,6 @@ body {
 }
 
 .home-content__main {
-  padding-top:15rem;
   position: relative;
 }
 
@@ -431,12 +432,15 @@ transform: translateY(-5px);
 		background-position: bottom right;
 	}
   
-  .s-home,
-  .home-content {
+  .s-home {
     display: block;
   }
 
   .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 4rem;
     overflow-y: auto;
   }
 
@@ -502,7 +506,9 @@ transform: translateY(-5px);
   }
 
   .home-social {
-    display: none;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
   }
 
 }
@@ -518,10 +524,14 @@ transform: translateY(-5px);
   }
 
   .home-content__counter .time {
-	     height: auto;
+    height: auto;
+    width: 85px;
     font-size: 3rem;
-    min-width: 3rem;
+    min-width: 85px;
     font-weight: 600;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
   }
 
   .home-content__counter .time span {
@@ -563,8 +573,20 @@ transform: translateY(-5px);
 
 @media only screen and (max-width:500px) {
   .s-home {
-    min-height: 642px;
+    min-height: 100vh;
     text-align: center;
+    background-size: 150px;
+  }
+  .home-content {
+    padding-bottom: 120px;
+  }
+
+  .home-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .home-logo a.logo-dark {
+    justify-content: center;
   }
 
   .home-content h3 {
@@ -576,11 +598,15 @@ transform: translateY(-5px);
   }
 
   .home-content h1 {
-    font-size: 3.3rem;
+    font-size: 2.6rem;
   }
 
   .home-content__main {
     max-width: 420px;
+  }
+
+  .home-content__text p {
+    font-size: 1.5rem;
   }
 
   #mc-form input[type="email"] {
@@ -614,12 +640,14 @@ transform: translateY(-5px);
   }
 
   .home-logo img {
-    width: 70px;
-    height: 70px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 80px;
   }
 
   .home-content h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   .home-content__main {
@@ -631,7 +659,13 @@ transform: translateY(-5px);
   }
 
   .home-content__text p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  .home-content__counter .time {
+    font-size: 2.2rem;
+    padding: 8px 10px;
+    margin: 3px;
   }
 
   .home-copyright {

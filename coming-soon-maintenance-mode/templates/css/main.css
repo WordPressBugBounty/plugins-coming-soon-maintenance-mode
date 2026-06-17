@@ -57,6 +57,17 @@ html {
   font-size: 10px;
 }
 
+.comisoma-row {
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.comisoma-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media only screen and (max-width:400px) {
   html {
     font-size: 9.411764705882353px;

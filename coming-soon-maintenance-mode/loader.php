@@ -115,7 +115,7 @@ function comisoma_enqueue_template_assets( $template_id ) {
 					jQuery(this).html(event.strftime(str));
 				})
 				.on("finish.countdown", function(event) {
-					jQuery( ".home-content__counter" ).fadeOut( "slow" );
+					// jQuery( ".home-content__counter" ).fadeOut( "slow" );
 				});
 			};
 			(function ssInit() {

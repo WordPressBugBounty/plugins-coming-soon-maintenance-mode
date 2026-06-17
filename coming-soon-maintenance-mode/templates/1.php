@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <main class="s-home s-home--particles template-one">
         <div id="particles-js" class="home-particles"></div>
         <div class="home-content">
-            <div class="row home-content__main text-center">
+            <div class="comisoma-row home-content__main text-center">
                 
                 <?php if($comisoma_logo_id) { ?>
                 <div class="home-logo">

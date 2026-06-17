@@ -403,13 +403,13 @@ textarea {
  * # grid - (_grid.scss)
  *
  * ------------------------------------------------------------------- */
-.row {
+.row, .comisoma-row {
   width: 94%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.row:after {
+.row:after, .comisoma-row:after {
   content: "";
   display: table;
   clear: both;

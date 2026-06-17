@@ -63,8 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </div>
            
 
-            <div class="row home-content__main">
-
+            <div class="comisoma-row home-content__main text-center">
 
                 <?php if ($comisoma_countdown == 1) { ?>
                     <div class="home-content__counter">

@@ -28,12 +28,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <div class="home-content">
 
-            <div class="row home-content__main text-center">
+            <div class="comisoma-row home-content__main text-center">
 				<div class="frame-ipad">
 					
-					<div class="col-six">
+					<div class="comisoma-col-spacer">
 					</div>
-					<div class="col-eight text-wrap">
+					<div class="comisoma-col-content text-wrap">
 
 						<?php if($comisoma_logo_id) { ?>
 						<div class="home-logo">
