@@ -24,8 +24,8 @@ $comisoma_description = sanitize_text_field("Thank you for visiting our website!
 $comisoma_countdown = 1;
 $comisoma_countdown_title = sanitize_text_field("Launching In...");
 $comisoma_current_date = gmdate('Y-m-d');
-$comisoma_launch_dt = gmdate('Y-m-d', strtotime($comisoma_current_date . ' +1 month'));
-$comisoma_countdown_time = wp_date('H:i');
+$comisoma_countdown_date = gmdate('Y-m-d', strtotime('+1 month'));
+$comisoma_countdown_time = '10:00';
 $comisoma_sm_facebook = $comisoma_sm_twitter = $comisoma_sm_instagram = "#";
 
 //load CSMM settings
@@ -53,8 +53,8 @@ if(is_array($comisoma_content)){
 	if(array_key_exists('description', $comisoma_content)){ $comisoma_description = $comisoma_content['description']; }
 	if(array_key_exists('countdown', $comisoma_content)){ $comisoma_countdown = $comisoma_content['countdown']; }
 	if(array_key_exists('countdown_title', $comisoma_content)){ $comisoma_countdown_title = $comisoma_content['countdown_title']; }
-	if(array_key_exists('countdown_date', $comisoma_content)){ $comisoma_countdown_date = $comisoma_content['countdown_date']; }
-	if(array_key_exists('countdown_time', $comisoma_content)){ $comisoma_countdown_time = $comisoma_content['countdown_time']; }
+	if(array_key_exists('countdown_date', $comisoma_content) && !empty($comisoma_content['countdown_date'])){ $comisoma_countdown_date = $comisoma_content['countdown_date']; }
+	if(array_key_exists('countdown_time', $comisoma_content) && !empty($comisoma_content['countdown_time'])){ $comisoma_countdown_time = $comisoma_content['countdown_time']; }
 	if(array_key_exists('susbcriber_form', $comisoma_content)){ $comisoma_susbcriber_form = $comisoma_content['susbcriber_form']; }
 	if(array_key_exists('video_url', $comisoma_content)){ $comisoma_video_url = $comisoma_content['video_url']; }
 	if(array_key_exists('slide_ids', $comisoma_content)){ $comisoma_slide_ids = $comisoma_content['slide_ids']; }
@@ -294,9 +294,9 @@ if(is_array($comisoma_social_media)){
 								</div>
 							</div>
 							<div class="col-md-12 p-2">
-								<div class="d-grid gap-2">
-									<a class="btn btn-lg btn-danger" target="_blank" href="https://wpfrank.com/demo/coming-soon-maintenance-mode-pro">Check More 35 Pro Templates</a>
-									<a class="btn btn-lg btn-info" target="_blank" href="https://wordpress.org/plugins/coming-soon-maintenance-mode/">Rate <i class="fa-solid fa-star"></i> and Share Feedback <i class="fa-solid fa-comment-dots"></i> on <i class="fa-brands fa-wordpress"></i> if you like our plugin.</a>
+								<div class="d-grid gap-3">
+									<a class="comisoma-btn-pro" target="_blank" href="https://wpfrank.com/demo/coming-soon-maintenance-mode-pro"><i class="fa-solid fa-crown me-2"></i> Check More 35 Pro Templates</a>
+									<a class="comisoma-btn-rate" target="_blank" href="https://wordpress.org/plugins/coming-soon-maintenance-mode/">Rate <i class="fa-solid fa-star"></i> and Share Feedback <i class="fa-solid fa-comment-dots mx-1"></i> on <i class="fa-brands fa-wordpress ms-1"></i> if you like our plugin.</a>
 								</div>
 							</div>
 						</div>
@@ -470,7 +470,7 @@ if(is_array($comisoma_social_media)){
 								<div id="comisoma-website-mode-info" class="form-text">
 									<h5 class=""><?php esc_html_e( 'Upgrade To Pro', 'coming-soon-maintenance-mode' ); ?></h5>
 									<?php esc_html_e( 'Upgrade the plugin to the Pro version to get more templates and features.', 'coming-soon-maintenance-mode' ); ?>
-									<br><br><a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" id="comisoma-subscribe" name="comisoma-subscribe" class="btn btn-lg btn-danger"><i class="fa-solid fa-cart-shopping"></i> <?php esc_html_e( 'Get Pro Plugin', 'coming-soon-maintenance-mode' ); ?></a>
+									<br><br><a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" id="comisoma-subscribe" name="comisoma-subscribe" class="comisoma-btn-pro"><i class="fa-solid fa-cart-shopping me-2"></i> <?php esc_html_e( 'Get Pro Plugin', 'coming-soon-maintenance-mode' ); ?></a>
 								</div>
 							</div>
 						</div>

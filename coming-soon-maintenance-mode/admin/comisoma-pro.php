@@ -74,7 +74,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             View Pro Live Demo
         </a>
         <a href="https://wpfrank.com/wordpress-plugins/coming-soon-maintenance-mode-pro/" target="_blank" class="comisoma-btn-upgrade">
-            Upgrade to Pro Version - Just $25.00
+            Upgrade to Pro Version - Just $19.00
         </a>
         <div class="comisoma-guarantee">
             <i class="fa-solid fa-shield-halved"></i>

@@ -13,3 +13,53 @@ div.sticky {
 ol, ul {
 	padding-left: 0rem !important;
 }
+
+/* Modern Action Banners / Buttons */
+.comisoma-btn-pro,
+.comisoma-btn-rate {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 24px !important;
+	border-radius: 10px !important;
+	font-weight: 600 !important;
+	font-size: 15px !important;
+	text-decoration: none !important;
+	border: none !important;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+	cursor: pointer;
+}
+
+.comisoma-btn-pro {
+	background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%) !important;
+	color: #ffffff !important;
+	box-shadow: 0 4px 14px rgba(225, 29, 72, 0.35) !important;
+}
+
+.comisoma-btn-pro:hover,
+.comisoma-btn-pro:focus {
+	background: linear-gradient(135deg, #e11d48 0%, #be123c 100%) !important;
+	color: #ffffff !important;
+	transform: translateY(-2px) !important;
+	box-shadow: 0 6px 20px rgba(225, 29, 72, 0.45) !important;
+}
+
+.comisoma-btn-rate {
+	background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%) !important;
+	color: #ffffff !important;
+	box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35) !important;
+}
+
+.comisoma-btn-rate:hover,
+.comisoma-btn-rate:focus {
+	background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+	color: #ffffff !important;
+	transform: translateY(-2px) !important;
+	box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45) !important;
+}
+
+.comisoma-btn-rate .fa-star {
+	color: #fbbf24 !important;
+	margin: 0 2px;
+}
+

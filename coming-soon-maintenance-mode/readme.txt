@@ -1,9 +1,9 @@
 === Coming Soon Maintenance Mode ===
 Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
 Tags: coming soon, maintenance mode, landing page, under construction page, SEO friendly
-Requires at least: 5.0
-Tested up to: 6.9
-Stable tag: 1.1.9
+Requires at least: 5.3.0
+Tested up to: 7.0
+Stable tag: 1.2.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,6 +36,8 @@ Search engine optimization is a key consideration for this plugin. It allows sea
 *   **Bootstrap 5 Interface:** Uses a modern interface for backend settings.
 *   **Countdown Timer:** Optionally display a timer to indicate when the site will be live.
 *   **Auto Launch:** Schedule your site to go live automatically.
+*   **Import & Export Settings:** Easily export your plugin configurations as a JSON file and import them to another site.
+*   **Factory Reset:** Reset all plugin settings, template selections, and social media data to default state.
 
 ### What You Get in the Free Version
 
@@ -45,6 +47,7 @@ Search engine optimization is a key consideration for this plugin. It allows sea
 *   **Free Responsive Templates:** Choose from professionally designed templates that work on all devices.
 *   **Customization Settings:** Personalize colors, backgrounds, and content to match your brand.
 *   **Website Auto Launch:** Set a date and time for your site to go live automatically.
+*   **Settings Management:** Full support for exporting, importing, and factory resetting plugin settings.
 
 ### Upgrade to Pro for More Power
 
@@ -175,6 +178,14 @@ For support questions, please visit the WordPress.org support forum for this plu
 10. Social Media Settings
 
 == Changelog ==
+
+= 1.2.0 =
+*   New: Added dedicated "Our Plugins" and "Our Themes" dashboard pages with responsive showcase grids (June 29, 2026).
+*   Security: Bundled SweetAlert2 locally to eliminate remote CDN script execution for WP.org compliance (June 29, 2026).
+*   Update: Modernized admin banner action buttons with custom gradients and icon designs (June 29, 2026).
+*   Fixed: Resolved countdown date default initialization on plugin reset and activation to current date + 1 month (June 29, 2026).
+*   Cleaned: Completely removed deprecated "More Products" page and cleaned up legacy assets (June 29, 2026).
+*   Cleaned: Removed custom promo notice banner and updated Pro version pricing to $19.00 (June 29, 2026).
 
 = 1.1.9 =
 *   New: Added a dedicated Tools tab with Factory Reset and Import/Export configuration capabilities (June 17, 2026).
