@@ -1,45 +1,52 @@
-<?php
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title><?php echo esc_html($comisoma_title); ?></title>
-    <meta name="description" content="<?php echo esc_html($comisoma_description); ?>">
+    <title><?php echo esc_html($csmm_title); ?></title>
+    <meta name="description" content="<?php echo esc_html($csmm_description); ?>">
     <meta name="author" content="">
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="<?php echo esc_url( CSMM_URL.'templates/css/base.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( CSMM_URL.'templates/css/vendor.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( CSMM_URL.'templates/css/main.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( CSMM_URL.'templates/css/1.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( CSMM_URL.'admin/assets/fontawesome-free-6.2.1-web/css/all.min.css' ); ?>">
+    <!-- script
+    ================================================== -->
+    <script src="<?php echo esc_url( CSMM_URL.'templates/js/modernizr.js' ); ?>"></script>
+    <script src="<?php echo esc_url( CSMM_URL.'templates/js/pace.min.js' ); ?>"></script>
     <!-- favicons
     ================================================== -->
-   <link rel="shortcut icon" href="<?php echo esc_url( get_site_icon_url() ); ?>" type="image/x-icon">
-	<link rel="icon" href="<?php echo esc_url( get_site_icon_url() ); ?>" type="image/x-icon">
-    <?php wp_head(); ?>
+    <link rel="shortcut icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
+	<link rel="icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
 </head>
 <body>
     <!-- home
     ================================================== -->
     <main class="s-home s-home--particles template-one">
+        <?php if ( 'default' === $csmm_bg_type ) { ?>
         <div id="particles-js" class="home-particles"></div>
+        <?php } ?>
         <div class="home-content">
-            <div class="comisoma-row home-content__main text-center">
+            <div class="row home-content__main text-center">
                 
-                <?php if($comisoma_logo_id) { ?>
+                <?php if($csmm_logo_id) { ?>
                 <div class="home-logo">
-                    <a href="<?php echo esc_url( get_site_url() ); ?>">
-                        <img src="<?php echo esc_url( $comisoma_logo_url[0] ); ?>" alt="<?php echo esc_attr( $comisoma_logo_alt ); ?>">
+                    <a href="<?php echo ! empty( $csmm_logo_link ) ? esc_url( $csmm_logo_link ) : esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php echo esc_url( $csmm_logo_url[0] ); ?>" alt="<?php echo esc_attr( $csmm_logo_alt ); ?>">
                     </a>
                 </div>
                 <?php } ?>
                 
-                <?php if($comisoma_countdown == 1) { ?>
+                <?php if($csmm_countdown == 1) { ?>
                 <div class="home-content__counter">
-                    <h3><?php if($comisoma_countdown_title != "") { echo esc_html( $comisoma_countdown_title ); } ?></h3>
+                    <h3><?php if($csmm_countdown_title != "") { echo esc_html( $csmm_countdown_title ); } ?></h3>
                     <div class="home-content__clock">
                         <div class="time days">
                             325
@@ -62,20 +69,21 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <?php } ?>
                 
                 <div class="home-content__text">
-                    <h1><?php if($comisoma_title != "") { echo esc_html( $comisoma_title ); } ?></h1>
-                    <p><?php if($comisoma_description != "") { echo esc_textarea( stripslashes( $comisoma_description ) ); } ?></p>
+                    <h1><?php if($csmm_title != "") { echo esc_html( $csmm_title ); } ?></h1>
+                    <p><?php if($csmm_description != "") { echo esc_textarea( stripslashes( $csmm_description ) ); } ?></p>
+                    
                 </div>  <!-- end home-content__text -->
             </div>  <!-- end home-content__main -->
             
             <ul class="home-social">
-                <?php if(empty($comisoma_sm_facebook) == false) { ?>
-                <li><a href="<?php echo esc_url($comisoma_sm_facebook); ?>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <?php if(empty($csmm_sm_facebook) == false) { ?>
+                <li><a href="<?php echo esc_url($csmm_sm_facebook); ?>" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <?php } ?>
-                <?php if(empty($comisoma_sm_twitter) == false) { ?>
-                <li><a href="<?php echo esc_url($comisoma_sm_twitter); ?>" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <?php if(empty($csmm_sm_twitter) == false) { ?>
+                <li><a href="<?php echo esc_url($csmm_sm_twitter); ?>" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
                 <?php } ?>
-                <?php if(empty($comisoma_sm_instagram) == false) { ?>
-                <li><a href="<?php echo esc_url($comisoma_sm_instagram); ?>" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <?php if(empty($csmm_sm_instagram) == false) { ?>
+                <li><a href="<?php echo esc_url($csmm_sm_instagram); ?>" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
                 <?php } ?>
             </ul> <!-- end home-social -->
             
@@ -85,8 +93,47 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div> <!-- end home-content -->
     </main> <!-- end s-home -->
     
+    <!-- preloader
+    ================================================== 
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>-->
+   
     <!-- Java Script
     ================================================== -->
-    <?php wp_footer(); ?>
+    <?php 
+    // Javascript
+    $csmm_include_url = includes_url();
+    $csmm_last = $csmm_include_url[strlen( $csmm_include_url )-1];
+    if ( $csmm_last != '/' ) {
+        $csmm_include_url = $csmm_include_url . '/';
+    }
+    ?>
+    <script src="<?php echo esc_url($csmm_include_url); ?>js/jquery/jquery.min.js"></script>
+    <?php if ( 'default' === $csmm_bg_type ) { ?>
+    <script src="<?php echo esc_url(CSMM_URL.'templates/js/particles.min.js'); ?>"></script>
+    <script src="<?php echo esc_url(CSMM_URL.'templates/js/plugins.js'); ?>"></script>
+    <script src="<?php echo esc_url(CSMM_URL.'templates/js/polygons.js'); ?>"></script>
+    <?php } ?>
+    <script>
+    jQuery( document ).ready(function() {
+        // Add the User Agent to the <html>
+        // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
+        var doc = document.documentElement;
+        doc.setAttribute('data-useragent', navigator.userAgent);
+        // svg fallback
+                if (!Modernizr.svg) {
+            jQuery(".home-logo img").attr("src", "images/logo.png");
+        }
+    });
+    </script>
 </body>
 </html>

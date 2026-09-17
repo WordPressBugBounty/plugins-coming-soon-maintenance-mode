@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: coming-soon-maintenance-mode\n"
-"POT-Creation-Date: 2024-01-25 15:10+0530\n"
-"PO-Revision-Date: 2024-01-25 15:10+0530\n"
+"POT-Creation-Date: 2024-01-25 13:52+0530\n"
+"PO-Revision-Date: 2024-01-25 13:53+0530\n"
 "Last-Translator: Weblizar <lizarweb@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -18,63 +18,59 @@ msgstr ""
 "X-Poedit-SearchPath-1: coming-soon-maintenance-mode.php\n"
 "X-Poedit-SearchPath-2: admin\n"
 
-#: admin/csmm.php:93 coming-soon-maintenance-mode.php:78
+#: admin/csmm.php:101 coming-soon-maintenance-mode.php:78
 msgid "Coming Soon Maintenance Mode"
 msgstr "Hamarosan karbantartás mód"
 
-#: admin/csmm.php:107 admin/csmm.php:135 admin/csmm.php:155
+#: admin/csmm.php:116 admin/csmm.php:144 admin/csmm.php:159
 msgid "Coming Soon"
 msgstr "Hamarosan"
 
-#: admin/csmm.php:109 admin/csmm.php:137 admin/csmm.php:158
+#: admin/csmm.php:118 admin/csmm.php:146 admin/csmm.php:162
 msgid "Maintenance"
 msgstr "Karbantartás"
 
-#: admin/csmm.php:111 admin/csmm.php:139 admin/csmm.php:161
+#: admin/csmm.php:120 admin/csmm.php:148 admin/csmm.php:165
 msgid "Live"
 msgstr "Élő"
 
-#: admin/csmm.php:113 admin/csmm.php:165
+#: admin/csmm.php:122 admin/csmm.php:169
 msgid "Check Live Preview"
 msgstr "Élő előnézet ellenőrzése"
 
-#: admin/csmm.php:119 admin/csmm.php:132
+#: admin/csmm.php:128 admin/csmm.php:141
 msgid "Website Mode"
 msgstr "Weboldal mód"
 
-#: admin/csmm.php:120
+#: admin/csmm.php:129
 msgid "Templates"
 msgstr "Sablonok"
 
-#: admin/csmm.php:121
+#: admin/csmm.php:130
 msgid "Settings"
 msgstr "Beállítások"
 
-#: admin/csmm.php:122
+#: admin/csmm.php:131
 msgid "Social Media"
 msgstr "Közösségi média"
 
-#: admin/csmm.php:123
+#: admin/csmm.php:132
 msgid "More"
 msgstr "Továbbiak"
 
-#: admin/csmm.php:124
+#: admin/csmm.php:133
 msgid "Docs"
 msgstr "Dokumentációk"
 
-#: admin/csmm.php:143
-msgid "Video Tutorial - Check How Plugin Works"
-msgstr "Videó bemutató - Nézd meg, hogyan működik a bővítmény"
-
-#: admin/csmm.php:148
+#: admin/csmm.php:152
 msgid "Website Mode Tips"
 msgstr "Tippek a webhely módhoz"
 
-#: admin/csmm.php:150
+#: admin/csmm.php:154
 msgid "What are the website modes?"
 msgstr "Mik a weboldal módok?"
 
-#: admin/csmm.php:152
+#: admin/csmm.php:156
 msgid ""
 "Website mode defines the status of the website, such as whether it is "
 "available to access for visitors or not."
@@ -82,7 +78,7 @@ msgstr ""
 "A Webhely mód meghatározza a webhely állapotát, például azt, hogy elérhető-e "
 "a látogatók számára vagy sem."
 
-#: admin/csmm.php:155
+#: admin/csmm.php:159
 msgid ""
 "this mode is used to inform visitors that a website is under construction or "
 "coming soon. Expect an update from the administrator."
@@ -90,7 +86,7 @@ msgstr ""
 "ez a mód arra szolgál, hogy tájékoztassa a látogatókat, hogy egy webhely "
 "fejlesztés alatt áll, vagy hamarosan megjelenik."
 
-#: admin/csmm.php:158
+#: admin/csmm.php:162
 msgid ""
 "this mode is a way for website administrators to temporarily disable access "
 "to the particular part of website while it is being updated or undergoing "
@@ -100,7 +96,7 @@ msgstr ""
 "a hozzáférést a webhely adott részéhez, amíg az frissítés vagy karbantartás "
 "alatt áll."
 
-#: admin/csmm.php:161
+#: admin/csmm.php:165
 msgid ""
 "this mode means that the website is accessible and available for anyone to "
 "visit on the internet."
@@ -108,30 +104,30 @@ msgstr ""
 "ez a mód azt jelenti, hogy a weboldal bárki számára elérhető és elérhető az "
 "interneten."
 
-#: admin/csmm.php:164 admin/csmm.php:249 admin/csmm.php:443
+#: admin/csmm.php:168 admin/csmm.php:256 admin/csmm.php:455
 msgid "Important Note"
 msgstr "Fontos megjegyzés"
 
-#: admin/csmm.php:165
+#: admin/csmm.php:169
 msgid "button is used to check the website as a visitor only for admin."
 msgstr ""
 "gomb a weboldal látogatóként való ellenőrzésére szolgál, csak az "
 "adminisztrátor számára."
 
-#: admin/csmm.php:166
+#: admin/csmm.php:170
 msgid "Coming Soon and Maintenance Mode will not work for admin."
 msgstr ""
 "Hamarosan és a Karbantartási mód nem fog működni a rendszergazdák számára."
 
-#: admin/csmm.php:172
+#: admin/csmm.php:176
 msgid "Maintenance Mode Options"
 msgstr "Karbantartási mód beállításai"
 
-#: admin/csmm.php:175
+#: admin/csmm.php:179
 msgid "Maintenance Mode Options Tips"
 msgstr "Karbantartási mód opciói Tippek"
 
-#: admin/csmm.php:177
+#: admin/csmm.php:181
 msgid ""
 "If you need to perform updates on a specific part of your website, you can "
 "use the option below to display a maintenance message to visitors on "
@@ -142,193 +138,238 @@ msgstr ""
 "opcióval karbantartási üzenetet jeleníthet meg a látogatók számára bizonyos "
 "bejegyzéseken és oldalakon."
 
-#: admin/csmm.php:181
+#: admin/csmm.php:185
 msgid "Select Posts"
 msgstr "Válassza a Bejegyzések lehetőséget"
 
-#: admin/csmm.php:185 admin/csmm.php:199 admin/csmm.php:212
+#: admin/csmm.php:189 admin/csmm.php:203 admin/csmm.php:216
 msgid "Select All"
 msgstr "Válassza az Összes lehetőséget"
 
-#: admin/csmm.php:195
+#: admin/csmm.php:199
 msgid "Select Pages"
 msgstr "Válassza az Oldalak lehetőséget"
 
-#: admin/csmm.php:209
+#: admin/csmm.php:213
 msgid "Select Other Pages"
 msgstr "Válassza az Egyéb oldalak lehetőséget"
 
-#: admin/csmm.php:215
+#: admin/csmm.php:219
 msgid "Front Page"
 msgstr "Első oldal"
 
-#: admin/csmm.php:218
+#: admin/csmm.php:222
 msgid "Home Page"
 msgstr "Főoldal"
 
-#: admin/csmm.php:221
+#: admin/csmm.php:225
+msgid "Archive Page"
+msgstr "Archívum oldal"
+
+#: admin/csmm.php:228
 msgid "Category Page"
 msgstr "Kategória oldal"
 
-#: admin/csmm.php:224
+#: admin/csmm.php:231
 msgid "Tag Page"
 msgstr "Címkeoldal"
 
-#: admin/csmm.php:227
+#: admin/csmm.php:234
 msgid "Search Page"
 msgstr "Keresőoldal"
 
-#: admin/csmm.php:239 admin/csmm.php:530 admin/csmm.php:630
+#: admin/csmm.php:246 admin/csmm.php:559 admin/csmm.php:653
 msgid "Save"
 msgstr "Mentés"
 
-#: admin/csmm.php:247
+#: admin/csmm.php:254
 msgid "Select Template"
 msgstr "Válassza a Sablon lehetőséget"
 
-#: admin/csmm.php:248
+#: admin/csmm.php:255
 msgid "Click on activate button under the template for selection."
 msgstr "Kattintson a sablon alatti aktiválás gombra a kiválasztáshoz."
 
-#: admin/csmm.php:257
+#: admin/csmm.php:256
+msgid ""
+"Some templates are designed with specific features and limitations, so the "
+"available options and settings may be restricted."
+msgstr ""
+"Egyes sablonokat speciális funkciókkal és korlátozásokkal terveztek, így a "
+"rendelkezésre álló lehetőségek és beállítások korlátozottak lehetnek."
+
+#: admin/csmm.php:264
 msgid "Template 1"
 msgstr "1. sablon"
 
+#: admin/csmm.php:273
+msgid "Template 2"
+msgstr "2. sablon"
+
 #: admin/csmm.php:282
+msgid "Template 3"
+msgstr "3. sablon"
+
+#: admin/csmm.php:291
 msgid "Template 4"
 msgstr "4. sablon"
 
-#: admin/csmm.php:315
+#: admin/csmm.php:300
+msgid "Template 5"
+msgstr "5. sablon"
+
+#: admin/csmm.php:309
+msgid "Template 6"
+msgstr "6. sablon"
+
+#: admin/csmm.php:318
+msgid "Template 7"
+msgstr "7. sablon"
+
+#: admin/csmm.php:327
 msgid "Template 8"
 msgstr "8. sablon"
 
-#: admin/csmm.php:347
+#: admin/csmm.php:336
+msgid "Template 9"
+msgstr "9. sablon"
+
+#: admin/csmm.php:345
+msgid "Template 10"
+msgstr "10. sablon"
+
+#: admin/csmm.php:355
 msgid "Logo"
 msgstr "Logó"
 
-#: admin/csmm.php:355 admin/csmm.php:362 coming-soon-maintenance-mode.php:128
+#: admin/csmm.php:363 admin/csmm.php:370 coming-soon-maintenance-mode.php:135
 msgid "Remove Logo"
 msgstr "Távolítsa el az emblémát"
 
-#: admin/csmm.php:361
+#: admin/csmm.php:369
 msgid "Upload Logo"
 msgstr "Logó feltöltése"
 
-#: admin/csmm.php:367
+#: admin/csmm.php:375
 msgid "Logo Tips"
 msgstr "Logó tippek"
 
-#: admin/csmm.php:369
+#: admin/csmm.php:377
 msgid "Upload your logo for your website."
 msgstr "Töltse fel logóját webhelyéhez."
 
-#: admin/csmm.php:370
+#: admin/csmm.php:378
 msgid "The recommended logo size is 300x170px."
 msgstr "Az ajánlott logóméret 300x170 képpont."
 
-#: admin/csmm.php:377
+#: admin/csmm.php:379 admin/csmm.php:396 admin/csmm.php:413 admin/csmm.php:454
+#: admin/csmm.php:477 admin/csmm.php:493 admin/csmm.php:532 admin/csmm.php:549
+msgid "Setting available for"
+msgstr "A beállítás elérhető a következőhöz"
+
+#: admin/csmm.php:386
 msgid "Title"
 msgstr "Cím"
 
-#: admin/csmm.php:383
+#: admin/csmm.php:392
 msgid "Title Tips"
 msgstr "Cím tippek"
 
-#: admin/csmm.php:385
+#: admin/csmm.php:394
 msgid "Write a title for the website."
 msgstr "Írjon címet a webhelynek."
 
-#: admin/csmm.php:386 admin/csmm.php:402
+#: admin/csmm.php:395 admin/csmm.php:412
 msgid "Leave it blank if you dont want to display it."
 msgstr "Ha nem szeretné megjeleníteni, hagyja üresen."
 
-#: admin/csmm.php:393
+#: admin/csmm.php:403
 msgid "Description"
 msgstr "Leírás"
 
-#: admin/csmm.php:399
+#: admin/csmm.php:409
 msgid "Description Tips"
 msgstr "Leírási tippek"
 
-#: admin/csmm.php:401
+#: admin/csmm.php:411
 msgid "Write a brief description for the website."
 msgstr "Írjon rövid leírást a webhelyről."
 
-#: admin/csmm.php:409
+#: admin/csmm.php:420
 msgid "Countdown"
 msgstr "Visszaszámlálás"
 
-#: admin/csmm.php:413 admin/csmm.php:453
+#: admin/csmm.php:424 admin/csmm.php:465
 msgid "Yes"
 msgstr "Igen"
 
-#: admin/csmm.php:415 admin/csmm.php:455
+#: admin/csmm.php:426 admin/csmm.php:468
 msgid "No"
 msgstr "Nem"
 
-#: admin/csmm.php:419
+#: admin/csmm.php:430
 msgid "Timezone"
 msgstr "Időzóna"
 
-#: admin/csmm.php:420
+#: admin/csmm.php:431
 msgid "set timezone"
 msgstr "időzóna beállítása"
 
-#: admin/csmm.php:423
+#: admin/csmm.php:434
 msgid "Countdown Heading"
 msgstr "Visszaszámlálás címsor"
 
-#: admin/csmm.php:427
+#: admin/csmm.php:438
 msgid "Date"
 msgstr "Dátum"
 
-#: admin/csmm.php:431
+#: admin/csmm.php:442
 msgid "Time"
 msgstr "Idő"
 
-#: admin/csmm.php:436
+#: admin/csmm.php:447
 msgid "Countdown Tips"
 msgstr "Visszaszámlálási tippek"
 
-#: admin/csmm.php:438
+#: admin/csmm.php:449
 msgid "Set a website launch countdown."
 msgstr "Állítson be egy webhelyindítási visszaszámlálást."
 
-#: admin/csmm.php:439
+#: admin/csmm.php:450
 msgid "Timezone setting used to calculate website launch."
 msgstr "A webhely indításának kiszámításához használt időzóna-beállítás."
 
-#: admin/csmm.php:440
+#: admin/csmm.php:451
 msgid "Write a countdown heading which will appear above the countdown."
 msgstr ""
 "Írjon egy visszaszámlálási fejlécet, amely megjelenik a visszaszámlálás "
 "felett."
 
-#: admin/csmm.php:441
+#: admin/csmm.php:452
 msgid "Set a date and time for the website launch."
 msgstr "Állítsa be a webhely indításának dátumát és időpontját."
 
-#: admin/csmm.php:442
+#: admin/csmm.php:453
 msgid "When the countdown ends, the website will go live automatically."
 msgstr "Amikor a visszaszámlálás véget ér, a webhely automatikusan életbe lép."
 
-#: admin/csmm.php:443
+#: admin/csmm.php:455
 msgid ""
-"Automatic website launch on the countdown end is available only in the Pro "
-"version."
+"If you set an expiry date and time, the plugin automatically calculates and "
+"sets the website mode as Live."
 msgstr ""
-"Az automatikus webhelyindítás a visszaszámlálás végén csak a Pro verzióban "
-"érhető el."
+"Ha beállít egy lejárati dátumot és időpontot, a beépülő modul automatikusan "
+"kiszámítja, és a webhely módot Élőre állítja."
 
-#: admin/csmm.php:450
+#: admin/csmm.php:462
 msgid "Subscriber Form"
 msgstr "Előfizetői űrlap"
 
-#: admin/csmm.php:459
+#: admin/csmm.php:472
 msgid "Subscriber Form Tips"
 msgstr "Tippek az előfizetői űrlaphoz"
 
-#: admin/csmm.php:461
+#: admin/csmm.php:474
 msgid ""
 "Display an email subscription form for visitors to sign up for the mailing "
 "list."
@@ -336,7 +377,7 @@ msgstr ""
 "Jelenítsen meg egy e-mail feliratkozási űrlapot a látogatók számára, hogy "
 "feliratkozhassanak a levelezőlistára."
 
-#: admin/csmm.php:462
+#: admin/csmm.php:475
 msgid ""
 "The email subscription mailing list, used to send updates and offers about "
 "your website via email."
@@ -344,7 +385,7 @@ msgstr ""
 "Az e-mail-előfizetéses levelezőlista, amely a webhelyével kapcsolatos "
 "frissítések és ajánlatok e-mailben történő küldésére szolgál."
 
-#: admin/csmm.php:463
+#: admin/csmm.php:476
 msgid ""
 "Admin can download mailing list from Subscribers sub menu and import in any "
 "email maketing tools."
@@ -352,63 +393,63 @@ msgstr ""
 "Az adminisztrátor letöltheti a levelezési listát az Előfizetők almenüből, és "
 "bármely e-mail-készítő eszközbe importálhatja."
 
-#: admin/csmm.php:464 admin/csmm.php:480 admin/csmm.php:503 admin/csmm.php:520
-msgid "Setting available in Pro"
-msgstr "A beállítás elérhető a Pro-ban"
-
-#: admin/csmm.php:471
+#: admin/csmm.php:484
 msgid "Video URL"
 msgstr "Videó URL-je"
 
-#: admin/csmm.php:477
+#: admin/csmm.php:490
 msgid "Video URL Tips"
 msgstr "Videó URL-tippek"
 
-#: admin/csmm.php:479
+#: admin/csmm.php:492
 msgid "Provide a Youtube / Vimeo embed video URL."
 msgstr "Adjon meg egy Youtube/Vimeo beágyazott videó URL-jét."
 
-#: admin/csmm.php:487
+#: admin/csmm.php:500
 msgid "Background Slides"
 msgstr "Háttérdiák"
 
-#: admin/csmm.php:493
+#: admin/csmm.php:513 coming-soon-maintenance-mode.php:156
+msgid "Remove Slide"
+msgstr "Távolítsa el a diákat"
+
+#: admin/csmm.php:522
 msgid "Upload Slide"
 msgstr "Dia feltöltése"
 
-#: admin/csmm.php:494
+#: admin/csmm.php:523
 msgid "Remove All Slide"
 msgstr "Az összes dia eltávolítása"
 
-#: admin/csmm.php:500
+#: admin/csmm.php:529
 msgid "Background Slides Tips"
 msgstr "Tippek a háttér diákjaihoz"
 
-#: admin/csmm.php:501
+#: admin/csmm.php:530
 msgid "Upload the images for the background slideshow."
 msgstr "Töltsd fel a képeket a háttér diavetítéshez."
 
-#: admin/csmm.php:502
+#: admin/csmm.php:531
 msgid "Recommended image slide resolution is 1920x1080px."
 msgstr "A dia javasolt felbontása 1920x1080 képpont."
 
-#: admin/csmm.php:510
+#: admin/csmm.php:539
 msgid "Custom CSS"
 msgstr "Egyéni CSS"
 
-#: admin/csmm.php:516
+#: admin/csmm.php:545
 msgid "Custom CSS Tips"
 msgstr "Egyéni CSS-tippek"
 
-#: admin/csmm.php:518
+#: admin/csmm.php:547
 msgid "Write custom CSS code to modify the template designs."
 msgstr "Írjon egyéni CSS-kódot a sablonterv módosításához."
 
-#: admin/csmm.php:519
+#: admin/csmm.php:548
 msgid "Do not use the <style> tag in the CSS field."
 msgstr "Ne használja a <style> címkét a CSS mezőben."
 
-#: admin/csmm.php:539
+#: admin/csmm.php:568
 msgid ""
 "Add your social media account URLs in given social media section to display "
 "on website."
@@ -416,32 +457,33 @@ msgstr ""
 "Adja hozzá közösségimédia-fiókja URL-címét az adott közösségimédia-"
 "szakaszhoz, hogy megjelenjen a webhelyen."
 
-#: admin/csmm.php:540
+#: admin/csmm.php:569
 msgid "You can keep it blank if you dont want to display."
 msgstr "Ha nem szeretné megjeleníteni, üresen hagyhatja."
 
-#: admin/csmm.php:562
-msgid "More Social Media options are available in Pro"
-msgstr "A beállítás elérhető a Pro-ban"
-
-#: admin/csmm.php:640
+#: admin/csmm.php:666
 msgid "Have a problem with the plugin?"
 msgstr "Problémája van a pluginnal?"
 
-#: admin/csmm.php:641
+#: admin/csmm.php:667
 msgid "Raise a support ticket and we will respond you ASAP."
 msgstr ""
 "Emeljen fel egy támogatási jegyet, és mi a lehető leggyorsabban válaszolunk."
 
-#: admin/csmm.php:642
-msgid "Create Ticket"
-msgstr "Jegy létrehozása"
+#: admin/csmm.php:668
+msgid "Contact Us"
+msgstr "Lépjen kapcsolatba velünk"
 
-#: admin/csmm.php:646
+#: admin/csmm.php:672
+msgid "Check Video Tutorial - How Plugin Configure and Works?"
+msgstr ""
+"Nézze meg az oktatóvideót – Hogyan konfigurálható és működik a beépülő modul?"
+
+#: admin/csmm.php:677
 msgid "Visit & Subscribe Our YouTube Channel for More Tutorial Videos"
 msgstr "Látogassa meg"
 
-#: admin/csmm.php:647
+#: admin/csmm.php:678
 msgid ""
 "In upcoming plugin updates you will get all video docs on our YouTube "
 "official website."
@@ -449,25 +491,71 @@ msgstr ""
 "A közelgő bővítményfrissítések során az összes videodokumentumot megkapja "
 "hivatalos YouTube webhelyünkön."
 
-#: admin/csmm.php:648
+#: admin/csmm.php:679
 msgid "Subscribe"
 msgstr "Feliratkozás"
 
-#: admin/csmm.php:652
-msgid "Upgrade To Pro"
-msgstr "Frissítés a Pro verzióra"
+#: admin/subscribers.php:23
+msgid "Total Subscribers"
+msgstr "Összes előfizető"
 
-#: admin/csmm.php:653
-msgid ""
-"Upgrade the plugin to the Pro version to get more templates and features."
-msgstr ""
-"Frissítse a beépülő modult Pro verzióra, hogy több sablonhoz és "
-"szolgáltatáshoz jusson."
+#: admin/subscribers.php:26
+msgid "Download List"
+msgstr "Letöltési lista"
 
-#: admin/csmm.php:654
-msgid "Get Pro Plugin"
-msgstr "Szerezze be a Pro plugint"
+#: admin/subscribers.php:37
+msgid "Email"
+msgstr "Email"
 
-#: coming-soon-maintenance-mode.php:247
+#: admin/subscribers.php:97
+msgid "First"
+msgstr "Első"
+
+#: admin/subscribers.php:98
+msgid "Prev"
+msgstr "Előző"
+
+#: admin/subscribers.php:99
+msgid "Next"
+msgstr "Következő"
+
+#: admin/subscribers.php:100
+msgid "Last"
+msgstr "Utolsó"
+
+#: coming-soon-maintenance-mode.php:80
+msgid "Subscribers"
+msgstr "Előfizetők"
+
+#: coming-soon-maintenance-mode.php:328
 msgid "Nonce not verified action."
 msgstr "Nonce nem hitelesített művelet."
+
+#: templates/1.php:117 templates/10.php:138 templates/2.php:115
+#: templates/4.php:124 templates/5.php:118 templates/6.php:136
+#: templates/7.php:120 templates/8.php:123
+msgid "subscribed"
+msgstr "előfizetett"
+
+#~ msgid ""
+#~ "Automatice website lauch on countdown end available only in Pro version."
+#~ msgstr ""
+#~ "Az automatikus webhelyindítás a visszaszámlálás végén csak a Pro "
+#~ "verzióban érhető el."
+
+#~ msgid "More Social Media options are available in Pro"
+#~ msgstr "A beállítás elérhető a Pro-ban"
+
+#~ msgid "Create Ticket"
+#~ msgstr "Jegy létrehozása"
+
+#~ msgid "Upgrade To Pro"
+#~ msgstr "Frissítés a Pro verzióra"
+
+#~ msgid "Upgrape plugin to Pro version to get more templates and features."
+#~ msgstr ""
+#~ "Frissítse a bővítményt a Pro verzióra, hogy több sablont és funkciót "
+#~ "kapjon."
+
+#~ msgid "Get Pro Plugin"
+#~ msgstr "Szerezze be a Pro plugint"

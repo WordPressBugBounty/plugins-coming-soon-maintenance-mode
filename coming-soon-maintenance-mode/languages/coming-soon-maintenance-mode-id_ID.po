@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: coming-soon-maintenance-mode\n"
-"POT-Creation-Date: 2024-01-25 14:30+0530\n"
-"PO-Revision-Date: 2024-01-25 14:32+0530\n"
+"POT-Creation-Date: 2024-01-25 13:54+0530\n"
+"PO-Revision-Date: 2024-01-25 13:54+0530\n"
 "Last-Translator: Weblizar <lizarweb@gmail.com>\n"
 "Language-Team: \n"
 "Language: id\n"
@@ -18,63 +18,59 @@ msgstr ""
 "X-Poedit-SearchPath-1: coming-soon-maintenance-mode.php\n"
 "X-Poedit-SearchPath-2: admin\n"
 
-#: admin/csmm.php:93 coming-soon-maintenance-mode.php:78
+#: admin/csmm.php:101 coming-soon-maintenance-mode.php:78
 msgid "Coming Soon Maintenance Mode"
 msgstr "Mode Pemeliharaan Segera Hadir"
 
-#: admin/csmm.php:107 admin/csmm.php:135 admin/csmm.php:155
+#: admin/csmm.php:116 admin/csmm.php:144 admin/csmm.php:159
 msgid "Coming Soon"
 msgstr "Segera Hadir"
 
-#: admin/csmm.php:109 admin/csmm.php:137 admin/csmm.php:158
+#: admin/csmm.php:118 admin/csmm.php:146 admin/csmm.php:162
 msgid "Maintenance"
 msgstr "Pemeliharaan"
 
-#: admin/csmm.php:111 admin/csmm.php:139 admin/csmm.php:161
+#: admin/csmm.php:120 admin/csmm.php:148 admin/csmm.php:165
 msgid "Live"
 msgstr "Langsung"
 
-#: admin/csmm.php:113 admin/csmm.php:165
+#: admin/csmm.php:122 admin/csmm.php:169
 msgid "Check Live Preview"
 msgstr "Periksa Pratinjau Langsung"
 
-#: admin/csmm.php:119 admin/csmm.php:132
+#: admin/csmm.php:128 admin/csmm.php:141
 msgid "Website Mode"
 msgstr "Mode Situs Web"
 
-#: admin/csmm.php:120
+#: admin/csmm.php:129
 msgid "Templates"
 msgstr "Templat"
 
-#: admin/csmm.php:121
+#: admin/csmm.php:130
 msgid "Settings"
 msgstr "Pengaturan"
 
-#: admin/csmm.php:122
+#: admin/csmm.php:131
 msgid "Social Media"
 msgstr "Media Sosial"
 
-#: admin/csmm.php:123
+#: admin/csmm.php:132
 msgid "More"
 msgstr "Lebih lanjut"
 
-#: admin/csmm.php:124
+#: admin/csmm.php:133
 msgid "Docs"
 msgstr "Dokumen"
 
-#: admin/csmm.php:143
-msgid "Video Tutorial - Check How Plugin Works"
-msgstr "Video Tutorial - Periksa Cara Kerja Plugin"
-
-#: admin/csmm.php:148
+#: admin/csmm.php:152
 msgid "Website Mode Tips"
 msgstr "Tip Mode Situs Web"
 
-#: admin/csmm.php:150
+#: admin/csmm.php:154
 msgid "What are the website modes?"
 msgstr "Apa saja mode situs webnya?"
 
-#: admin/csmm.php:152
+#: admin/csmm.php:156
 msgid ""
 "Website mode defines the status of the website, such as whether it is "
 "available to access for visitors or not."
@@ -82,7 +78,7 @@ msgstr ""
 "Mode situs web menentukan status situs web, seperti apakah tersedia untuk "
 "diakses oleh pengunjung atau tidak."
 
-#: admin/csmm.php:155
+#: admin/csmm.php:159
 msgid ""
 "this mode is used to inform visitors that a website is under construction or "
 "coming soon. Expect an update from the administrator."
@@ -91,7 +87,7 @@ msgstr ""
 "dalam pembangunan atau akan segera hadir. Harapkan pembaruan dari "
 "administrator."
 
-#: admin/csmm.php:158
+#: admin/csmm.php:162
 msgid ""
 "this mode is a way for website administrators to temporarily disable access "
 "to the particular part of website while it is being updated or undergoing "
@@ -101,7 +97,7 @@ msgstr ""
 "sementara akses ke bagian tertentu situs web saat sedang diperbarui atau "
 "menjalani pemeliharaan."
 
-#: admin/csmm.php:161
+#: admin/csmm.php:165
 msgid ""
 "this mode means that the website is accessible and available for anyone to "
 "visit on the internet."
@@ -109,29 +105,29 @@ msgstr ""
 "mode ini berarti situs web dapat diakses dan tersedia untuk dikunjungi siapa "
 "saja di internet."
 
-#: admin/csmm.php:164 admin/csmm.php:249 admin/csmm.php:443
+#: admin/csmm.php:168 admin/csmm.php:256 admin/csmm.php:455
 msgid "Important Note"
 msgstr "Catatan Penting"
 
-#: admin/csmm.php:165
+#: admin/csmm.php:169
 msgid "button is used to check the website as a visitor only for admin."
 msgstr ""
 "Tombol digunakan untuk memeriksa website sebagai pengunjung hanya untuk "
 "admin."
 
-#: admin/csmm.php:166
+#: admin/csmm.php:170
 msgid "Coming Soon and Maintenance Mode will not work for admin."
 msgstr "Segera Hadir dan Mode Pemeliharaan tidak akan berfungsi untuk admin."
 
-#: admin/csmm.php:172
+#: admin/csmm.php:176
 msgid "Maintenance Mode Options"
 msgstr "Opsi Mode Pemeliharaan"
 
-#: admin/csmm.php:175
+#: admin/csmm.php:179
 msgid "Maintenance Mode Options Tips"
 msgstr "Tip Opsi Mode Perawatan"
 
-#: admin/csmm.php:177
+#: admin/csmm.php:181
 msgid ""
 "If you need to perform updates on a specific part of your website, you can "
 "use the option below to display a maintenance message to visitors on "
@@ -143,191 +139,236 @@ msgstr ""
 "pemeliharaan kepada pengunjung pada postingan dan halaman tertentu. Semua "
 "bagian lain dari situs web Anda akan tetap dapat diakses selama waktu ini."
 
-#: admin/csmm.php:181
+#: admin/csmm.php:185
 msgid "Select Posts"
 msgstr "Pilih Postingan"
 
-#: admin/csmm.php:185 admin/csmm.php:199 admin/csmm.php:212
+#: admin/csmm.php:189 admin/csmm.php:203 admin/csmm.php:216
 msgid "Select All"
 msgstr "Pilih Semua"
 
-#: admin/csmm.php:195
+#: admin/csmm.php:199
 msgid "Select Pages"
 msgstr "Pilih Halaman"
 
-#: admin/csmm.php:209
+#: admin/csmm.php:213
 msgid "Select Other Pages"
 msgstr "Pilih Halaman Lainnya"
 
-#: admin/csmm.php:215
+#: admin/csmm.php:219
 msgid "Front Page"
 msgstr "Halaman Depan"
 
-#: admin/csmm.php:218
+#: admin/csmm.php:222
 msgid "Home Page"
 msgstr "Halaman Beranda"
 
-#: admin/csmm.php:221
+#: admin/csmm.php:225
+msgid "Archive Page"
+msgstr "Halaman Arsip"
+
+#: admin/csmm.php:228
 msgid "Category Page"
 msgstr "Halaman Kategori"
 
-#: admin/csmm.php:224
+#: admin/csmm.php:231
 msgid "Tag Page"
 msgstr "Halaman Tag"
 
-#: admin/csmm.php:227
+#: admin/csmm.php:234
 msgid "Search Page"
 msgstr "Halaman Pencarian"
 
-#: admin/csmm.php:239 admin/csmm.php:530 admin/csmm.php:630
+#: admin/csmm.php:246 admin/csmm.php:559 admin/csmm.php:653
 msgid "Save"
 msgstr "Simpan"
 
-#: admin/csmm.php:247
+#: admin/csmm.php:254
 msgid "Select Template"
 msgstr "Pilih Templat"
 
-#: admin/csmm.php:248
+#: admin/csmm.php:255
 msgid "Click on activate button under the template for selection."
 msgstr "Klik tombol aktifkan di bawah templat untuk dipilih."
 
-#: admin/csmm.php:257
+#: admin/csmm.php:256
+msgid ""
+"Some templates are designed with specific features and limitations, so the "
+"available options and settings may be restricted."
+msgstr ""
+"Beberapa templat dirancang dengan fitur dan batasan tertentu, sehingga opsi "
+"dan pengaturan yang tersedia mungkin dibatasi."
+
+#: admin/csmm.php:264
 msgid "Template 1"
 msgstr "Templat 1"
 
+#: admin/csmm.php:273
+msgid "Template 2"
+msgstr "Templat 2"
+
 #: admin/csmm.php:282
+msgid "Template 3"
+msgstr "Templat 3"
+
+#: admin/csmm.php:291
 msgid "Template 4"
 msgstr "Templat 4"
 
-#: admin/csmm.php:315
+#: admin/csmm.php:300
+msgid "Template 5"
+msgstr "Templat 5"
+
+#: admin/csmm.php:309
+msgid "Template 6"
+msgstr "Templat 6"
+
+#: admin/csmm.php:318
+msgid "Template 7"
+msgstr "Templat 7"
+
+#: admin/csmm.php:327
 msgid "Template 8"
 msgstr "Templat 8"
 
-#: admin/csmm.php:347
+#: admin/csmm.php:336
+msgid "Template 9"
+msgstr "Templat 9"
+
+#: admin/csmm.php:345
+msgid "Template 10"
+msgstr "Templat 10"
+
+#: admin/csmm.php:355
 msgid "Logo"
 msgstr "Logo"
 
-#: admin/csmm.php:355 admin/csmm.php:362 coming-soon-maintenance-mode.php:128
+#: admin/csmm.php:363 admin/csmm.php:370 coming-soon-maintenance-mode.php:135
 msgid "Remove Logo"
 msgstr "Hapus Logo"
 
-#: admin/csmm.php:361
+#: admin/csmm.php:369
 msgid "Upload Logo"
 msgstr "Unggah Logo"
 
-#: admin/csmm.php:367
+#: admin/csmm.php:375
 msgid "Logo Tips"
 msgstr "Tip Logo"
 
-#: admin/csmm.php:369
+#: admin/csmm.php:377
 msgid "Upload your logo for your website."
 msgstr "Unggah logo Anda untuk situs web Anda."
 
-#: admin/csmm.php:370
+#: admin/csmm.php:378
 msgid "The recommended logo size is 300x170px."
 msgstr "Ukuran logo yang disarankan adalah 300x170px."
 
-#: admin/csmm.php:377
+#: admin/csmm.php:379 admin/csmm.php:396 admin/csmm.php:413 admin/csmm.php:454
+#: admin/csmm.php:477 admin/csmm.php:493 admin/csmm.php:532 admin/csmm.php:549
+msgid "Setting available for"
+msgstr "Pengaturan tersedia untuk"
+
+#: admin/csmm.php:386
 msgid "Title"
 msgstr "Judul"
 
-#: admin/csmm.php:383
+#: admin/csmm.php:392
 msgid "Title Tips"
 msgstr "Tip Judul"
 
-#: admin/csmm.php:385
+#: admin/csmm.php:394
 msgid "Write a title for the website."
 msgstr "Tulis judul situs web."
 
-#: admin/csmm.php:386 admin/csmm.php:402
+#: admin/csmm.php:395 admin/csmm.php:412
 msgid "Leave it blank if you dont want to display it."
 msgstr "Biarkan kosong jika Anda tidak ingin menampilkannya."
 
-#: admin/csmm.php:393
+#: admin/csmm.php:403
 msgid "Description"
 msgstr "Deskripsi"
 
-#: admin/csmm.php:399
+#: admin/csmm.php:409
 msgid "Description Tips"
 msgstr "Tip Deskripsi"
 
-#: admin/csmm.php:401
+#: admin/csmm.php:411
 msgid "Write a brief description for the website."
 msgstr "Tulis deskripsi singkat untuk situs web tersebut."
 
-#: admin/csmm.php:409
+#: admin/csmm.php:420
 msgid "Countdown"
 msgstr "Hitung mundur"
 
-#: admin/csmm.php:413 admin/csmm.php:453
+#: admin/csmm.php:424 admin/csmm.php:465
 msgid "Yes"
 msgstr "Ya"
 
-#: admin/csmm.php:415 admin/csmm.php:455
+#: admin/csmm.php:426 admin/csmm.php:468
 msgid "No"
 msgstr "Tidak"
 
-#: admin/csmm.php:419
+#: admin/csmm.php:430
 msgid "Timezone"
 msgstr "Zona waktu"
 
-#: admin/csmm.php:420
+#: admin/csmm.php:431
 msgid "set timezone"
 msgstr "atur zona waktu"
 
-#: admin/csmm.php:423
+#: admin/csmm.php:434
 msgid "Countdown Heading"
 msgstr "Judul Hitung Mundur"
 
-#: admin/csmm.php:427
+#: admin/csmm.php:438
 msgid "Date"
 msgstr "Tanggal"
 
-#: admin/csmm.php:431
+#: admin/csmm.php:442
 msgid "Time"
 msgstr "Waktu"
 
-#: admin/csmm.php:436
+#: admin/csmm.php:447
 msgid "Countdown Tips"
 msgstr "Tip Menghitung Mundur"
 
-#: admin/csmm.php:438
+#: admin/csmm.php:449
 msgid "Set a website launch countdown."
 msgstr "Tetapkan hitungan mundur peluncuran situs web."
 
-#: admin/csmm.php:439
+#: admin/csmm.php:450
 msgid "Timezone setting used to calculate website launch."
 msgstr "Pengaturan zona waktu digunakan untuk menghitung peluncuran situs web."
 
-#: admin/csmm.php:440
+#: admin/csmm.php:451
 msgid "Write a countdown heading which will appear above the countdown."
 msgstr "Tulis judul hitung mundur yang akan muncul di atas hitung mundur."
 
-#: admin/csmm.php:441
+#: admin/csmm.php:452
 msgid "Set a date and time for the website launch."
 msgstr "Tetapkan tanggal dan waktu peluncuran situs web."
 
-#: admin/csmm.php:442
+#: admin/csmm.php:453
 msgid "When the countdown ends, the website will go live automatically."
 msgstr "Saat hitungan mundur berakhir, situs web akan aktif secara otomatis."
 
-#: admin/csmm.php:443
+#: admin/csmm.php:455
 msgid ""
-"Automatic website launch on the countdown end is available only in the Pro "
-"version."
+"If you set an expiry date and time, the plugin automatically calculates and "
+"sets the website mode as Live."
 msgstr ""
-"Peluncuran situs web otomatis pada akhir hitung mundur hanya tersedia dalam "
-"versi Pro."
+"Jika Anda menetapkan tanggal dan waktu kedaluwarsa, plugin secara otomatis "
+"menghitung dan menetapkan mode situs web sebagai Live."
 
-#: admin/csmm.php:450
+#: admin/csmm.php:462
 msgid "Subscriber Form"
 msgstr "Formulir Pelanggan"
 
-#: admin/csmm.php:459
+#: admin/csmm.php:472
 msgid "Subscriber Form Tips"
 msgstr "Tip Formulir Pelanggan"
 
-#: admin/csmm.php:461
+#: admin/csmm.php:474
 msgid ""
 "Display an email subscription form for visitors to sign up for the mailing "
 "list."
@@ -335,7 +376,7 @@ msgstr ""
 "Menampilkan formulir berlangganan email bagi pengunjung untuk mendaftar ke "
 "milis."
 
-#: admin/csmm.php:462
+#: admin/csmm.php:475
 msgid ""
 "The email subscription mailing list, used to send updates and offers about "
 "your website via email."
@@ -343,7 +384,7 @@ msgstr ""
 "Milis langganan email, digunakan untuk mengirim pembaruan dan penawaran "
 "tentang situs web Anda melalui email."
 
-#: admin/csmm.php:463
+#: admin/csmm.php:476
 msgid ""
 "Admin can download mailing list from Subscribers sub menu and import in any "
 "email maketing tools."
@@ -351,63 +392,63 @@ msgstr ""
 "Admin dapat mengunduh milis dari sub menu Pelanggan dan mengimpornya ke alat "
 "pembuatan email apa pun."
 
-#: admin/csmm.php:464 admin/csmm.php:480 admin/csmm.php:503 admin/csmm.php:520
-msgid "Setting available in Pro"
-msgstr "Pengaturan tersedia di Pro"
-
-#: admin/csmm.php:471
+#: admin/csmm.php:484
 msgid "Video URL"
 msgstr "URL Video"
 
-#: admin/csmm.php:477
+#: admin/csmm.php:490
 msgid "Video URL Tips"
 msgstr "Tip URL Video"
 
-#: admin/csmm.php:479
+#: admin/csmm.php:492
 msgid "Provide a Youtube / Vimeo embed video URL."
 msgstr "Berikan URL video penyematan Youtube / Vimeo."
 
-#: admin/csmm.php:487
+#: admin/csmm.php:500
 msgid "Background Slides"
 msgstr "Slide Latar Belakang"
 
-#: admin/csmm.php:493
+#: admin/csmm.php:513 coming-soon-maintenance-mode.php:156
+msgid "Remove Slide"
+msgstr "Hapus Slide"
+
+#: admin/csmm.php:522
 msgid "Upload Slide"
 msgstr "Unggah Slide"
 
-#: admin/csmm.php:494
+#: admin/csmm.php:523
 msgid "Remove All Slide"
 msgstr "Hapus Semua Slide"
 
-#: admin/csmm.php:500
+#: admin/csmm.php:529
 msgid "Background Slides Tips"
 msgstr "Tip Slide Latar Belakang"
 
-#: admin/csmm.php:501
+#: admin/csmm.php:530
 msgid "Upload the images for the background slideshow."
 msgstr "Unggah gambar untuk tayangan slide latar belakang."
 
-#: admin/csmm.php:502
+#: admin/csmm.php:531
 msgid "Recommended image slide resolution is 1920x1080px."
 msgstr "Resolusi slide gambar yang disarankan adalah 1920x1080px."
 
-#: admin/csmm.php:510
+#: admin/csmm.php:539
 msgid "Custom CSS"
 msgstr "CSS Khusus"
 
-#: admin/csmm.php:516
+#: admin/csmm.php:545
 msgid "Custom CSS Tips"
 msgstr "Tip CSS Khusus"
 
-#: admin/csmm.php:518
+#: admin/csmm.php:547
 msgid "Write custom CSS code to modify the template designs."
 msgstr "Tulis kode CSS khusus untuk mengubah desain templat."
 
-#: admin/csmm.php:519
+#: admin/csmm.php:548
 msgid "Do not use the <style> tag in the CSS field."
 msgstr "Jangan gunakan tag <style> di kolom CSS."
 
-#: admin/csmm.php:539
+#: admin/csmm.php:568
 msgid ""
 "Add your social media account URLs in given social media section to display "
 "on website."
@@ -415,31 +456,31 @@ msgstr ""
 "Tambahkan URL akun media sosial Anda di bagian media sosial tertentu untuk "
 "ditampilkan di situs web."
 
-#: admin/csmm.php:540
+#: admin/csmm.php:569
 msgid "You can keep it blank if you dont want to display."
 msgstr "Anda dapat mengosongkannya jika tidak ingin ditampilkan."
 
-#: admin/csmm.php:562
-msgid "More Social Media options are available in Pro"
-msgstr "Opsi Media Sosial lainnya tersedia di Pro"
-
-#: admin/csmm.php:640
+#: admin/csmm.php:666
 msgid "Have a problem with the plugin?"
 msgstr "Ada masalah dengan pluginnya?"
 
-#: admin/csmm.php:641
+#: admin/csmm.php:667
 msgid "Raise a support ticket and we will respond you ASAP."
 msgstr "Ajukan tiket dukungan dan kami akan merespons Anda secepatnya."
 
-#: admin/csmm.php:642
-msgid "Create Ticket"
-msgstr "Buat Tiket"
+#: admin/csmm.php:668
+msgid "Contact Us"
+msgstr "Hubungi Kami"
 
-#: admin/csmm.php:646
+#: admin/csmm.php:672
+msgid "Check Video Tutorial - How Plugin Configure and Works?"
+msgstr "Periksa Video Tutorial - Bagaimana Konfigurasi dan Cara Kerja Plugin?"
+
+#: admin/csmm.php:677
 msgid "Visit & Subscribe Our YouTube Channel for More Tutorial Videos"
 msgstr "Kunjungi"
 
-#: admin/csmm.php:647
+#: admin/csmm.php:678
 msgid ""
 "In upcoming plugin updates you will get all video docs on our YouTube "
 "official website."
@@ -447,95 +488,48 @@ msgstr ""
 "Dalam pembaruan plugin mendatang, Anda akan mendapatkan semua dokumen video "
 "di situs web resmi YouTube kami."
 
-#: admin/csmm.php:648
+#: admin/csmm.php:679
 msgid "Subscribe"
 msgstr "Langganan"
 
-#: admin/csmm.php:652
-msgid "Upgrade To Pro"
-msgstr "Upgrade ke yang lebih baik"
+#: admin/subscribers.php:23
+msgid "Total Subscribers"
+msgstr "Jumlah Pelanggan"
 
-#: admin/csmm.php:653
-msgid ""
-"Upgrade the plugin to the Pro version to get more templates and features."
-msgstr ""
-"Upgrade the plugin to the Pro version to get more templates and features."
+#: admin/subscribers.php:26
+msgid "Download List"
+msgstr "Daftar Unduh"
 
-#: admin/csmm.php:654
-msgid "Get Pro Plugin"
-msgstr "Dapatkan Plugin Pro"
+#: admin/subscribers.php:37
+msgid "Email"
+msgstr "Surel"
 
-#: coming-soon-maintenance-mode.php:247
+#: admin/subscribers.php:97
+msgid "First"
+msgstr "Pertama"
+
+#: admin/subscribers.php:98
+msgid "Prev"
+msgstr "Sebelumnya"
+
+#: admin/subscribers.php:99
+msgid "Next"
+msgstr "Berikutnya"
+
+#: admin/subscribers.php:100
+msgid "Last"
+msgstr "Terakhir"
+
+#: coming-soon-maintenance-mode.php:80
+msgid "Subscribers"
+msgstr "Pelanggan"
+
+#: coming-soon-maintenance-mode.php:328
 msgid "Nonce not verified action."
 msgstr "Tindakan nonce tidak terverifikasi."
 
-#~ msgid "Archive Page"
-#~ msgstr "Halaman Arsip"
-
-#~ msgid ""
-#~ "Some templates are designed with specific features and limitations, so "
-#~ "the available options and settings may be restricted."
-#~ msgstr ""
-#~ "Beberapa templat dirancang dengan fitur dan batasan tertentu, sehingga "
-#~ "opsi dan pengaturan yang tersedia mungkin dibatasi."
-
-#~ msgid "Template 2"
-#~ msgstr "Templat 2"
-
-#~ msgid "Template 3"
-#~ msgstr "Templat 3"
-
-#~ msgid "Template 5"
-#~ msgstr "Templat 5"
-
-#~ msgid "Template 6"
-#~ msgstr "Templat 6"
-
-#~ msgid "Template 7"
-#~ msgstr "Templat 7"
-
-#~ msgid "Template 9"
-#~ msgstr "Templat 9"
-
-#~ msgid "Template 10"
-#~ msgstr "Templat 10"
-
-#~ msgid ""
-#~ "If you set an expiry date and time, the plugin automatically calculates "
-#~ "and sets the website mode as Live."
-#~ msgstr ""
-#~ "Jika Anda menetapkan tanggal dan waktu kedaluwarsa, plugin secara "
-#~ "otomatis menghitung dan menetapkan mode situs web sebagai Live."
-
-#~ msgid "Remove Slide"
-#~ msgstr "Hapus Slide"
-
-#~ msgid "Contact Us"
-#~ msgstr "Hubungi Kami"
-
-#~ msgid "Total Subscribers"
-#~ msgstr "Jumlah Pelanggan"
-
-#~ msgid "Download List"
-#~ msgstr "Daftar Unduh"
-
-#~ msgid "Email"
-#~ msgstr "Surel"
-
-#~ msgid "First"
-#~ msgstr "Pertama"
-
-#~ msgid "Prev"
-#~ msgstr "Sebelumnya"
-
-#~ msgid "Next"
-#~ msgstr "Berikutnya"
-
-#~ msgid "Last"
-#~ msgstr "Terakhir"
-
-#~ msgid "Subscribers"
-#~ msgstr "Pelanggan"
-
-#~ msgid "subscribed"
-#~ msgstr "berlangganan"
+#: templates/1.php:117 templates/10.php:138 templates/2.php:115
+#: templates/4.php:124 templates/5.php:118 templates/6.php:136
+#: templates/7.php:120 templates/8.php:123
+msgid "subscribed"
+msgstr "berlangganan"

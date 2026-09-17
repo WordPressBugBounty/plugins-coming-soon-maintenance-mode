@@ -13,7 +13,7 @@
  *    ## floated image
  *    ## tables
  *    ## Spacing
-
+ *    ## pace.js styles - minimal
  *  # preloader
  *  # forms
  *    ## style placeholder text
@@ -52,20 +52,12 @@
 }
 
 
-
+/* ===================================================================
+ * # base style overrides - (_document-setup.scss)
+ *
+ * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
-}
-
-.comisoma-row {
-  width: 94%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.comisoma-row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 @media only screen and (max-width:400px) {
@@ -77,8 +69,10 @@ html {
 
 html,
 body {
-  height: 100%;  /* prevent horizontal scrolling */
-  overflow: hidden;
+  min-height: 100%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -508,6 +502,35 @@ form,
 .video-container,
 .ss-custom-select {
   margin-bottom: 3rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## pace.js styles - minimal - (_document-setup.scss)
+ * ------------------------------------------------------------------- */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: var(--thm-primary);
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 4px;
+}
+
+.oldie .pace {
+  display: none;
 }
 
 /* ===================================================================

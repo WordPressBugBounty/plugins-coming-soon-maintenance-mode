@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: coming-soon-maintenance-mode\n"
-"POT-Creation-Date: 2024-01-25 15:06+0530\n"
-"PO-Revision-Date: 2024-01-25 15:08+0530\n"
+"POT-Creation-Date: 2024-01-25 13:51+0530\n"
+"PO-Revision-Date: 2024-01-25 13:52+0530\n"
 "Last-Translator: Weblizar <lizarweb@gmail.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,63 +18,59 @@ msgstr ""
 "X-Poedit-SearchPath-1: coming-soon-maintenance-mode.php\n"
 "X-Poedit-SearchPath-2: admin\n"
 
-#: admin/csmm.php:93 coming-soon-maintenance-mode.php:78
+#: admin/csmm.php:101 coming-soon-maintenance-mode.php:78
 msgid "Coming Soon Maintenance Mode"
 msgstr "Mode Maintenance Bientôt Disponible"
 
-#: admin/csmm.php:107 admin/csmm.php:135 admin/csmm.php:155
+#: admin/csmm.php:116 admin/csmm.php:144 admin/csmm.php:159
 msgid "Coming Soon"
 msgstr "Bientôt Disponible"
 
-#: admin/csmm.php:109 admin/csmm.php:137 admin/csmm.php:158
+#: admin/csmm.php:118 admin/csmm.php:146 admin/csmm.php:162
 msgid "Maintenance"
 msgstr "Maintenance"
 
-#: admin/csmm.php:111 admin/csmm.php:139 admin/csmm.php:161
+#: admin/csmm.php:120 admin/csmm.php:148 admin/csmm.php:165
 msgid "Live"
 msgstr "En Direct"
 
-#: admin/csmm.php:113 admin/csmm.php:165
+#: admin/csmm.php:122 admin/csmm.php:169
 msgid "Check Live Preview"
 msgstr "Vérifier l'aperçu en direct"
 
-#: admin/csmm.php:119 admin/csmm.php:132
+#: admin/csmm.php:128 admin/csmm.php:141
 msgid "Website Mode"
 msgstr "Mode du Site Web"
 
-#: admin/csmm.php:120
+#: admin/csmm.php:129
 msgid "Templates"
 msgstr "Modèles"
 
-#: admin/csmm.php:121
+#: admin/csmm.php:130
 msgid "Settings"
 msgstr "Paramètres"
 
-#: admin/csmm.php:122
+#: admin/csmm.php:131
 msgid "Social Media"
 msgstr "Médias Sociaux"
 
-#: admin/csmm.php:123
+#: admin/csmm.php:132
 msgid "More"
 msgstr "Plus"
 
-#: admin/csmm.php:124
+#: admin/csmm.php:133
 msgid "Docs"
 msgstr "Documentation"
 
-#: admin/csmm.php:143
-msgid "Video Tutorial - Check How Plugin Works"
-msgstr "Tutoriel Vidéo - Découvrez Comment Fonctionne le Plugin"
-
-#: admin/csmm.php:148
+#: admin/csmm.php:152
 msgid "Website Mode Tips"
 msgstr "Conseils sur le Mode du Site Web"
 
-#: admin/csmm.php:150
+#: admin/csmm.php:154
 msgid "What are the website modes?"
 msgstr "Quels sont les modes du site web ?"
 
-#: admin/csmm.php:152
+#: admin/csmm.php:156
 msgid ""
 "Website mode defines the status of the website, such as whether it is "
 "available to access for visitors or not."
@@ -82,58 +78,58 @@ msgstr ""
 "Le mode du site web définit l'état du site, notamment s'il est disponible ou "
 "non pour les visiteurs."
 
-#: admin/csmm.php:155
+#: admin/csmm.php:159
 msgid ""
 "this mode is used to inform visitors that a website is under construction or "
 "coming soon. Expect an update from the administrator."
 msgstr ""
-"Ce mode est utilisé pour informer les visiteurs que le site est en "
-"construction ou bientôt disponible. Attendez une mise à jour de "
-"l'administrateur."
+"ce mode est utilisé pour informer les visiteurs qu'un site Web est en "
+"construction ou à venir. Attendez-vous à une mise à jour de l'administrateur."
 
-#: admin/csmm.php:158
+#: admin/csmm.php:162
 msgid ""
 "this mode is a way for website administrators to temporarily disable access "
 "to the particular part of website while it is being updated or undergoing "
 "maintenance."
 msgstr ""
-"Ce mode permet aux administrateurs de site web de désactiver temporairement "
-"l'accès à une partie spécifique du site pendant sa mise à jour ou sa "
-"maintenance."
+"ce mode est un moyen pour les administrateurs de sites Web de désactiver "
+"temporairement l'accès à une partie particulière du site Web pendant qu'elle "
+"est en cours de mise à jour ou de maintenance."
 
-#: admin/csmm.php:161
+#: admin/csmm.php:165
 msgid ""
 "this mode means that the website is accessible and available for anyone to "
 "visit on the internet."
 msgstr ""
-"Ce mode signifie que le site web est accessible et disponible pour tout le "
-"monde sur Internet."
+"ce mode est un moyen pour les administrateurs du site Web de désactiver "
+"temporairement l'accès à une partie particulière du site Web pendant qu'il "
+"est en cours de mise à jour ou de maintenance."
 
-#: admin/csmm.php:164 admin/csmm.php:249 admin/csmm.php:443
+#: admin/csmm.php:168 admin/csmm.php:256 admin/csmm.php:455
 msgid "Important Note"
 msgstr "Note Importante"
 
-#: admin/csmm.php:165
+#: admin/csmm.php:169
 msgid "button is used to check the website as a visitor only for admin."
 msgstr ""
 "Le bouton est utilisé pour vérifier le site Web en tant que visiteur "
 "uniquement pour l'administrateur."
 
-#: admin/csmm.php:166
+#: admin/csmm.php:170
 msgid "Coming Soon and Maintenance Mode will not work for admin."
 msgstr ""
 "Le mode Bientôt Disponible et le mode Maintenance ne fonctionneront pas pour "
 "l'administrateur."
 
-#: admin/csmm.php:172
+#: admin/csmm.php:176
 msgid "Maintenance Mode Options"
 msgstr "Options du Mode Maintenance"
 
-#: admin/csmm.php:175
+#: admin/csmm.php:179
 msgid "Maintenance Mode Options Tips"
 msgstr "Conseils sur les Options du Mode Maintenance"
 
-#: admin/csmm.php:177
+#: admin/csmm.php:181
 msgid ""
 "If you need to perform updates on a specific part of your website, you can "
 "use the option below to display a maintenance message to visitors on "
@@ -146,197 +142,243 @@ msgstr ""
 "Toutes les autres parties de votre site resteront accessibles pendant cette "
 "période."
 
-#: admin/csmm.php:181
+#: admin/csmm.php:185
 msgid "Select Posts"
 msgstr "Sélectionner des Articles"
 
-#: admin/csmm.php:185 admin/csmm.php:199 admin/csmm.php:212
+#: admin/csmm.php:189 admin/csmm.php:203 admin/csmm.php:216
 msgid "Select All"
 msgstr "Tout Sélectionner"
 
-#: admin/csmm.php:195
+#: admin/csmm.php:199
 msgid "Select Pages"
 msgstr "Sélectionner des Pages"
 
-#: admin/csmm.php:209
+#: admin/csmm.php:213
 msgid "Select Other Pages"
 msgstr "Sélectionner d'Autres Pages"
 
-#: admin/csmm.php:215
+#: admin/csmm.php:219
 msgid "Front Page"
 msgstr "Page d'Accueil"
 
-#: admin/csmm.php:218
+#: admin/csmm.php:222
 msgid "Home Page"
 msgstr "Page d'Accueil"
 
-#: admin/csmm.php:221
+#: admin/csmm.php:225
+msgid "Archive Page"
+msgstr "Page d'archives"
+
+#: admin/csmm.php:228
 msgid "Category Page"
 msgstr "Page de Catégorie"
 
-#: admin/csmm.php:224
+#: admin/csmm.php:231
 msgid "Tag Page"
 msgstr "Page de Tag"
 
-#: admin/csmm.php:227
+#: admin/csmm.php:234
 msgid "Search Page"
 msgstr "Page de Recherche"
 
-#: admin/csmm.php:239 admin/csmm.php:530 admin/csmm.php:630
+#: admin/csmm.php:246 admin/csmm.php:559 admin/csmm.php:653
 msgid "Save"
 msgstr "Enregistrer"
 
-#: admin/csmm.php:247
+#: admin/csmm.php:254
 msgid "Select Template"
 msgstr "Sélectionner un Modèle"
 
-#: admin/csmm.php:248
+#: admin/csmm.php:255
 msgid "Click on activate button under the template for selection."
 msgstr ""
 "Cliquez sur le bouton d'activation sous le modèle pour le sélectionner."
 
-#: admin/csmm.php:257
+#: admin/csmm.php:256
+msgid ""
+"Some templates are designed with specific features and limitations, so the "
+"available options and settings may be restricted."
+msgstr ""
+"Certains modèles sont conçus avec des fonctionnalités et des limitations "
+"spécifiques, de sorte que les options et paramètres disponibles peuvent être "
+"restreints."
+
+#: admin/csmm.php:264
 msgid "Template 1"
 msgstr "Modèle 1"
 
+#: admin/csmm.php:273
+msgid "Template 2"
+msgstr "Modèle 2"
+
 #: admin/csmm.php:282
+msgid "Template 3"
+msgstr "Modèle 3"
+
+#: admin/csmm.php:291
 msgid "Template 4"
 msgstr "Modèle 4"
 
-#: admin/csmm.php:315
+#: admin/csmm.php:300
+msgid "Template 5"
+msgstr "Modèle 5"
+
+#: admin/csmm.php:309
+msgid "Template 6"
+msgstr "Modèle 6"
+
+#: admin/csmm.php:318
+msgid "Template 7"
+msgstr "Modèle 7"
+
+#: admin/csmm.php:327
 msgid "Template 8"
 msgstr "Modèle 8"
 
-#: admin/csmm.php:347
+#: admin/csmm.php:336
+msgid "Template 9"
+msgstr "Modèle 9"
+
+#: admin/csmm.php:345
+msgid "Template 10"
+msgstr "Modèle 10"
+
+#: admin/csmm.php:355
 msgid "Logo"
 msgstr "Logo"
 
-#: admin/csmm.php:355 admin/csmm.php:362 coming-soon-maintenance-mode.php:128
+#: admin/csmm.php:363 admin/csmm.php:370 coming-soon-maintenance-mode.php:135
 msgid "Remove Logo"
 msgstr "Supprimer le Logo"
 
-#: admin/csmm.php:361
+#: admin/csmm.php:369
 msgid "Upload Logo"
 msgstr "Télécharger un Logo"
 
-#: admin/csmm.php:367
+#: admin/csmm.php:375
 msgid "Logo Tips"
 msgstr "Conseils sur le Logo"
 
-#: admin/csmm.php:369
+#: admin/csmm.php:377
 msgid "Upload your logo for your website."
 msgstr "Téléchargez votre logo pour votre site web."
 
-#: admin/csmm.php:370
+#: admin/csmm.php:378
 msgid "The recommended logo size is 300x170px."
 msgstr "La taille de logo recommandée est de 300x170px."
 
-#: admin/csmm.php:377
+#: admin/csmm.php:379 admin/csmm.php:396 admin/csmm.php:413 admin/csmm.php:454
+#: admin/csmm.php:477 admin/csmm.php:493 admin/csmm.php:532 admin/csmm.php:549
+msgid "Setting available for"
+msgstr "Setting available for"
+
+#: admin/csmm.php:386
 msgid "Title"
 msgstr "Titre"
 
-#: admin/csmm.php:383
+#: admin/csmm.php:392
 msgid "Title Tips"
 msgstr "Conseils sur le Titre"
 
-#: admin/csmm.php:385
+#: admin/csmm.php:394
 msgid "Write a title for the website."
 msgstr "Écrivez un titre pour le site web."
 
-#: admin/csmm.php:386 admin/csmm.php:402
+#: admin/csmm.php:395 admin/csmm.php:412
 msgid "Leave it blank if you dont want to display it."
 msgstr "Laissez-le vide si vous ne souhaitez pas l'afficher."
 
-#: admin/csmm.php:393
+#: admin/csmm.php:403
 msgid "Description"
 msgstr "Description"
 
-#: admin/csmm.php:399
+#: admin/csmm.php:409
 msgid "Description Tips"
 msgstr "Conseils sur la Description"
 
-#: admin/csmm.php:401
+#: admin/csmm.php:411
 msgid "Write a brief description for the website."
 msgstr "Écrivez une brève description pour le site web."
 
-#: admin/csmm.php:409
+#: admin/csmm.php:420
 msgid "Countdown"
 msgstr "Compte à rebours"
 
-#: admin/csmm.php:413 admin/csmm.php:453
+#: admin/csmm.php:424 admin/csmm.php:465
 msgid "Yes"
 msgstr "Oui"
 
-#: admin/csmm.php:415 admin/csmm.php:455
+#: admin/csmm.php:426 admin/csmm.php:468
 msgid "No"
 msgstr "Non"
 
-#: admin/csmm.php:419
+#: admin/csmm.php:430
 msgid "Timezone"
 msgstr "Fuseau horaire"
 
-#: admin/csmm.php:420
+#: admin/csmm.php:431
 msgid "set timezone"
-msgstr "Définir le fuseau horaire"
+msgstr "définir le fuseau horaire"
 
-#: admin/csmm.php:423
+#: admin/csmm.php:434
 msgid "Countdown Heading"
 msgstr "Titre du compte à rebours"
 
-#: admin/csmm.php:427
+#: admin/csmm.php:438
 msgid "Date"
 msgstr "Date"
 
-#: admin/csmm.php:431
+#: admin/csmm.php:442
 msgid "Time"
 msgstr "Heure"
 
-#: admin/csmm.php:436
+#: admin/csmm.php:447
 msgid "Countdown Tips"
 msgstr "Conseils pour le compte à rebours"
 
-#: admin/csmm.php:438
+#: admin/csmm.php:449
 msgid "Set a website launch countdown."
 msgstr "Définir un compte à rebours pour le lancement du site web."
 
-#: admin/csmm.php:439
+#: admin/csmm.php:450
 msgid "Timezone setting used to calculate website launch."
 msgstr ""
 "Paramètre de fuseau horaire utilisé pour calculer le lancement du site Web."
 
-#: admin/csmm.php:440
+#: admin/csmm.php:451
 msgid "Write a countdown heading which will appear above the countdown."
 msgstr ""
 "Écrivez un titre de compte à rebours qui apparaîtra au-dessus du compte à "
 "rebours."
 
-#: admin/csmm.php:441
+#: admin/csmm.php:452
 msgid "Set a date and time for the website launch."
 msgstr "Définissez une date et une heure pour le lancement du site web."
 
-#: admin/csmm.php:442
+#: admin/csmm.php:453
 msgid "When the countdown ends, the website will go live automatically."
 msgstr ""
 "Lorsque le compte à rebours se termine, le site web sera automatiquement mis "
 "en ligne."
 
-#: admin/csmm.php:443
+#: admin/csmm.php:455
 msgid ""
-"Automatic website launch on the countdown end is available only in the Pro "
-"version."
+"If you set an expiry date and time, the plugin automatically calculates and "
+"sets the website mode as Live."
 msgstr ""
-"Le lancement automatique du site Web à la fin du compte à rebours n'est "
-"disponible que dans la version Pro."
+"Si vous définissez une date et une heure d'expiration, le plugin calcule et "
+"définit automatiquement le mode du site Web sur Live."
 
-#: admin/csmm.php:450
+#: admin/csmm.php:462
 msgid "Subscriber Form"
 msgstr "Formulaire d'abonnement"
 
-#: admin/csmm.php:459
+#: admin/csmm.php:472
 msgid "Subscriber Form Tips"
 msgstr "Conseils pour le formulaire d'abonnement"
 
-#: admin/csmm.php:461
+#: admin/csmm.php:474
 msgid ""
 "Display an email subscription form for visitors to sign up for the mailing "
 "list."
@@ -344,7 +386,7 @@ msgstr ""
 "Affichez un formulaire d'abonnement par e-mail pour permettre aux visiteurs "
 "de s'inscrire à la liste de diffusion."
 
-#: admin/csmm.php:462
+#: admin/csmm.php:475
 msgid ""
 "The email subscription mailing list, used to send updates and offers about "
 "your website via email."
@@ -352,73 +394,74 @@ msgstr ""
 "La liste de diffusion par e-mail d'abonnement, utilisée pour envoyer des "
 "mises à jour et des offres concernant votre site web par e-mail."
 
-#: admin/csmm.php:463
+#: admin/csmm.php:476
 msgid ""
 "Admin can download mailing list from Subscribers sub menu and import in any "
 "email maketing tools."
 msgstr ""
-"L'administrateur peut télécharger la liste de diffusion depuis le sous-menu "
-"Abonnés et l'importer dans n'importe quel outil de marketing par e-mail."
+"L'administrateur peut télécharger la liste de diffusion à partir du sous-"
+"menu Abonnés et l'importer dans n'importe quel outil de marketing par "
+"courrier électronique."
 
-#: admin/csmm.php:464 admin/csmm.php:480 admin/csmm.php:503 admin/csmm.php:520
-msgid "Setting available in Pro"
-msgstr "Paramètre disponible en version Pro"
-
-#: admin/csmm.php:471
+#: admin/csmm.php:484
 msgid "Video URL"
 msgstr "URL de la vidéo"
 
-#: admin/csmm.php:477
+#: admin/csmm.php:490
 msgid "Video URL Tips"
 msgstr "Conseils pour l'URL de la vidéo"
 
-#: admin/csmm.php:479
+#: admin/csmm.php:492
 msgid "Provide a Youtube / Vimeo embed video URL."
 msgstr "Fournissez une URL de vidéo intégrée de Youtube / Vimeo."
 
-#: admin/csmm.php:487
+#: admin/csmm.php:500
 msgid "Background Slides"
 msgstr "Diapositives de fond"
 
-#: admin/csmm.php:493
+#: admin/csmm.php:513 coming-soon-maintenance-mode.php:156
+msgid "Remove Slide"
+msgstr "Supprimer la diapositive"
+
+#: admin/csmm.php:522
 msgid "Upload Slide"
 msgstr "Télécharger une diapositive"
 
-#: admin/csmm.php:494
+#: admin/csmm.php:523
 msgid "Remove All Slide"
 msgstr "Supprimer toutes les diapositives"
 
-#: admin/csmm.php:500
+#: admin/csmm.php:529
 msgid "Background Slides Tips"
 msgstr "Conseils pour les diapositives de fond"
 
-#: admin/csmm.php:501
+#: admin/csmm.php:530
 msgid "Upload the images for the background slideshow."
 msgstr "Téléchargez les images pour le diaporama en arrière-plan."
 
-#: admin/csmm.php:502
+#: admin/csmm.php:531
 msgid "Recommended image slide resolution is 1920x1080px."
 msgstr ""
 "La résolution recommandée pour les diapositives d'images est de 1920x1080 "
 "pixels."
 
-#: admin/csmm.php:510
+#: admin/csmm.php:539
 msgid "Custom CSS"
 msgstr "CSS personnalisé"
 
-#: admin/csmm.php:516
+#: admin/csmm.php:545
 msgid "Custom CSS Tips"
 msgstr "Conseils pour le CSS personnalisé"
 
-#: admin/csmm.php:518
+#: admin/csmm.php:547
 msgid "Write custom CSS code to modify the template designs."
 msgstr "Écrivez un code CSS personnalisé pour modifier les designs du modèle."
 
-#: admin/csmm.php:519
+#: admin/csmm.php:548
 msgid "Do not use the <style> tag in the CSS field."
 msgstr "N'utilisez pas la balise <style> dans le champ CSS."
 
-#: admin/csmm.php:539
+#: admin/csmm.php:568
 msgid ""
 "Add your social media account URLs in given social media section to display "
 "on website."
@@ -426,33 +469,35 @@ msgstr ""
 "Ajoutez les URLs de vos comptes de médias sociaux dans la section des médias "
 "sociaux pour les afficher sur le site web."
 
-#: admin/csmm.php:540
+#: admin/csmm.php:569
 msgid "You can keep it blank if you dont want to display."
 msgstr "Vous pouvez laisser vide si vous ne souhaitez pas les afficher."
 
-#: admin/csmm.php:562
-msgid "More Social Media options are available in Pro"
-msgstr "Paramètre disponible en version Pro"
-
-#: admin/csmm.php:640
+#: admin/csmm.php:666
 msgid "Have a problem with the plugin?"
 msgstr "Vous avez un problème avec le plugin ?"
 
-#: admin/csmm.php:641
+#: admin/csmm.php:667
 msgid "Raise a support ticket and we will respond you ASAP."
 msgstr "Ouvrez un ticket de support et nous vous répondrons dès que possible."
 
-#: admin/csmm.php:642
-msgid "Create Ticket"
-msgstr "Créer un ticket"
+#: admin/csmm.php:668
+msgid "Contact Us"
+msgstr "Contactez-nous"
 
-#: admin/csmm.php:646
+#: admin/csmm.php:672
+msgid "Check Video Tutorial - How Plugin Configure and Works?"
+msgstr ""
+"Consultez le didacticiel vidéo - Comment le plugin est-il configuré et "
+"fonctionne-t-il ?"
+
+#: admin/csmm.php:677
 msgid "Visit & Subscribe Our YouTube Channel for More Tutorial Videos"
 msgstr ""
 "Visitez et abonnez-vous à notre chaîne YouTube pour plus de vidéos "
 "tutorielles"
 
-#: admin/csmm.php:647
+#: admin/csmm.php:678
 msgid ""
 "In upcoming plugin updates you will get all video docs on our YouTube "
 "official website."
@@ -460,25 +505,71 @@ msgstr ""
 "Dans les prochaines mises à jour du plugin, vous trouverez tous les "
 "documents vidéo sur notre site Web officiel YouTube."
 
-#: admin/csmm.php:648
+#: admin/csmm.php:679
 msgid "Subscribe"
 msgstr "S'abonner"
 
-#: admin/csmm.php:652
-msgid "Upgrade To Pro"
-msgstr "Passer à la version Pro"
+#: admin/subscribers.php:23
+msgid "Total Subscribers"
+msgstr "Nombre total d'abonnés"
 
-#: admin/csmm.php:653
-msgid ""
-"Upgrade the plugin to the Pro version to get more templates and features."
-msgstr ""
-"Mettez à niveau le plugin vers la version Pro pour obtenir plus de modèles "
-"et de fonctionnalités."
+#: admin/subscribers.php:26
+msgid "Download List"
+msgstr "Télécharger la liste"
 
-#: admin/csmm.php:654
-msgid "Get Pro Plugin"
-msgstr "Obtenir le plugin Pro"
+#: admin/subscribers.php:37
+msgid "Email"
+msgstr "E-mail"
 
-#: coming-soon-maintenance-mode.php:247
+#: admin/subscribers.php:97
+msgid "First"
+msgstr "D'abord"
+
+#: admin/subscribers.php:98
+msgid "Prev"
+msgstr "Précédente"
+
+#: admin/subscribers.php:99
+msgid "Next"
+msgstr "Suivante"
+
+#: admin/subscribers.php:100
+msgid "Last"
+msgstr "Dernière"
+
+#: coming-soon-maintenance-mode.php:80
+msgid "Subscribers"
+msgstr "Les abonnés"
+
+#: coming-soon-maintenance-mode.php:328
 msgid "Nonce not verified action."
 msgstr "Action non vérifiée par le nonce."
+
+#: templates/1.php:117 templates/10.php:138 templates/2.php:115
+#: templates/4.php:124 templates/5.php:118 templates/6.php:136
+#: templates/7.php:120 templates/8.php:123
+msgid "subscribed"
+msgstr "abonnée"
+
+#~ msgid ""
+#~ "Automatice website lauch on countdown end available only in Pro version."
+#~ msgstr ""
+#~ "Le lancement automatique du site web à la fin du compte à rebours est "
+#~ "disponible uniquement dans la version Pro. "
+
+#~ msgid "More Social Media options are available in Pro"
+#~ msgstr "Paramètre disponible en version Pro "
+
+#~ msgid "Create Ticket"
+#~ msgstr "Créer un ticket"
+
+#~ msgid "Upgrade To Pro"
+#~ msgstr "Passer à la version Pro"
+
+#~ msgid "Upgrape plugin to Pro version to get more templates and features."
+#~ msgstr ""
+#~ "Mettez à niveau le plugin vers la version Pro pour obtenir plus de "
+#~ "modèles et de fonctionnalités."
+
+#~ msgid "Get Pro Plugin"
+#~ msgstr "Obtenir le plugin Pro"

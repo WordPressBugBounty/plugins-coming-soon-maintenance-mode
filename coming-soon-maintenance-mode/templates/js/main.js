@@ -41,32 +41,10 @@ jQuery( document ).ready(function() {
         });
     };
 
-   /* final countdown
-    * ------------------------------------------------------ */
-    var CmssFinalCountdown = function() {
-        var finalDate =  new Date("March 25, 2024 15:37:25").getTime();
-        //-date: "Mar 25 2021",
-        jQuery('.home-content__clock').countdown(finalDate)
-        .on('update.countdown finish.countdown', function(event) {
-            var str = '<div class=\"time days\">' +
-                      '%D <span>D</span>' + 
-                      '</div></div>' +
-                      '<div class=\"time hours\">' +
-                      '%H <span>H</span></div>' +
-                      '<div class=\"time minutes\">' +
-                      '%M <span>M</span></div>' +
-                      '<div class=\"time seconds\">' +
-                      '%S <span>S</span>';
-            jQuery(this)
-            .html(event.strftime(str));
-        });
-    };
-
    /* initialize
     * ------------------------------------------------------ */
     (function ssInit() {
         CmssPreloader();
-        CmssFinalCountdown();
     })();
 
 });

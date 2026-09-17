@@ -125,60 +125,58 @@
 }
 
  .home-content h1 {
-   margin-top: 0;
-   margin-bottom: 3rem;
-   font-size: 8rem;
+   margin-top: 3rem;
+   font-size: 10rem;
    line-height: 1.219;
    color: #FFFFFF;
    letter-spacing: 0;
    font-family: 'metropolis-semibold';
    background-color: #0000;
+   color: #fff;
    mix-blend-mode: lighten;
+   color: transparent;
    -webkit-text-stroke-width: 2px;
-   -webkit-text-stroke-color: #ffe8b7;
+   -webkit-text-stroke-color: #ffffff;
    text-transform: uppercase;
- }
-
- .comisoma-description {
-   color: rgba(255, 255, 255, 0.8);
-   font-size: 1.8rem;
-   line-height: 1.6;
-   max-width: 600px;
-   margin: 2rem auto;
-   font-family: "Nunito Sans", sans-serif;
+   margin-bottom: 7rem;
  }
 
 
- .home-content h3, .comisoma-countdown-title {
-   margin-top: 0;
-   margin-bottom: 3rem;
-   font-family: "Nunito Sans", sans-serif;
-   font-weight: 300;
-   font-size: 3rem;
-   line-height: 1.342;
-   font-style: normal;
-   color: #ffe8b7;
+  .home-content h3 {
+    margin-top: 1.2rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    font-size: 3.8rem;
+    line-height: 1.342;
+    font-style: normal;
+    color: #9c9c9c;
+  }
+
+  .home-content p,
+  .home-content__main p,
+  .home-content__text p {
+    color: #ffffff !important;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    max-width: 780px;
+    margin: 0 auto 3rem auto;
+    font-family: "Nunito Sans", sans-serif;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  }
+
+ .home-logo {
+   padding-bottom: 3rem;
  }
 
-.home-logo {
-  margin-top: 0;
-  margin-bottom: 3rem;
-  padding-bottom: 0;
-}
+  .home-logo img {
+    width: auto;
+    height: 75px;
+  }
 
- .home-logo img {
-   width: auto;
-   height: 100px;
- }
-
- .home-content__main {
-   position: relative;
-   text-align: center;
- }
-
- .home-content__counter {
-   margin-bottom: 3rem;
- }
+  .home-content__main {
+    position: relative;
+    text-align: center;
+  }
 
  .home-content__counter .top {
    margin-bottom: 1.5rem;
@@ -191,11 +189,11 @@
    font-size: 4rem;
    display: inline-block;
    position: relative;
-   padding: 0;
-   min-width: 8rem;
-   height: auto;
+   padding: 18px;
+   width: 12rem;
+   height: 10rem;
+   width: 15rem;
    vertical-align: text-bottom;
-   margin: 0 1rem;
  }
 
  .home-content__counter .time.days,
@@ -242,7 +240,7 @@
     margin-bottom: 1.8rem;
 }
 
-#comisoma-email {
+#csmm-email {
   -webkit-text-fill-color: #fff;
 }
 
@@ -385,15 +383,20 @@
  /* ------------------------------------------------------------------- 
  * ## home social
  * ------------------------------------------------------------------- */
- .home-social {
-  list-style: none;
-  font-family: "Nunito Sans", sans-serif;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
- }
+  .home-social {
+    list-style: none;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 25px auto 0 auto !important;
+    padding: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 5;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 24px;
+    width: 100% !important;
+  }
 
  .home-social a {
    color: #ffe8b7;
@@ -650,17 +653,13 @@
  }
 
  @media only screen and (max-width:1000px) {
-    .comisoma-row {
-      width: 90%;
-    }
+   .home-content h1 {
+     font-size: 13rem;
+   }
 
-    .home-content h1 {
-      font-size: 7rem;
-    }
-
-    .home-content h3 {
-      font-size: 2.5rem;
-    }
+   .home-content h3 {
+     font-size: 3rem;
+   }
 
    .home-content__button .btn {
      width: 24rem;
@@ -677,28 +676,46 @@
  }
 
  @media only screen and (max-width:900px) {
-    .home-content h1 {
-      font-size: 6rem;
-    }
+   .home-content h1 {
+     font-size: 12rem;
+   }
 
-    .home-content h3 {
-      font-size: 2.2rem;
-    }
+   .home-content h3 {
+     font-size: 2.7rem;
+   }
 
-    html,
-    body {
-      overflow: visible
-    }
-  }
+   .home-social {
+     display: block;
+   }
+
+   html,
+   body {
+     overflow: visible
+   }
+
+   .home-social {
+     bottom: -80px !important;
+     right: 0 !important;
+     /* top: 0 !important; */
+     display: flex !important;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     justify-content: space-evenly;
+     /* margin-bottom: -70px; */
+     left: 0;
+   }
+
+
+ }
 
  @media only screen and (max-width:800px) {
-    .home-content h1 {
-      font-size: 5rem;
-    }
+   .home-content h1 {
+     font-size: 11.4rem;
+   }
 
-    .home-content h3 {
-      font-size: 2rem;
-    }
+   .home-content h3 {
+     font-size: 2.6rem;
+   }
 
    .home-content__video {
      margin-top: 3.6rem;
@@ -730,13 +747,13 @@
  }
 
  @media only screen and (max-width:700px) {
-    .home-content h1 {
-      font-size: 4rem;
-    }
+   .home-content h1 {
+     font-size: 10.2rem;
+   }
 
-    .home-content h3 {
-      font-size: 1.8rem;
-    }
+   .home-content h3 {
+     font-size: 2.4rem;
+   }
 
    .home-content__scroll {
      right: 5rem;
@@ -750,17 +767,17 @@
  }
 
  @media only screen and (max-width:600px) {
-    .home-content {
-      padding-top: 2rem;
-    }
+   .home-content {
+     padding-top: 6rem;
+   }
 
-    .home-content h1 {
-      font-size: 3.5rem;
-    }
+   .home-content h1 {
+     font-size: 9rem;
+   }
 
-    .home-content h3 {
-      font-size: 1.6rem;
-    }
+   .home-content h3 {
+     font-size: 2.1rem;
+   }
 
    .home-content__main {
      padding: 0 35px;
@@ -789,43 +806,26 @@
 
  @media only screen and (max-width:500px) {
    .home-content h1 {
-     font-size: 3.5rem;
-     margin-bottom: 2rem;
+     font-size: 7.5rem;
    }
 
    .home-content h3 {
      font-size: 1.8rem;
-     margin-bottom: 2rem;
    }
-
-   .home-logo img {
-     height: 100px;
-   }
-
-   .home-content__counter .time {
-     min-width: 6rem;
-     font-size: 2.5rem;
-     margin: 0 0.5rem;
-   }
-
-   .comisoma-description {
-     font-size: 1.4rem;
-   }
-
 
  }
 
  @media only screen and (max-width:400px) {
    .s-home {
-     min-height: 100vh;
+     min-height: 630px;
    }
 
    .home-content h1 {
-     font-size: 3rem;
+     font-size: 6.5rem;
    }
 
    .home-content__main {
-     padding: 0 15px;
+     padding: 0 25px;
    }
 
    .home-content__video .video-link {
@@ -850,7 +850,7 @@
 
  @media only screen and (max-width:350px) {
    .home-content h1 {
-     font-size: 2.5rem;
+     font-size: 6.2rem;
    }
 
  }

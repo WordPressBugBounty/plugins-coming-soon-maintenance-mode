@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: coming-soon-maintenance-mode\n"
-"POT-Creation-Date: 2024-01-25 15:05+0530\n"
-"PO-Revision-Date: 2024-01-25 15:06+0530\n"
+"POT-Creation-Date: 2024-01-25 13:50+0530\n"
+"PO-Revision-Date: 2024-01-25 13:51+0530\n"
 "Last-Translator: Weblizar <lizarweb@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
@@ -18,63 +18,59 @@ msgstr ""
 "X-Poedit-SearchPath-1: coming-soon-maintenance-mode.php\n"
 "X-Poedit-SearchPath-2: admin\n"
 
-#: admin/csmm.php:93 coming-soon-maintenance-mode.php:78
+#: admin/csmm.php:101 coming-soon-maintenance-mode.php:78
 msgid "Coming Soon Maintenance Mode"
 msgstr "Tulossa pian huolto tila"
 
-#: admin/csmm.php:107 admin/csmm.php:135 admin/csmm.php:155
+#: admin/csmm.php:116 admin/csmm.php:144 admin/csmm.php:159
 msgid "Coming Soon"
 msgstr "Tulossa pian"
 
-#: admin/csmm.php:109 admin/csmm.php:137 admin/csmm.php:158
+#: admin/csmm.php:118 admin/csmm.php:146 admin/csmm.php:162
 msgid "Maintenance"
 msgstr "Huolto"
 
-#: admin/csmm.php:111 admin/csmm.php:139 admin/csmm.php:161
+#: admin/csmm.php:120 admin/csmm.php:148 admin/csmm.php:165
 msgid "Live"
 msgstr "Livessä"
 
-#: admin/csmm.php:113 admin/csmm.php:165
+#: admin/csmm.php:122 admin/csmm.php:169
 msgid "Check Live Preview"
 msgstr "Tarkista Live-esikatselu"
 
-#: admin/csmm.php:119 admin/csmm.php:132
+#: admin/csmm.php:128 admin/csmm.php:141
 msgid "Website Mode"
 msgstr "Verkkosivustotila"
 
-#: admin/csmm.php:120
+#: admin/csmm.php:129
 msgid "Templates"
 msgstr "Mallit"
 
-#: admin/csmm.php:121
+#: admin/csmm.php:130
 msgid "Settings"
 msgstr "Asetukset"
 
-#: admin/csmm.php:122
+#: admin/csmm.php:131
 msgid "Social Media"
 msgstr "Sosiaalinen media"
 
-#: admin/csmm.php:123
+#: admin/csmm.php:132
 msgid "More"
 msgstr "Lisää"
 
-#: admin/csmm.php:124
+#: admin/csmm.php:133
 msgid "Docs"
 msgstr "Dokumentaatio"
 
-#: admin/csmm.php:143
-msgid "Video Tutorial - Check How Plugin Works"
-msgstr "Videokurssi - Tarkista, miten liitännäinen toimii"
-
-#: admin/csmm.php:148
+#: admin/csmm.php:152
 msgid "Website Mode Tips"
 msgstr "Verkkosivustotilan vinkit"
 
-#: admin/csmm.php:150
+#: admin/csmm.php:154
 msgid "What are the website modes?"
 msgstr "Mitä verkkosivustotilat ovat?"
 
-#: admin/csmm.php:152
+#: admin/csmm.php:156
 msgid ""
 "Website mode defines the status of the website, such as whether it is "
 "available to access for visitors or not."
@@ -82,7 +78,7 @@ msgstr ""
 "Verkkosivustotila määrittää verkkosivuston tilan, kuten sen, onko se "
 "saatavilla vierailijoille vai ei."
 
-#: admin/csmm.php:155
+#: admin/csmm.php:159
 msgid ""
 "this mode is used to inform visitors that a website is under construction or "
 "coming soon. Expect an update from the administrator."
@@ -90,7 +86,7 @@ msgstr ""
 "tätä tilaa käytetään ilmoittamaan vierailijoille, että verkkosivusto on "
 "rakenteilla tai tulossa pian. Odota päivitystä ylläpitäjältä."
 
-#: admin/csmm.php:158
+#: admin/csmm.php:162
 msgid ""
 "this mode is a way for website administrators to temporarily disable access "
 "to the particular part of website while it is being updated or undergoing "
@@ -100,7 +96,7 @@ msgstr ""
 "estää pääsyn tietylle osalle verkkosivustoa, kun sitä päivitetään tai "
 "huolletaan."
 
-#: admin/csmm.php:161
+#: admin/csmm.php:165
 msgid ""
 "this mode means that the website is accessible and available for anyone to "
 "visit on the internet."
@@ -108,29 +104,29 @@ msgstr ""
 "tämä tila tarkoittaa, että verkkosivusto on kaikkien saatavilla ja "
 "saatavilla kenen tahansa käydäkseni Internetissä."
 
-#: admin/csmm.php:164 admin/csmm.php:249 admin/csmm.php:443
+#: admin/csmm.php:168 admin/csmm.php:256 admin/csmm.php:455
 msgid "Important Note"
 msgstr "Tärkeä huomautus"
 
-#: admin/csmm.php:165
+#: admin/csmm.php:169
 msgid "button is used to check the website as a visitor only for admin."
 msgstr ""
 "-painiketta käytetään tarkistamaan verkkosivusto vierailijana vain "
 "järjestelmänvalvojana."
 
-#: admin/csmm.php:166
+#: admin/csmm.php:170
 msgid "Coming Soon and Maintenance Mode will not work for admin."
 msgstr "Tulossa pian ja huoltotila eivät toimi ylläpitäjälle."
 
-#: admin/csmm.php:172
+#: admin/csmm.php:176
 msgid "Maintenance Mode Options"
 msgstr "Huoltotilan asetukset"
 
-#: admin/csmm.php:175
+#: admin/csmm.php:179
 msgid "Maintenance Mode Options Tips"
 msgstr "Huoltotilan asetusten vinkit"
 
-#: admin/csmm.php:177
+#: admin/csmm.php:181
 msgid ""
 "If you need to perform updates on a specific part of your website, you can "
 "use the option below to display a maintenance message to visitors on "
@@ -142,193 +138,238 @@ msgstr ""
 "tietyillä sivuilla ja viesteissä. Kaikki muut osat verkkosivustostasi ovat "
 "saatavilla tämän ajan."
 
-#: admin/csmm.php:181
+#: admin/csmm.php:185
 msgid "Select Posts"
 msgstr "Valitse viestit"
 
-#: admin/csmm.php:185 admin/csmm.php:199 admin/csmm.php:212
+#: admin/csmm.php:189 admin/csmm.php:203 admin/csmm.php:216
 msgid "Select All"
 msgstr "Valitse kaikki"
 
-#: admin/csmm.php:195
+#: admin/csmm.php:199
 msgid "Select Pages"
 msgstr "Valitse sivut"
 
-#: admin/csmm.php:209
+#: admin/csmm.php:213
 msgid "Select Other Pages"
 msgstr "Valitse muut sivut"
 
-#: admin/csmm.php:215
+#: admin/csmm.php:219
 msgid "Front Page"
 msgstr "Etusivu"
 
-#: admin/csmm.php:218
+#: admin/csmm.php:222
 msgid "Home Page"
 msgstr "Kotisivu"
 
-#: admin/csmm.php:221
+#: admin/csmm.php:225
+msgid "Archive Page"
+msgstr "Arkistosivu"
+
+#: admin/csmm.php:228
 msgid "Category Page"
 msgstr "Kategoriasivu"
 
-#: admin/csmm.php:224
+#: admin/csmm.php:231
 msgid "Tag Page"
 msgstr "Tagisivu"
 
-#: admin/csmm.php:227
+#: admin/csmm.php:234
 msgid "Search Page"
 msgstr "Hakusivu"
 
-#: admin/csmm.php:239 admin/csmm.php:530 admin/csmm.php:630
+#: admin/csmm.php:246 admin/csmm.php:559 admin/csmm.php:653
 msgid "Save"
 msgstr "Tallenna"
 
-#: admin/csmm.php:247
+#: admin/csmm.php:254
 msgid "Select Template"
 msgstr "Valitse malli"
 
-#: admin/csmm.php:248
+#: admin/csmm.php:255
 msgid "Click on activate button under the template for selection."
 msgstr "Valitse malli napsauttamalla mallin alla olevaa aktivoi-painiketta."
 
-#: admin/csmm.php:257
+#: admin/csmm.php:256
+msgid ""
+"Some templates are designed with specific features and limitations, so the "
+"available options and settings may be restricted."
+msgstr ""
+"Joissakin malleissa on erityisiä ominaisuuksia ja rajoituksia, joten "
+"käytettävissä olevat vaihtoehdot ja asetukset voivat olla rajoitettuja."
+
+#: admin/csmm.php:264
 msgid "Template 1"
 msgstr "Malli 1"
 
+#: admin/csmm.php:273
+msgid "Template 2"
+msgstr "Malli 2"
+
 #: admin/csmm.php:282
+msgid "Template 3"
+msgstr "Malli 3"
+
+#: admin/csmm.php:291
 msgid "Template 4"
 msgstr "Malli 4"
 
-#: admin/csmm.php:315
+#: admin/csmm.php:300
+msgid "Template 5"
+msgstr "Malli 5"
+
+#: admin/csmm.php:309
+msgid "Template 6"
+msgstr "Malli 6"
+
+#: admin/csmm.php:318
+msgid "Template 7"
+msgstr "Malli 7"
+
+#: admin/csmm.php:327
 msgid "Template 8"
 msgstr "Malli 8"
 
-#: admin/csmm.php:347
+#: admin/csmm.php:336
+msgid "Template 9"
+msgstr "Malli 9"
+
+#: admin/csmm.php:345
+msgid "Template 10"
+msgstr "Malli 10"
+
+#: admin/csmm.php:355
 msgid "Logo"
 msgstr "Logo"
 
-#: admin/csmm.php:355 admin/csmm.php:362 coming-soon-maintenance-mode.php:128
+#: admin/csmm.php:363 admin/csmm.php:370 coming-soon-maintenance-mode.php:135
 msgid "Remove Logo"
 msgstr "Poista logo"
 
-#: admin/csmm.php:361
+#: admin/csmm.php:369
 msgid "Upload Logo"
 msgstr "Lataa logo"
 
-#: admin/csmm.php:367
+#: admin/csmm.php:375
 msgid "Logo Tips"
 msgstr "Logon vinkit"
 
-#: admin/csmm.php:369
+#: admin/csmm.php:377
 msgid "Upload your logo for your website."
 msgstr "Lataa logo verkkosivustollesi."
 
-#: admin/csmm.php:370
+#: admin/csmm.php:378
 msgid "The recommended logo size is 300x170px."
 msgstr "Suositeltu logon koko on 300x170px."
 
-#: admin/csmm.php:377
+#: admin/csmm.php:379 admin/csmm.php:396 admin/csmm.php:413 admin/csmm.php:454
+#: admin/csmm.php:477 admin/csmm.php:493 admin/csmm.php:532 admin/csmm.php:549
+msgid "Setting available for"
+msgstr "Asetus käytettävissä"
+
+#: admin/csmm.php:386
 msgid "Title"
 msgstr "Otsikko"
 
-#: admin/csmm.php:383
+#: admin/csmm.php:392
 msgid "Title Tips"
 msgstr "Otsikon vinkit"
 
-#: admin/csmm.php:385
+#: admin/csmm.php:394
 msgid "Write a title for the website."
 msgstr "Kirjoita verkkosivuston otsikko."
 
-#: admin/csmm.php:386 admin/csmm.php:402
+#: admin/csmm.php:395 admin/csmm.php:412
 msgid "Leave it blank if you dont want to display it."
 msgstr "Jätä se tyhjäksi, jos et halua näyttää sitä."
 
-#: admin/csmm.php:393
+#: admin/csmm.php:403
 msgid "Description"
 msgstr "Kuvaus"
 
-#: admin/csmm.php:399
+#: admin/csmm.php:409
 msgid "Description Tips"
 msgstr "Kuvauksen vinkit"
 
-#: admin/csmm.php:401
+#: admin/csmm.php:411
 msgid "Write a brief description for the website."
 msgstr "Kirjoita lyhyt kuvaus verkkosivustosta."
 
-#: admin/csmm.php:409
+#: admin/csmm.php:420
 msgid "Countdown"
 msgstr "Vastalaskenta"
 
-#: admin/csmm.php:413 admin/csmm.php:453
+#: admin/csmm.php:424 admin/csmm.php:465
 msgid "Yes"
 msgstr "Kyllä"
 
-#: admin/csmm.php:415 admin/csmm.php:455
+#: admin/csmm.php:426 admin/csmm.php:468
 msgid "No"
 msgstr "Ei"
 
-#: admin/csmm.php:419
+#: admin/csmm.php:430
 msgid "Timezone"
 msgstr "Aikavyöhyke"
 
-#: admin/csmm.php:420
+#: admin/csmm.php:431
 msgid "set timezone"
 msgstr "aseta aikavyöhyke"
 
-#: admin/csmm.php:423
+#: admin/csmm.php:434
 msgid "Countdown Heading"
 msgstr "Vastalaskennan otsikko"
 
-#: admin/csmm.php:427
+#: admin/csmm.php:438
 msgid "Date"
 msgstr "Päivämäärä"
 
-#: admin/csmm.php:431
+#: admin/csmm.php:442
 msgid "Time"
 msgstr "Aika"
 
-#: admin/csmm.php:436
+#: admin/csmm.php:447
 msgid "Countdown Tips"
 msgstr "Vastalaskennan vinkit"
 
-#: admin/csmm.php:438
+#: admin/csmm.php:449
 msgid "Set a website launch countdown."
 msgstr "Aseta verkkosivuston käynnistysvastalaskenta."
 
-#: admin/csmm.php:439
+#: admin/csmm.php:450
 msgid "Timezone setting used to calculate website launch."
 msgstr ""
 "Aikavyöhykeasetus, jota käytetään verkkosivuston käynnistyksen laskemiseen."
 
-#: admin/csmm.php:440
+#: admin/csmm.php:451
 msgid "Write a countdown heading which will appear above the countdown."
 msgstr ""
 "Kirjoita vastalaskennan otsikko, joka näkyy vastalaskennan yläpuolella."
 
-#: admin/csmm.php:441
+#: admin/csmm.php:452
 msgid "Set a date and time for the website launch."
 msgstr "Aseta päivämäärä ja aika verkkosivuston käynnistykseen."
 
-#: admin/csmm.php:442
+#: admin/csmm.php:453
 msgid "When the countdown ends, the website will go live automatically."
 msgstr "Kun vastalaskenta päättyy, verkkosivusto käynnistyy automaattisesti."
 
-#: admin/csmm.php:443
+#: admin/csmm.php:455
 msgid ""
-"Automatic website launch on the countdown end is available only in the Pro "
-"version."
+"If you set an expiry date and time, the plugin automatically calculates and "
+"sets the website mode as Live."
 msgstr ""
-"Automaattinen verkkosivuston käynnistäminen lähtölaskennan lopussa on "
-"saatavilla vain Pro-versiossa."
+"Jos asetat vanhenemispäivän ja -ajan, laajennus laskee automaattisesti ja "
+"asettaa verkkosivuston tilaksi Live."
 
-#: admin/csmm.php:450
+#: admin/csmm.php:462
 msgid "Subscriber Form"
 msgstr "Tilaajalomake"
 
-#: admin/csmm.php:459
+#: admin/csmm.php:472
 msgid "Subscriber Form Tips"
 msgstr "Tilaajalomakkeen vinkit"
 
-#: admin/csmm.php:461
+#: admin/csmm.php:474
 msgid ""
 "Display an email subscription form for visitors to sign up for the mailing "
 "list."
@@ -336,7 +377,7 @@ msgstr ""
 "Näytä sähköpostitilauksen lomake vierailijoille, jotta he voivat tilata "
 "postituslistalle."
 
-#: admin/csmm.php:462
+#: admin/csmm.php:475
 msgid ""
 "The email subscription mailing list, used to send updates and offers about "
 "your website via email."
@@ -344,7 +385,7 @@ msgstr ""
 "Sähköpostitilauksen postituslista, jota käytetään päivitysten ja tarjousten "
 "lähettämiseen verkkosivustostasi sähköpostitse."
 
-#: admin/csmm.php:463
+#: admin/csmm.php:476
 msgid ""
 "Admin can download mailing list from Subscribers sub menu and import in any "
 "email maketing tools."
@@ -352,63 +393,63 @@ msgstr ""
 "Ylläpitäjä voi ladata postituslistan Tilaukset-osiosta ja tuoda sen mihin "
 "tahansa sähköpostimarkkinoinnin työkaluun."
 
-#: admin/csmm.php:464 admin/csmm.php:480 admin/csmm.php:503 admin/csmm.php:520
-msgid "Setting available in Pro"
-msgstr "Asetus saatavilla Pro-versiossa"
-
-#: admin/csmm.php:471
+#: admin/csmm.php:484
 msgid "Video URL"
 msgstr "Videon URL"
 
-#: admin/csmm.php:477
+#: admin/csmm.php:490
 msgid "Video URL Tips"
 msgstr "Videon URL-vinkit"
 
-#: admin/csmm.php:479
+#: admin/csmm.php:492
 msgid "Provide a Youtube / Vimeo embed video URL."
 msgstr "Anna Youtube- / Vimeo-upotettu videon URL."
 
-#: admin/csmm.php:487
+#: admin/csmm.php:500
 msgid "Background Slides"
 msgstr "Taustakuvat"
 
-#: admin/csmm.php:493
+#: admin/csmm.php:513 coming-soon-maintenance-mode.php:156
+msgid "Remove Slide"
+msgstr "Poista dia"
+
+#: admin/csmm.php:522
 msgid "Upload Slide"
 msgstr "Lataa dia"
 
-#: admin/csmm.php:494
+#: admin/csmm.php:523
 msgid "Remove All Slide"
 msgstr "Poista kaikki diat"
 
-#: admin/csmm.php:500
+#: admin/csmm.php:529
 msgid "Background Slides Tips"
 msgstr "Taustakuvavinkit"
 
-#: admin/csmm.php:501
+#: admin/csmm.php:530
 msgid "Upload the images for the background slideshow."
 msgstr "Lataa kuvat taustakuvan diaesitykseen."
 
-#: admin/csmm.php:502
+#: admin/csmm.php:531
 msgid "Recommended image slide resolution is 1920x1080px."
 msgstr "Suositeltu kuvan resoluutio taustakuvan diaesityksessä on 1920x1080px."
 
-#: admin/csmm.php:510
+#: admin/csmm.php:539
 msgid "Custom CSS"
 msgstr "Mukautettu CSS"
 
-#: admin/csmm.php:516
+#: admin/csmm.php:545
 msgid "Custom CSS Tips"
 msgstr "Mukautetun CSS:n vinkit"
 
-#: admin/csmm.php:518
+#: admin/csmm.php:547
 msgid "Write custom CSS code to modify the template designs."
 msgstr "Kirjoita mukautettu CSS-koodi mallipohjan suunnittelun muokkaamiseksi."
 
-#: admin/csmm.php:519
+#: admin/csmm.php:548
 msgid "Do not use the <style> tag in the CSS field."
 msgstr "Älä käytä <style>-tagia CSS-kentässä."
 
-#: admin/csmm.php:539
+#: admin/csmm.php:568
 msgid ""
 "Add your social media account URLs in given social media section to display "
 "on website."
@@ -416,56 +457,103 @@ msgstr ""
 "Lisää sosiaalisen median tilisi URL-osoitteet annettuun sosiaalisen median "
 "osioon näyttääksesi ne verkkosivustolla."
 
-#: admin/csmm.php:540
+#: admin/csmm.php:569
 msgid "You can keep it blank if you dont want to display."
 msgstr "Voit pitää sen tyhjänä, jos et halua näyttää sitä."
 
-#: admin/csmm.php:562
-msgid "More Social Media options are available in Pro"
-msgstr "Pro-versiossa on saatavilla enemmän sosiaalisen median vaihtoehtoja."
-
-#: admin/csmm.php:640
+#: admin/csmm.php:666
 msgid "Have a problem with the plugin?"
 msgstr "Onko sinulla ongelmia laajennuksen kanssa?"
 
-#: admin/csmm.php:641
+#: admin/csmm.php:667
 msgid "Raise a support ticket and we will respond you ASAP."
 msgstr "Luo tukipyyntö, ja vastaamme siihen mahdollisimman pian."
 
-#: admin/csmm.php:642
-msgid "Create Ticket"
-msgstr "Luo lippu"
+#: admin/csmm.php:668
+msgid "Contact Us"
+msgstr "Ota meihin yhteyttä"
 
-#: admin/csmm.php:646
+#: admin/csmm.php:672
+msgid "Check Video Tutorial - How Plugin Configure and Works?"
+msgstr "Tarkista opetusvideo – kuinka laajennus määritetään ja toimii?"
+
+#: admin/csmm.php:677
 msgid "Visit & Subscribe Our YouTube Channel for More Tutorial Videos"
-msgstr "Vieraile ja tilaa YouTube-kanavamme lisää opetusvideoita varten."
+msgstr "Vieraile ja tilaa YouTube-kanavamme saadaksesi lisää opetusvideoita"
 
-#: admin/csmm.php:647
+#: admin/csmm.php:678
 msgid ""
 "In upcoming plugin updates you will get all video docs on our YouTube "
 "official website."
 msgstr ""
-"Tulevissa lisäosapäivityksissä saat kaikki videodokumentit viralliselta "
-"YouTube-sivustoltamme. "
+"Tulevissa laajennuspäivityksissä saat kaikki videodokumentit virallisella "
+"YouTube-sivustollamme."
 
-#: admin/csmm.php:648
+#: admin/csmm.php:679
 msgid "Subscribe"
 msgstr "Tilaa"
 
-#: admin/csmm.php:652
-msgid "Upgrade To Pro"
-msgstr "Päivitä Pro-versioon"
+#: admin/subscribers.php:23
+msgid "Total Subscribers"
+msgstr "Tilaajia yhteensä"
 
-#: admin/csmm.php:653
-msgid ""
-"Upgrade the plugin to the Pro version to get more templates and features."
-msgstr ""
-"Päivitä laajennus Pro-versioon saadaksesi lisää malleja ja ominaisuuksia."
+#: admin/subscribers.php:26
+msgid "Download List"
+msgstr "Lataa luettelo"
 
-#: admin/csmm.php:654
-msgid "Get Pro Plugin"
-msgstr "Hanki Pro-lisäosa"
+#: admin/subscribers.php:37
+msgid "Email"
+msgstr "Sähköposti"
 
-#: coming-soon-maintenance-mode.php:247
+#: admin/subscribers.php:97
+msgid "First"
+msgstr "Ensimmäinen"
+
+#: admin/subscribers.php:98
+msgid "Prev"
+msgstr "Ed"
+
+#: admin/subscribers.php:99
+msgid "Next"
+msgstr "Seuraava"
+
+#: admin/subscribers.php:100
+msgid "Last"
+msgstr "Kestää"
+
+#: coming-soon-maintenance-mode.php:80
+msgid "Subscribers"
+msgstr "Tilaajat"
+
+#: coming-soon-maintenance-mode.php:328
 msgid "Nonce not verified action."
 msgstr "Noncea ei ole vahvistettu toimintaa varten."
+
+#: templates/1.php:117 templates/10.php:138 templates/2.php:115
+#: templates/4.php:124 templates/5.php:118 templates/6.php:136
+#: templates/7.php:120 templates/8.php:123
+msgid "subscribed"
+msgstr "tilattu"
+
+#~ msgid ""
+#~ "Automatice website lauch on countdown end available only in Pro version."
+#~ msgstr ""
+#~ "Automaattinen verkkosivuston käynnistys vastalaskennan päättyessä on "
+#~ "saatavilla vain Pro-versiossa."
+
+#~ msgid "More Social Media options are available in Pro"
+#~ msgstr ""
+#~ "Pro-versiossa on saatavilla enemmän sosiaalisen median vaihtoehtoja."
+
+#~ msgid "Create Ticket"
+#~ msgstr "Luo lippu"
+
+#~ msgid "Upgrade To Pro"
+#~ msgstr "Päivitä Pro-versioon"
+
+#~ msgid "Upgrape plugin to Pro version to get more templates and features."
+#~ msgstr ""
+#~ "Päivitä lisäosa Pro-versioon saadaksesi lisää malleja ja ominaisuuksia. "
+
+#~ msgid "Get Pro Plugin"
+#~ msgstr "Hanki Pro-lisäosa"
